@@ -30,7 +30,7 @@ Each of `N` agents picks the top-scoring document, deposits its evidence into th
 ├── LICENSE
 ├── app_v11.py                 # Flask evaluation harness (all retrieval systems + metrics)
 ├── run_svsf.ipynb             # Colab notebook (runs the full harness end-to-end)
-├── index_v11.html             # Batch-evaluation UI
+├── index_v11.html             # Batch-evaluation UI (if needed)
 ├── data/
 │   ├── deepchain_*.csv        # Self-constructed deep-chain QA sets
 │   ├── mega_pool_5k.txt       # 4,942-passage stress-test pool (real + synthetic distractors)
