@@ -1,0 +1,2401 @@
+qidx,cond,system,pred,gold,strict,flex,judge,notfound,ms
+0,cot,Vanilla,NOT FOUND,Czech koruna,0,0,0,1,0.622
+0,nocot,Vanilla,Argentine peso,Czech koruna,0,0,0,0,0.622
+0,cot,SVSF,NOT FOUND,Czech koruna,0,0,0,1,0.836
+0,nocot,SVSF,Argentine peso,Czech koruna,0,0,0,0,0.836
+0,cot,MMR,NOT FOUND,Czech koruna,0,0,0,1,0.762
+0,nocot,MMR,Argentine peso,Czech koruna,0,0,0,0,0.762
+0,cot,Rerank,Czech koruna,Czech koruna,1,1,1,0,50.389
+0,nocot,Rerank,Czech koruna,Czech koruna,1,1,1,0,50.389
+0,cot,RerankBGE,Czech koruna,Czech koruna,1,1,1,0,936.435
+0,nocot,RerankBGE,Czech koruna,Czech koruna,1,1,1,0,936.435
+0,cot,MultiQuery,NOT FOUND,Czech koruna,0,0,0,1,1.1
+0,nocot,MultiQuery,Argentine peso,Czech koruna,0,0,0,0,1.1
+1,cot,Vanilla,88,84,0,0,0,0,0.574
+1,nocot,Vanilla,72,84,0,0,0,0,0.574
+1,cot,SVSF,NOT FOUND,84,0,0,0,1,0.801
+1,nocot,SVSF,92,84,0,0,0,0,0.801
+1,cot,MMR,NOT FOUND,84,0,0,0,1,0.744
+1,nocot,MMR,88,84,0,0,0,0,0.744
+1,cot,Rerank,NOT FOUND,84,0,0,0,1,52.54
+1,nocot,Rerank,NOT FOUND,84,0,0,0,1,52.54
+1,cot,RerankBGE,50,84,0,0,0,0,1059.352
+1,nocot,RerankBGE,50,84,0,0,0,0,1059.352
+1,cot,MultiQuery,NOT FOUND,84,0,0,0,1,0.955
+1,nocot,MultiQuery,NOT FOUND,84,0,0,0,1,0.955
+2,cot,Vanilla,"Cincinnati, Ohio",Kapuskasing,0,0,0,0,0.603
+2,nocot,Vanilla,"Cincinnati, Ohio",Kapuskasing,0,0,0,0,0.603
+2,cot,SVSF,"Cincinnati, Ohio",Kapuskasing,0,0,0,0,1.076
+2,nocot,SVSF,"Cincinnati, Ohio",Kapuskasing,0,0,0,0,1.076
+2,cot,MMR,Kapuskasing,Kapuskasing,1,1,1,0,1.031
+2,nocot,MMR,"Cincinnati, Ohio",Kapuskasing,0,0,0,0,1.031
+2,cot,Rerank,"Cincinnati, Ohio",Kapuskasing,0,0,0,0,48.71
+2,nocot,Rerank,"Cincinnati, Ohio",Kapuskasing,0,0,0,0,48.71
+2,cot,RerankBGE,Kapuskasing,Kapuskasing,1,1,1,0,1033.369
+2,nocot,RerankBGE,Kapuskasing,Kapuskasing,1,1,1,0,1033.369
+2,cot,MultiQuery,Kapuskasing,Kapuskasing,1,1,1,0,1.093
+2,nocot,MultiQuery,Kapuskasing,Kapuskasing,1,1,1,0,1.093
+3,cot,Vanilla,1793,1793,1,1,1,0,0.561
+3,nocot,Vanilla,1793,1793,1,1,1,0,0.561
+3,cot,SVSF,1793,1793,1,1,1,0,1.908
+3,nocot,SVSF,1793,1793,1,1,1,0,1.908
+3,cot,MMR,1793,1793,1,1,1,0,1.522
+3,nocot,MMR,1793,1793,1,1,1,0,1.522
+3,cot,Rerank,1793,1793,1,1,1,0,50.61
+3,nocot,Rerank,1793,1793,1,1,1,0,50.61
+3,cot,RerankBGE,1793,1793,1,1,1,0,1034.12
+3,nocot,RerankBGE,1793,1793,1,1,1,0,1034.12
+3,cot,MultiQuery,1793,1793,1,1,1,0,0.94
+3,nocot,MultiQuery,1793,1793,1,1,1,0,0.94
+4,cot,Vanilla,Frank G. Jackson,Frank G. Jackson,1,1,1,0,0.644
+4,nocot,Vanilla,Frank G. Jackson,Frank G. Jackson,1,1,1,0,0.644
+4,cot,SVSF,Frank G. Jackson,Frank G. Jackson,1,1,1,0,0.815
+4,nocot,SVSF,Frank G. Jackson,Frank G. Jackson,1,1,1,0,0.815
+4,cot,MMR,NOT FOUND,Frank G. Jackson,0,0,0,1,0.756
+4,nocot,MMR,NOT FOUND,Frank G. Jackson,0,0,0,1,0.756
+4,cot,Rerank,Frank G. Jackson,Frank G. Jackson,1,1,1,0,50.679
+4,nocot,Rerank,Frank G. Jackson,Frank G. Jackson,1,1,1,0,50.679
+4,cot,RerankBGE,Frank G. Jackson,Frank G. Jackson,1,1,1,0,1056.938
+4,nocot,RerankBGE,Frank G. Jackson,Frank G. Jackson,1,1,1,0,1056.938
+4,cot,MultiQuery,Frank G. Jackson,Frank G. Jackson,1,1,1,0,1.044
+4,nocot,MultiQuery,Frank G. Jackson,Frank G. Jackson,1,1,1,0,1.044
+5,cot,Vanilla,George III,George III,1,1,1,0,0.578
+5,nocot,Vanilla,George III,George III,1,1,1,0,0.578
+5,cot,SVSF,George III,George III,1,1,1,0,0.814
+5,nocot,SVSF,George III,George III,1,1,1,0,0.814
+5,cot,MMR,George III,George III,1,1,1,0,0.738
+5,nocot,MMR,George III,George III,1,1,1,0,0.738
+5,cot,Rerank,George III,George III,1,1,1,0,49.391
+5,nocot,Rerank,George III,George III,1,1,1,0,49.391
+5,cot,RerankBGE,George III,George III,1,1,1,0,972.141
+5,nocot,RerankBGE,George III,George III,1,1,1,0,972.141
+5,cot,MultiQuery,George III,George III,1,1,1,0,0.931
+5,nocot,MultiQuery,George III,George III,1,1,1,0,0.931
+6,cot,Vanilla,NOT FOUND,River Shannon,0,0,0,1,0.565
+6,nocot,Vanilla,Vistula River,River Shannon,0,0,0,0,0.565
+6,cot,SVSF,NOT FOUND,River Shannon,0,0,0,1,0.812
+6,nocot,SVSF,Vistula River,River Shannon,0,0,0,0,0.812
+6,cot,MMR,River Shannon,River Shannon,1,1,1,0,0.768
+6,nocot,MMR,Vistula River,River Shannon,0,0,0,0,0.768
+6,cot,Rerank,Vistula River,River Shannon,0,0,0,0,48.729
+6,nocot,Rerank,Vistula River,River Shannon,0,0,0,0,48.729
+6,cot,RerankBGE,NOT FOUND,River Shannon,0,0,0,1,1036.85
+6,nocot,RerankBGE,Danube,River Shannon,0,0,0,0,1036.85
+6,cot,MultiQuery,Vistula River,River Shannon,0,0,0,0,0.993
+6,nocot,MultiQuery,Vistula River,River Shannon,0,0,0,0,0.993
+7,cot,Vanilla,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.581
+7,nocot,Vanilla,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.581
+7,cot,SVSF,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.815
+7,nocot,SVSF,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.815
+7,cot,MMR,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.799
+7,nocot,MMR,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.799
+7,cot,Rerank,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,53.058
+7,nocot,Rerank,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,53.058
+7,cot,RerankBGE,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,1051.218
+7,nocot,RerankBGE,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,1051.218
+7,cot,MultiQuery,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.923
+7,nocot,MultiQuery,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.923
+8,cot,Vanilla,NOT FOUND,Alameda,0,0,0,1,0.551
+8,nocot,Vanilla,NOT FOUND,Alameda,0,0,0,1,0.551
+8,cot,SVSF,NOT FOUND,Alameda,0,0,0,1,0.796
+8,nocot,SVSF,NOT FOUND,Alameda,0,0,0,1,0.796
+8,cot,MMR,NOT FOUND,Alameda,0,0,0,1,0.779
+8,nocot,MMR,"Cupertino, California",Alameda,0,0,0,0,0.779
+8,cot,Rerank,NOT FOUND,Alameda,0,0,0,1,56.451
+8,nocot,Rerank,NOT FOUND,Alameda,0,0,0,1,56.451
+8,cot,RerankBGE,NOT FOUND,Alameda,0,0,0,1,1083.586
+8,nocot,RerankBGE,NOT FOUND,Alameda,0,0,0,1,1083.586
+8,cot,MultiQuery,NOT FOUND,Alameda,0,0,0,1,1.037
+8,nocot,MultiQuery,NOT FOUND,Alameda,0,0,0,1,1.037
+9,cot,Vanilla,Chicago,Chicago,1,1,1,0,0.564
+9,nocot,Vanilla,Chicago,Chicago,1,1,1,0,0.564
+9,cot,SVSF,Chicago,Chicago,1,1,1,0,0.779
+9,nocot,SVSF,Chicago,Chicago,1,1,1,0,0.779
+9,cot,MMR,Chicago,Chicago,1,1,1,0,0.74
+9,nocot,MMR,Chicago,Chicago,1,1,1,0,0.74
+9,cot,Rerank,Barcelona,Chicago,0,0,0,0,52.74
+9,nocot,Rerank,Barcelona,Chicago,0,0,0,0,52.74
+9,cot,RerankBGE,Paris,Chicago,0,0,0,0,1094.767
+9,nocot,RerankBGE,Paris,Chicago,0,0,0,0,1094.767
+9,cot,MultiQuery,Chicago,Chicago,1,1,1,0,0.961
+9,nocot,MultiQuery,Chicago,Chicago,1,1,1,0,0.961
+10,cot,Vanilla,Chordata,Chordata,1,1,1,0,0.578
+10,nocot,Vanilla,Chordata,Chordata,1,1,1,0,0.578
+10,cot,SVSF,Chordata,Chordata,1,1,1,0,0.8
+10,nocot,SVSF,Chordata,Chordata,1,1,1,0,0.8
+10,cot,MMR,Chordata,Chordata,1,1,1,0,0.752
+10,nocot,MMR,Chordata,Chordata,1,1,1,0,0.752
+10,cot,Rerank,Chordata,Chordata,1,1,1,0,50.568
+10,nocot,Rerank,Chordata,Chordata,1,1,1,0,50.568
+10,cot,RerankBGE,Chordata,Chordata,1,1,1,0,1044.707
+10,nocot,RerankBGE,Chordata,Chordata,1,1,1,0,1044.707
+10,cot,MultiQuery,Chordata,Chordata,1,1,1,0,0.954
+10,nocot,MultiQuery,Chordata,Chordata,1,1,1,0,0.954
+11,cot,Vanilla,101,99,0,0,0,0,0.615
+11,nocot,Vanilla,101,99,0,0,0,0,0.615
+11,cot,SVSF,101,99,0,0,0,0,0.803
+11,nocot,SVSF,101,99,0,0,0,0,0.803
+11,cot,MMR,The context states that Niels Bohr,99,0,0,0,0,0.756
+11,nocot,MMR,101,99,0,0,0,0,0.756
+11,cot,Rerank,101,99,0,0,0,0,51.081
+11,nocot,Rerank,101,99,0,0,0,0,51.081
+11,cot,RerankBGE,101,99,0,0,0,0,1081.361
+11,nocot,RerankBGE,101,99,0,0,0,0,1081.361
+11,cot,MultiQuery,NOT FOUND,99,0,0,0,1,1.098
+11,nocot,MultiQuery,101,99,0,0,0,0,1.098
+12,cot,Vanilla,NOT FOUND,Bogotá,0,0,0,1,0.577
+12,nocot,Vanilla,Lima,Bogotá,0,0,0,0,0.577
+12,cot,SVSF,Lima,Bogotá,0,0,0,0,0.784
+12,nocot,SVSF,Lima,Bogotá,0,0,0,0,0.784
+12,cot,MMR,Lima,Bogotá,0,0,0,0,0.739
+12,nocot,MMR,Lima,Bogotá,0,0,0,0,0.739
+12,cot,Rerank,NOT FOUND,Bogotá,0,0,0,1,50.071
+12,nocot,Rerank,Lima,Bogotá,0,0,0,0,50.071
+12,cot,RerankBGE,Bogotá,Bogotá,1,1,1,0,1040.961
+12,nocot,RerankBGE,Bogotá,Bogotá,1,1,1,0,1040.961
+12,cot,MultiQuery,Bogotá,Bogotá,1,1,1,0,0.966
+12,nocot,MultiQuery,Lima,Bogotá,0,0,0,0,0.966
+13,cot,Vanilla,"Washington, D.C.",Columbus,0,0,0,0,0.587
+13,nocot,Vanilla,"Washington, D.C.",Columbus,0,0,0,0,0.587
+13,cot,SVSF,"Washington, D.C.",Columbus,0,0,0,0,1.05
+13,nocot,SVSF,"Washington, D.C.",Columbus,0,0,0,0,1.05
+13,cot,MMR,Trenton,Columbus,0,0,0,0,1.147
+13,nocot,MMR,Trenton,Columbus,0,0,0,0,1.147
+13,cot,Rerank,"Washington, D.C.",Columbus,0,0,0,0,52.933
+13,nocot,Rerank,"Washington, D.C.",Columbus,0,0,0,0,52.933
+13,cot,RerankBGE,"Washington, D.C.",Columbus,0,0,0,0,1025.164
+13,nocot,RerankBGE,"Washington, D.C.",Columbus,0,0,0,0,1025.164
+13,cot,MultiQuery,"Washington, D.C.",Columbus,0,0,0,0,1.002
+13,nocot,MultiQuery,"Washington, D.C.",Columbus,0,0,0,0,1.002
+14,cot,Vanilla,Oranienbaum,Oranienbaum,1,1,1,0,0.566
+14,nocot,Vanilla,Oranienbaum,Oranienbaum,1,1,1,0,0.566
+14,cot,SVSF,Oranienbaum,Oranienbaum,1,1,1,0,1.084
+14,nocot,SVSF,Oranienbaum,Oranienbaum,1,1,1,0,1.084
+14,cot,MMR,NOT FOUND,Oranienbaum,0,0,0,1,1.04
+14,nocot,MMR,Paris,Oranienbaum,0,0,0,0,1.04
+14,cot,Rerank,Oranienbaum,Oranienbaum,1,1,1,0,54.233
+14,nocot,Rerank,Oranienbaum,Oranienbaum,1,1,1,0,54.233
+14,cot,RerankBGE,Oranienbaum,Oranienbaum,1,1,1,0,1147.702
+14,nocot,RerankBGE,Oranienbaum,Oranienbaum,1,1,1,0,1147.702
+14,cot,MultiQuery,Oranienbaum,Oranienbaum,1,1,1,0,0.909
+14,nocot,MultiQuery,Oranienbaum,Oranienbaum,1,1,1,0,0.909
+15,cot,Vanilla,Denali,Denali,1,1,1,0,0.551
+15,nocot,Vanilla,Denali,Denali,1,1,1,0,0.551
+15,cot,SVSF,Denali,Denali,1,1,1,0,0.82
+15,nocot,SVSF,Denali,Denali,1,1,1,0,0.82
+15,cot,MMR,Denali,Denali,1,1,1,0,0.741
+15,nocot,MMR,Denali,Denali,1,1,1,0,0.741
+15,cot,Rerank,Denali,Denali,1,1,1,0,53.106
+15,nocot,Rerank,Denali,Denali,1,1,1,0,53.106
+15,cot,RerankBGE,Denali,Denali,1,1,1,0,1057.776
+15,nocot,RerankBGE,Denali,Denali,1,1,1,0,1057.776
+15,cot,MultiQuery,Denali,Denali,1,1,1,0,1.027
+15,nocot,MultiQuery,Denali,Denali,1,1,1,0,1.027
+16,cot,Vanilla,Yamuna,Yamuna,1,1,1,0,0.569
+16,nocot,Vanilla,Yamuna,Yamuna,1,1,1,0,0.569
+16,cot,SVSF,Yamuna,Yamuna,1,1,1,0,0.835
+16,nocot,SVSF,Yamuna,Yamuna,1,1,1,0,0.835
+16,cot,MMR,Yamuna,Yamuna,1,1,1,0,0.768
+16,nocot,MMR,Yamuna,Yamuna,1,1,1,0,0.768
+16,cot,Rerank,NOT FOUND,Yamuna,0,0,0,1,48.458
+16,nocot,Rerank,Yamuna,Yamuna,1,1,1,0,48.458
+16,cot,RerankBGE,Yamuna River,Yamuna,1,1,1,0,1016.531
+16,nocot,RerankBGE,Yamuna River,Yamuna,1,1,1,0,1016.531
+16,cot,MultiQuery,Yamuna,Yamuna,1,1,1,0,1.092
+16,nocot,MultiQuery,Yamuna,Yamuna,1,1,1,0,1.092
+17,cot,Vanilla,"Redmond, Washington",Redmond,1,1,1,0,0.56
+17,nocot,Vanilla,"Redmond, Washington",Redmond,1,1,1,0,0.56
+17,cot,SVSF,"Redmond, Washington",Redmond,1,1,1,0,1.074
+17,nocot,SVSF,"Redmond, Washington",Redmond,1,1,1,0,1.074
+17,cot,MMR,"Redmond, Washington",Redmond,1,1,1,0,1.021
+17,nocot,MMR,"Redmond, Washington",Redmond,1,1,1,0,1.021
+17,cot,Rerank,"Cupertino, California",Redmond,0,0,0,0,53.69
+17,nocot,Rerank,"Cupertino, California",Redmond,0,0,0,0,53.69
+17,cot,RerankBGE,"Redmond, Washington",Redmond,1,1,1,0,1145.036
+17,nocot,RerankBGE,"Redmond, Washington",Redmond,1,1,1,0,1145.036
+17,cot,MultiQuery,"Redmond, Washington",Redmond,1,1,1,0,0.977
+17,nocot,MultiQuery,"Redmond, Washington",Redmond,1,1,1,0,0.977
+18,cot,Vanilla,Pound Sterling,Indian Rupee,0,0,0,0,0.586
+18,nocot,Vanilla,Pound Sterling,Indian Rupee,0,0,0,0,0.586
+18,cot,SVSF,Pound Sterling,Indian Rupee,0,0,0,0,0.811
+18,nocot,SVSF,Pound Sterling,Indian Rupee,0,0,0,0,0.811
+18,cot,MMR,Pound Sterling,Indian Rupee,0,0,0,0,0.776
+18,nocot,MMR,Pound Sterling,Indian Rupee,0,0,0,0,0.776
+18,cot,Rerank,Pound Sterling,Indian Rupee,0,0,0,0,50.699
+18,nocot,Rerank,Pound Sterling,Indian Rupee,0,0,0,0,50.699
+18,cot,RerankBGE,Pound Sterling,Indian Rupee,0,0,0,0,1014.245
+18,nocot,RerankBGE,Pound Sterling,Indian Rupee,0,0,0,0,1014.245
+18,cot,MultiQuery,Pound Sterling,Indian Rupee,0,0,0,0,0.917
+18,nocot,MultiQuery,Pound Sterling,Indian Rupee,0,0,0,0,0.917
+19,cot,Vanilla,Warsaw,Warsaw,1,1,1,0,0.556
+19,nocot,Vanilla,Poland,Warsaw,0,0,0,0,0.556
+19,cot,SVSF,Warsaw,Warsaw,1,1,1,0,1.036
+19,nocot,SVSF,Poland,Warsaw,0,0,0,0,1.036
+19,cot,MMR,NOT FOUND,Warsaw,0,0,0,1,1.019
+19,nocot,MMR,Amsterdam,Warsaw,0,0,0,0,1.019
+19,cot,Rerank,NOT FOUND,Warsaw,0,0,0,1,48.719
+19,nocot,Rerank,Poland,Warsaw,0,0,0,0,48.719
+19,cot,RerankBGE,NOT FOUND,Warsaw,0,0,0,1,1021.869
+19,nocot,RerankBGE,Poland,Warsaw,0,0,0,0,1021.869
+19,cot,MultiQuery,Warsaw,Warsaw,1,1,1,0,1.659
+19,nocot,MultiQuery,Warsaw,Warsaw,1,1,1,0,1.659
+20,cot,Vanilla,Hugh Carey,Hugh Carey,1,1,1,0,0.621
+20,nocot,Vanilla,Hugh Carey,Hugh Carey,1,1,1,0,0.621
+20,cot,SVSF,NOT FOUND,Hugh Carey,0,0,0,1,0.81
+20,nocot,SVSF,NOT FOUND,Hugh Carey,0,0,0,1,0.81
+20,cot,MMR,NOT FOUND,Hugh Carey,0,0,0,1,0.786
+20,nocot,MMR,NOT FOUND,Hugh Carey,0,0,0,1,0.786
+20,cot,Rerank,NOT FOUND,Hugh Carey,0,0,0,1,52.119
+20,nocot,Rerank,Ronald Reagan,Hugh Carey,0,0,0,0,52.119
+20,cot,RerankBGE,Hugh Carey,Hugh Carey,1,1,1,0,1116.094
+20,nocot,RerankBGE,Hugh Carey,Hugh Carey,1,1,1,0,1116.094
+20,cot,MultiQuery,NOT FOUND,Hugh Carey,0,0,0,1,1.087
+20,nocot,MultiQuery,NOT FOUND,Hugh Carey,0,0,0,1,1.087
+21,cot,Vanilla,George II,George II,1,1,1,0,0.613
+21,nocot,Vanilla,George II of Great Britain,George II,1,1,1,0,0.613
+21,cot,SVSF,George II,George II,1,1,1,0,0.908
+21,nocot,SVSF,George II of Great Britain,George II,1,1,1,0,0.908
+21,cot,MMR,George II,George II,1,1,1,0,0.763
+21,nocot,MMR,George II,George II,1,1,1,0,0.763
+21,cot,Rerank,George II,George II,1,1,1,0,50.371
+21,nocot,Rerank,George II of Great Britain,George II,1,1,1,0,50.371
+21,cot,RerankBGE,George II,George II,1,1,1,0,1033.852
+21,nocot,RerankBGE,George II of Great Britain,George II,1,1,1,0,1033.852
+21,cot,MultiQuery,George II,George II,1,1,1,0,0.945
+21,nocot,MultiQuery,George II of Great Britain,George II,1,1,1,0,0.945
+22,cot,Vanilla,Johanna,Johanna,1,1,1,0,0.531
+22,nocot,Vanilla,Johanna,Johanna,1,1,1,0,0.531
+22,cot,SVSF,NOT FOUND,Johanna,0,0,0,1,0.806
+22,nocot,SVSF,NOT FOUND,Johanna,0,0,0,1,0.806
+22,cot,MMR,NOT FOUND,Johanna,0,0,0,1,0.779
+22,nocot,MMR,NOT FOUND,Johanna,0,0,0,1,0.779
+22,cot,Rerank,Johanna,Johanna,1,1,1,0,48.198
+22,nocot,Rerank,Johanna,Johanna,1,1,1,0,48.198
+22,cot,RerankBGE,Johanna,Johanna,1,1,1,0,1007.503
+22,nocot,RerankBGE,Johanna,Johanna,1,1,1,0,1007.503
+22,cot,MultiQuery,Johanna,Johanna,1,1,1,0,0.942
+22,nocot,MultiQuery,Johanna,Johanna,1,1,1,0,0.942
+23,cot,Vanilla,Pierre,Boise,0,0,0,0,0.57
+23,nocot,Vanilla,St. Charles,Boise,0,0,0,0,0.57
+23,cot,SVSF,Pierre,Boise,0,0,0,0,0.803
+23,nocot,SVSF,St. Charles,Boise,0,0,0,0,0.803
+23,cot,MMR,Pierre,Boise,0,0,0,0,0.738
+23,nocot,MMR,St. Charles,Boise,0,0,0,0,0.738
+23,cot,Rerank,Boise,Boise,1,1,1,0,49.12
+23,nocot,Rerank,Boise,Boise,1,1,1,0,49.12
+23,cot,RerankBGE,Boise,Boise,1,1,1,0,964.948
+23,nocot,RerankBGE,Boise,Boise,1,1,1,0,964.948
+23,cot,MultiQuery,Pierre,Boise,0,0,0,0,0.966
+23,nocot,MultiQuery,St. Charles,Boise,0,0,0,0,0.966
+24,cot,Vanilla,Brazil,Brazil,1,1,1,0,0.546
+24,nocot,Vanilla,Brazil,Brazil,1,1,1,0,0.546
+24,cot,SVSF,Brazil,Brazil,1,1,1,0,0.783
+24,nocot,SVSF,Brazil,Brazil,1,1,1,0,0.783
+24,cot,MMR,Brazil,Brazil,1,1,1,0,0.746
+24,nocot,MMR,Brazil,Brazil,1,1,1,0,0.746
+24,cot,Rerank,France,Brazil,0,0,0,0,47.384
+24,nocot,Rerank,France,Brazil,0,0,0,0,47.384
+24,cot,RerankBGE,Brazil,Brazil,1,1,1,0,963.269
+24,nocot,RerankBGE,Brazil,Brazil,1,1,1,0,963.269
+24,cot,MultiQuery,Brazil,Brazil,1,1,1,0,1.124
+24,nocot,MultiQuery,Brazil,Brazil,1,1,1,0,1.124
+25,cot,Vanilla,NOT FOUND,Lake Michigan,0,0,0,1,0.546
+25,nocot,Vanilla,Mississippi,Lake Michigan,0,0,0,0,0.546
+25,cot,SVSF,NOT FOUND,Lake Michigan,0,0,0,1,1.949
+25,nocot,SVSF,NOT FOUND,Lake Michigan,0,0,0,1,1.949
+25,cot,MMR,Lake Michigan,Lake Michigan,1,1,1,0,1.974
+25,nocot,MMR,Lake Michigan,Lake Michigan,1,1,1,0,1.974
+25,cot,Rerank,Lake Erie,Lake Michigan,0,0,0,0,51.543
+25,nocot,Rerank,Lake Erie,Lake Michigan,0,0,0,0,51.543
+25,cot,RerankBGE,Lake Michigan,Lake Michigan,1,1,1,0,1045.159
+25,nocot,RerankBGE,Lake Michigan,Lake Michigan,1,1,1,0,1045.159
+25,cot,MultiQuery,Lake Erie,Lake Michigan,0,0,0,0,1.367
+25,nocot,MultiQuery,Lake Erie,Lake Michigan,0,0,0,0,1.367
+26,cot,Vanilla,River Cam,River Thames,0,0,0,0,0.636
+26,nocot,Vanilla,River Cam,River Thames,0,0,0,0,0.636
+26,cot,SVSF,River Cam,River Thames,0,0,0,0,0.781
+26,nocot,SVSF,River Cam,River Thames,0,0,0,0,0.781
+26,cot,MMR,River Cam,River Thames,0,0,0,0,0.739
+26,nocot,MMR,River Cam,River Thames,0,0,0,0,0.739
+26,cot,Rerank,NOT FOUND,River Thames,0,0,0,1,50.567
+26,nocot,Rerank,River Cam,River Thames,0,0,0,0,50.567
+26,cot,RerankBGE,NOT FOUND,River Thames,0,0,0,1,1070.166
+26,nocot,RerankBGE,River Cam,River Thames,0,0,0,0,1070.166
+26,cot,MultiQuery,River Cam,River Thames,0,0,0,0,0.987
+26,nocot,MultiQuery,River Cam,River Thames,0,0,0,0,0.987
+27,cot,Vanilla,Bosnia and Herzegovina,Bosnia and Herzegovina,1,1,1,0,0.585
+27,nocot,Vanilla,Bosnia,Bosnia and Herzegovina,0,1,1,0,0.585
+27,cot,SVSF,Bosnia and Herzegovina,Bosnia and Herzegovina,1,1,1,0,0.797
+27,nocot,SVSF,Bosnia,Bosnia and Herzegovina,0,1,1,0,0.797
+27,cot,MMR,Austria-Hungary,Bosnia and Herzegovina,0,0,0,0,0.748
+27,nocot,MMR,Austria-Hungary,Bosnia and Herzegovina,0,0,0,0,0.748
+27,cot,Rerank,Serbia,Bosnia and Herzegovina,0,0,0,0,47.188
+27,nocot,Rerank,Austria-Hungary,Bosnia and Herzegovina,0,0,0,0,47.188
+27,cot,RerankBGE,Bosnia and Herzegovina,Bosnia and Herzegovina,1,1,1,0,1050.858
+27,nocot,RerankBGE,Bosnia,Bosnia and Herzegovina,0,1,1,0,1050.858
+27,cot,MultiQuery,Bosnia and Herzegovina,Bosnia and Herzegovina,1,1,1,0,0.973
+27,nocot,MultiQuery,Bosnia,Bosnia and Herzegovina,0,1,1,0,0.973
+28,cot,Vanilla,NOT FOUND,Canberra,0,0,0,1,0.529
+28,nocot,Vanilla,Moscow,Canberra,0,0,0,0,0.529
+28,cot,SVSF,NOT FOUND,Canberra,0,0,0,1,0.793
+28,nocot,SVSF,Kursk,Canberra,0,0,0,0,0.793
+28,cot,MMR,London,Canberra,0,0,0,0,0.769
+28,nocot,MMR,London,Canberra,0,0,0,0,0.769
+28,cot,Rerank,NOT FOUND,Canberra,0,0,0,1,51.448
+28,nocot,Rerank,Adelaide,Canberra,0,0,0,0,51.448
+28,cot,RerankBGE,Canberra,Canberra,1,1,1,0,1042.875
+28,nocot,RerankBGE,Adelaide,Canberra,0,0,0,0,1042.875
+28,cot,MultiQuery,NOT FOUND,Canberra,0,0,0,1,0.928
+28,nocot,MultiQuery,Bern,Canberra,0,0,0,0,0.928
+29,cot,Vanilla,New Jersey,New Jersey,1,1,1,0,0.462
+29,nocot,Vanilla,New Jersey,New Jersey,1,1,1,0,0.462
+29,cot,SVSF,New Jersey,New Jersey,1,1,1,0,0.888
+29,nocot,SVSF,New Jersey,New Jersey,1,1,1,0,0.888
+29,cot,MMR,New Jersey,New Jersey,1,1,1,0,0.773
+29,nocot,MMR,New Jersey,New Jersey,1,1,1,0,0.773
+29,cot,Rerank,New Jersey,New Jersey,1,1,1,0,48.27
+29,nocot,Rerank,New Jersey,New Jersey,1,1,1,0,48.27
+29,cot,RerankBGE,New Jersey,New Jersey,1,1,1,0,980.946
+29,nocot,RerankBGE,New Jersey,New Jersey,1,1,1,0,980.946
+29,cot,MultiQuery,New Jersey,New Jersey,1,1,1,0,0.95
+29,nocot,MultiQuery,New Jersey,New Jersey,1,1,1,0,0.95
+30,cot,Vanilla,Aconcagua,Aconcagua,1,1,1,0,0.61
+30,nocot,Vanilla,Aconcagua,Aconcagua,1,1,1,0,0.61
+30,cot,SVSF,Aconcagua,Aconcagua,1,1,1,0,1.083
+30,nocot,SVSF,Aconcagua,Aconcagua,1,1,1,0,1.083
+30,cot,MMR,NOT FOUND,Aconcagua,0,0,0,1,1.088
+30,nocot,MMR,Eastern Cordillera,Aconcagua,0,0,0,0,1.088
+30,cot,Rerank,Aconcagua,Aconcagua,1,1,1,0,50.208
+30,nocot,Rerank,Aconcagua,Aconcagua,1,1,1,0,50.208
+30,cot,RerankBGE,NOT FOUND,Aconcagua,0,0,0,1,1019.192
+30,nocot,RerankBGE,Black Elk Peak,Aconcagua,0,0,0,0,1019.192
+30,cot,MultiQuery,Aconcagua,Aconcagua,1,1,1,0,1.071
+30,nocot,MultiQuery,Aconcagua,Aconcagua,1,1,1,0,1.071
+31,cot,Vanilla,Figueres,Figueres,1,1,1,0,0.572
+31,nocot,Vanilla,Figueres,Figueres,1,1,1,0,0.572
+31,cot,SVSF,Figueres,Figueres,1,1,1,0,0.783
+31,nocot,SVSF,Figueres,Figueres,1,1,1,0,0.783
+31,cot,MMR,Figueres,Figueres,1,1,1,0,0.772
+31,nocot,MMR,Figueres,Figueres,1,1,1,0,0.772
+31,cot,Rerank,Figueres,Figueres,1,1,1,0,48.989
+31,nocot,Rerank,Figueres,Figueres,1,1,1,0,48.989
+31,cot,RerankBGE,Figueres,Figueres,1,1,1,0,1028.809
+31,nocot,RerankBGE,Figueres,Figueres,1,1,1,0,1028.809
+31,cot,MultiQuery,Figueres,Figueres,1,1,1,0,0.96
+31,nocot,MultiQuery,Figueres,Figueres,1,1,1,0,0.96
+32,cot,Vanilla,NOT FOUND,River Cam,0,0,0,1,0.556
+32,nocot,Vanilla,Danube River,River Cam,0,0,0,0,0.556
+32,cot,SVSF,NOT FOUND,River Cam,0,0,0,1,1.067
+32,nocot,SVSF,Danube River,River Cam,0,0,0,0,1.067
+32,cot,MMR,NOT FOUND,River Cam,0,0,0,1,1.007
+32,nocot,MMR,NOT FOUND,River Cam,0,0,0,1,1.007
+32,cot,Rerank,River Cam,River Cam,1,1,1,0,52.852
+32,nocot,Rerank,River Cam,River Cam,1,1,1,0,52.852
+32,cot,RerankBGE,River Thames,River Cam,0,0,0,0,1059.181
+32,nocot,RerankBGE,River Thames,River Cam,0,0,0,0,1059.181
+32,cot,MultiQuery,NOT FOUND,River Cam,0,0,0,1,0.935
+32,nocot,MultiQuery,Danube River,River Cam,0,0,0,0,0.935
+33,cot,Vanilla,NOT FOUND,Edinburgh,0,0,0,1,0.55
+33,nocot,Vanilla,Edinburgh,Edinburgh,1,1,1,0,0.55
+33,cot,SVSF,London,Edinburgh,0,0,0,0,1.065
+33,nocot,SVSF,Edinburgh,Edinburgh,1,1,1,0,1.065
+33,cot,MMR,London,Edinburgh,0,0,0,0,1.025
+33,nocot,MMR,London,Edinburgh,0,0,0,0,1.025
+33,cot,Rerank,London,Edinburgh,0,0,0,0,49.387
+33,nocot,Rerank,Madrid,Edinburgh,0,0,0,0,49.387
+33,cot,RerankBGE,London,Edinburgh,0,0,0,0,1053.573
+33,nocot,RerankBGE,Edinburgh,Edinburgh,1,1,1,0,1053.573
+33,cot,MultiQuery,Paris,Edinburgh,0,0,0,0,0.975
+33,nocot,MultiQuery,Colmar,Edinburgh,0,0,0,0,0.975
+34,cot,Vanilla,NOT FOUND,Nikita Khrushchev,0,0,0,1,0.52
+34,nocot,Vanilla,Soviet leadership,Nikita Khrushchev,0,0,0,0,0.52
+34,cot,SVSF,NOT FOUND,Nikita Khrushchev,0,0,0,1,0.791
+34,nocot,SVSF,Dwight D. Eisenhower,Nikita Khrushchev,0,0,0,0,0.791
+34,cot,MMR,NOT FOUND,Nikita Khrushchev,0,0,0,1,0.752
+34,nocot,MMR,Soviet leadership,Nikita Khrushchev,0,0,0,0,0.752
+34,cot,Rerank,NOT FOUND,Nikita Khrushchev,0,0,0,1,47.337
+34,nocot,Rerank,George III,Nikita Khrushchev,0,0,0,0,47.337
+34,cot,RerankBGE,Nikita Khrushchev,Nikita Khrushchev,1,1,1,0,985.021
+34,nocot,RerankBGE,Nikita Khrushchev,Nikita Khrushchev,1,1,1,0,985.021
+34,cot,MultiQuery,NOT FOUND,Nikita Khrushchev,0,0,0,1,0.929
+34,nocot,MultiQuery,Dwight D. Eisenhower,Nikita Khrushchev,0,0,0,0,0.929
+35,cot,Vanilla,Springfield,Springfield,1,1,1,0,0.533
+35,nocot,Vanilla,"Springfield, Illinois",Springfield,1,1,0,0,0.533
+35,cot,SVSF,Springfield,Springfield,1,1,1,0,1.259
+35,nocot,SVSF,"Springfield, Illinois",Springfield,1,1,0,0,1.259
+35,cot,MMR,Springfield,Springfield,1,1,1,0,0.998
+35,nocot,MMR,"Springfield, Illinois",Springfield,1,1,0,0,0.998
+35,cot,Rerank,Springfield,Springfield,1,1,1,0,50.039
+35,nocot,Rerank,Springfield,Springfield,1,1,1,0,50.039
+35,cot,RerankBGE,NOT FOUND,Springfield,0,0,0,1,1006.596
+35,nocot,RerankBGE,Indianapolis,Springfield,0,0,0,0,1006.596
+35,cot,MultiQuery,Springfield,Springfield,1,1,1,0,0.935
+35,nocot,MultiQuery,"Springfield, Illinois",Springfield,1,1,0,0,0.935
+36,cot,Vanilla,NOT FOUND,Charles II,0,0,0,1,0.598
+36,nocot,Vanilla,George III of the United Kingdom,Charles II,0,0,0,0,0.598
+36,cot,SVSF,George III,Charles II,0,0,0,0,0.798
+36,nocot,SVSF,George III of the United Kingdom,Charles II,0,0,0,0,0.798
+36,cot,MMR,NOT FOUND,Charles II,0,0,0,1,0.743
+36,nocot,MMR,NOT FOUND,Charles II,0,0,0,1,0.743
+36,cot,Rerank,King John,Charles II,0,0,0,0,50.668
+36,nocot,Rerank,King John,Charles II,0,0,0,0,50.668
+36,cot,RerankBGE,Charles II,Charles II,1,1,1,0,1049.648
+36,nocot,RerankBGE,Charles II of England,Charles II,1,1,1,0,1049.648
+36,cot,MultiQuery,Charles II,Charles II,1,1,1,0,1.084
+36,nocot,MultiQuery,Charles II of England,Charles II,1,1,1,0,1.084
+37,cot,Vanilla,Zirconium,Zirconium,1,1,1,0,0.551
+37,nocot,Vanilla,Zirconium,Zirconium,1,1,1,0,0.551
+37,cot,SVSF,Zirconium,Zirconium,1,1,1,0,1.064
+37,nocot,SVSF,Zirconium,Zirconium,1,1,1,0,1.064
+37,cot,MMR,Uranium,Zirconium,0,0,0,0,1.01
+37,nocot,MMR,Uranium,Zirconium,0,0,0,0,1.01
+37,cot,Rerank,Zirconium,Zirconium,1,1,1,0,48.368
+37,nocot,Rerank,Zirconium,Zirconium,1,1,1,0,48.368
+37,cot,RerankBGE,Zirconium,Zirconium,1,1,1,0,1033.048
+37,nocot,RerankBGE,Zirconium,Zirconium,1,1,1,0,1033.048
+37,cot,MultiQuery,Zirconium,Zirconium,1,1,1,0,1.099
+37,nocot,MultiQuery,Zirconium,Zirconium,1,1,1,0,1.099
+38,cot,Vanilla,Michael Crichton,Michael Crichton,1,1,1,0,0.439
+38,nocot,Vanilla,Michael Crichton,Michael Crichton,1,1,1,0,0.439
+38,cot,SVSF,Michael Crichton,Michael Crichton,1,1,1,0,0.951
+38,nocot,SVSF,Michael Crichton,Michael Crichton,1,1,1,0,0.951
+38,cot,MMR,Michael Crichton,Michael Crichton,1,1,1,0,0.909
+38,nocot,MMR,Michael Crichton,Michael Crichton,1,1,1,0,0.909
+38,cot,Rerank,Michael Crichton,Michael Crichton,1,1,1,0,52.468
+38,nocot,Rerank,Michael Crichton,Michael Crichton,1,1,1,0,52.468
+38,cot,RerankBGE,Michael Crichton,Michael Crichton,1,1,1,0,1069.852
+38,nocot,RerankBGE,Michael Crichton,Michael Crichton,1,1,1,0,1069.852
+38,cot,MultiQuery,Michael Crichton,Michael Crichton,1,1,1,0,0.958
+38,nocot,MultiQuery,Michael Crichton,Michael Crichton,1,1,1,0,0.958
+39,cot,Vanilla,Bern,Bern,1,1,1,0,0.581
+39,nocot,Vanilla,Bern,Bern,1,1,1,0,0.581
+39,cot,SVSF,Bern,Bern,1,1,1,0,0.802
+39,nocot,SVSF,Bern,Bern,1,1,1,0,0.802
+39,cot,MMR,Bern,Bern,1,1,1,0,0.755
+39,nocot,MMR,Bern,Bern,1,1,1,0,0.755
+39,cot,Rerank,Bern,Bern,1,1,1,0,50.395
+39,nocot,Rerank,Bern,Bern,1,1,1,0,50.395
+39,cot,RerankBGE,Bern,Bern,1,1,1,0,1017.495
+39,nocot,RerankBGE,Bern,Bern,1,1,1,0,1017.495
+39,cot,MultiQuery,Bern,Bern,1,1,1,0,0.97
+39,nocot,MultiQuery,Bern,Bern,1,1,1,0,0.97
+40,cot,Vanilla,NOT FOUND,Yerevan,0,0,0,1,0.594
+40,nocot,Vanilla,Moscow,Yerevan,0,0,0,0,0.594
+40,cot,SVSF,NOT FOUND,Yerevan,0,0,0,1,0.82
+40,nocot,SVSF,Moscow,Yerevan,0,0,0,0,0.82
+40,cot,MMR,Moscow,Yerevan,0,0,0,0,0.783
+40,nocot,MMR,Moscow,Yerevan,0,0,0,0,0.783
+40,cot,Rerank,NOT FOUND,Yerevan,0,0,0,1,49.442
+40,nocot,Rerank,Brasília,Yerevan,0,0,0,0,49.442
+40,cot,RerankBGE,NOT FOUND,Yerevan,0,0,0,1,1054.257
+40,nocot,RerankBGE,Moscow,Yerevan,0,0,0,0,1054.257
+40,cot,MultiQuery,Moscow,Yerevan,0,0,0,0,0.971
+40,nocot,MultiQuery,Moscow,Yerevan,0,0,0,0,0.971
+41,cot,Vanilla,NOT FOUND,Biltmore Estate,0,0,0,1,0.573
+41,nocot,Vanilla,NOT FOUND,Biltmore Estate,0,0,0,1,0.573
+41,cot,SVSF,Biltmore Estate,Biltmore Estate,1,1,1,0,1.011
+41,nocot,SVSF,NOT FOUND,Biltmore Estate,0,0,0,1,1.011
+41,cot,MMR,NOT FOUND,Biltmore Estate,0,0,0,1,0.767
+41,nocot,MMR,NOT FOUND,Biltmore Estate,0,0,0,1,0.767
+41,cot,Rerank,Biltmore Estate,Biltmore Estate,1,1,1,0,51.092
+41,nocot,Rerank,Biltmore Estate,Biltmore Estate,1,1,1,0,51.092
+41,cot,RerankBGE,Biltmore Estate,Biltmore Estate,1,1,1,0,1053.729
+41,nocot,RerankBGE,Biltmore Estate,Biltmore Estate,1,1,1,0,1053.729
+41,cot,MultiQuery,Biltmore Estate,Biltmore Estate,1,1,1,0,1.142
+41,nocot,MultiQuery,Biltmore Estate,Biltmore Estate,1,1,1,0,1.142
+42,cot,Vanilla,NOT FOUND,Russia,0,0,0,1,0.611
+42,nocot,Vanilla,NOT FOUND,Russia,0,0,0,1,0.611
+42,cot,SVSF,NOT FOUND,Russia,0,0,0,1,0.817
+42,nocot,SVSF,NOT FOUND,Russia,0,0,0,1,0.817
+42,cot,MMR,NOT FOUND,Russia,0,0,0,1,0.787
+42,nocot,MMR,NOT FOUND,Russia,0,0,0,1,0.787
+42,cot,Rerank,Russia,Russia,1,1,1,0,49.263
+42,nocot,Rerank,Russia,Russia,1,1,1,0,49.263
+42,cot,RerankBGE,Russia,Russia,1,1,1,0,1075.608
+42,nocot,RerankBGE,Russia,Russia,1,1,1,0,1075.608
+42,cot,MultiQuery,NOT FOUND,Russia,0,0,0,1,0.917
+42,nocot,MultiQuery,Kentucky,Russia,0,0,0,0,0.917
+43,cot,Vanilla,John Augustus Roebling,John A. Roebling,0,0,1,0,0.57
+43,nocot,Vanilla,John Augustus Roebling,John A. Roebling,0,0,1,0,0.57
+43,cot,SVSF,John Augustus Roebling,John A. Roebling,0,0,1,0,0.814
+43,nocot,SVSF,John Augustus Roebling,John A. Roebling,0,0,1,0,0.814
+43,cot,MMR,NOT FOUND,John A. Roebling,0,0,0,1,0.758
+43,nocot,MMR,NOT FOUND,John A. Roebling,0,0,0,1,0.758
+43,cot,Rerank,John Augustus Roebling,John A. Roebling,0,0,1,0,50.208
+43,nocot,Rerank,John Augustus Roebling,John A. Roebling,0,0,1,0,50.208
+43,cot,RerankBGE,John Augustus Roebling,John A. Roebling,0,0,1,0,1070.708
+43,nocot,RerankBGE,John Augustus Roebling,John A. Roebling,0,0,1,0,1070.708
+43,cot,MultiQuery,John Augustus Roebling,John A. Roebling,0,0,1,0,0.988
+43,nocot,MultiQuery,John Augustus Roebling,John A. Roebling,0,0,1,0,0.988
+44,cot,Vanilla,Dodoma,Dodoma,1,1,1,0,0.518
+44,nocot,Vanilla,Antananarivo,Dodoma,0,0,0,0,0.518
+44,cot,SVSF,Dodoma,Dodoma,1,1,1,0,1.667
+44,nocot,SVSF,Dodoma,Dodoma,1,1,1,0,1.667
+44,cot,MMR,Dodoma,Dodoma,1,1,1,0,1.699
+44,nocot,MMR,Antananarivo,Dodoma,0,0,0,0,1.699
+44,cot,Rerank,Dodoma,Dodoma,1,1,1,0,48.875
+44,nocot,Rerank,Dodoma,Dodoma,1,1,1,0,48.875
+44,cot,RerankBGE,Antananarivo,Dodoma,0,0,0,0,1056.218
+44,nocot,RerankBGE,Dodoma,Dodoma,1,1,1,0,1056.218
+44,cot,MultiQuery,Dodoma,Dodoma,1,1,1,0,1.002
+44,nocot,MultiQuery,Dodoma,Dodoma,1,1,1,0,1.002
+45,cot,Vanilla,NOT FOUND,Alexandria,0,0,0,1,0.656
+45,nocot,Vanilla,Madrid,Alexandria,0,0,0,0,0.656
+45,cot,SVSF,Alexandria,Alexandria,1,1,1,0,0.808
+45,nocot,SVSF,Alexandria,Alexandria,1,1,1,0,0.808
+45,cot,MMR,Alexandria,Alexandria,1,1,1,0,0.746
+45,nocot,MMR,Madrid,Alexandria,0,0,0,0,0.746
+45,cot,Rerank,Alexandria,Alexandria,1,1,1,0,54.653
+45,nocot,Rerank,Alexandria,Alexandria,1,1,1,0,54.653
+45,cot,RerankBGE,Alexandria,Alexandria,1,1,1,0,1065.519
+45,nocot,RerankBGE,Alexandria,Alexandria,1,1,1,0,1065.519
+45,cot,MultiQuery,Alexandria,Alexandria,1,1,1,0,1.241
+45,nocot,MultiQuery,Alexandria,Alexandria,1,1,1,0,1.241
+46,cot,Vanilla,Hemoglobin,Hemoglobin,1,1,1,0,0.56
+46,nocot,Vanilla,Hemoglobin,Hemoglobin,1,1,1,0,0.56
+46,cot,SVSF,Hemoglobin,Hemoglobin,1,1,1,0,0.774
+46,nocot,SVSF,Hemoglobin,Hemoglobin,1,1,1,0,0.774
+46,cot,MMR,Hemoglobin,Hemoglobin,1,1,1,0,0.741
+46,nocot,MMR,Hemoglobin,Hemoglobin,1,1,1,0,0.741
+46,cot,Rerank,Hemoglobin,Hemoglobin,1,1,1,0,50.798
+46,nocot,Rerank,Hemoglobin,Hemoglobin,1,1,1,0,50.798
+46,cot,RerankBGE,Hemoglobin,Hemoglobin,1,1,1,0,1072.987
+46,nocot,RerankBGE,Hemoglobin,Hemoglobin,1,1,1,0,1072.987
+46,cot,MultiQuery,Hemoglobin,Hemoglobin,1,1,1,0,1.262
+46,nocot,MultiQuery,Hemoglobin,Hemoglobin,1,1,1,0,1.262
+47,cot,Vanilla,Jin Mao Tower,Jin Mao Tower,1,1,1,0,0.578
+47,nocot,Vanilla,Jin Mao Tower,Jin Mao Tower,1,1,1,0,0.578
+47,cot,SVSF,Jin Mao Tower,Jin Mao Tower,1,1,1,0,1.067
+47,nocot,SVSF,Jin Mao Tower,Jin Mao Tower,1,1,1,0,1.067
+47,cot,MMR,Shanghai Tower,Jin Mao Tower,0,0,0,0,1.034
+47,nocot,MMR,Shanghai Tower,Jin Mao Tower,0,0,0,0,1.034
+47,cot,Rerank,Jin Mao Tower,Jin Mao Tower,1,1,1,0,50.746
+47,nocot,Rerank,Jin Mao Tower,Jin Mao Tower,1,1,1,0,50.746
+47,cot,RerankBGE,Jin Mao Tower,Jin Mao Tower,1,1,1,0,1014.686
+47,nocot,RerankBGE,Jin Mao Tower,Jin Mao Tower,1,1,1,0,1014.686
+47,cot,MultiQuery,Jin Mao Tower,Jin Mao Tower,1,1,1,0,1.024
+47,nocot,MultiQuery,Jin Mao Tower,Jin Mao Tower,1,1,1,0,1.024
+48,cot,Vanilla,Russia,Kazakhstan,0,0,0,0,0.565
+48,nocot,Vanilla,Soviet Union,Kazakhstan,0,0,0,0,0.565
+48,cot,SVSF,Soviet Union,Kazakhstan,0,0,0,0,1.089
+48,nocot,SVSF,Soviet Union,Kazakhstan,0,0,0,0,1.089
+48,cot,MMR,Soviet Union,Kazakhstan,0,0,0,0,1.029
+48,nocot,MMR,Soviet Union,Kazakhstan,0,0,0,0,1.029
+48,cot,Rerank,Soviet Union,Kazakhstan,0,0,0,0,51.841
+48,nocot,Rerank,Soviet Union,Kazakhstan,0,0,0,0,51.841
+48,cot,RerankBGE,Kazakhstan,Kazakhstan,1,1,1,0,1024.971
+48,nocot,RerankBGE,Kazakhstan,Kazakhstan,1,1,1,0,1024.971
+48,cot,MultiQuery,Russia,Kazakhstan,0,0,0,0,0.986
+48,nocot,MultiQuery,Soviet Union,Kazakhstan,0,0,0,0,0.986
+49,cot,Vanilla,NOT FOUND,Samuel Langhorne Clemens,0,0,0,1,0.604
+49,nocot,Vanilla,Albert Camus,Samuel Langhorne Clemens,0,0,0,0,0.604
+49,cot,SVSF,NOT FOUND,Samuel Langhorne Clemens,0,0,0,1,0.829
+49,nocot,SVSF,Albert Camus,Samuel Langhorne Clemens,0,0,0,0,0.829
+49,cot,MMR,NOT FOUND,Samuel Langhorne Clemens,0,0,0,1,0.771
+49,nocot,MMR,Ulysses S. Grant,Samuel Langhorne Clemens,0,0,0,0,0.771
+49,cot,Rerank,Glenn T. Seaborg,Samuel Langhorne Clemens,0,0,0,0,56.394
+49,nocot,Rerank,Isaac Newton,Samuel Langhorne Clemens,0,0,0,0,56.394
+49,cot,RerankBGE,NOT FOUND,Samuel Langhorne Clemens,0,0,0,1,1149.066
+49,nocot,RerankBGE,Charles L. Webster,Samuel Langhorne Clemens,0,0,0,0,1149.066
+49,cot,MultiQuery,NOT FOUND,Samuel Langhorne Clemens,0,0,0,1,1.401
+49,nocot,MultiQuery,Albert Camus,Samuel Langhorne Clemens,0,0,0,0,1.401
+50,cot,Vanilla,Lansing,Lansing,1,1,1,0,0.587
+50,nocot,Vanilla,Ishpeming,Lansing,0,0,0,0,0.587
+50,cot,SVSF,Lansing,Lansing,1,1,1,0,1.065
+50,nocot,SVSF,Lansing,Lansing,1,1,1,0,1.065
+50,cot,MMR,Lansing,Lansing,1,1,1,0,1.001
+50,nocot,MMR,Lansing,Lansing,1,1,1,0,1.001
+50,cot,Rerank,NOT FOUND,Lansing,0,0,0,1,52.261
+50,nocot,Rerank,Berkeley,Lansing,0,0,0,0,52.261
+50,cot,RerankBGE,Sacramento,Lansing,0,0,0,0,1006.922
+50,nocot,RerankBGE,Albany,Lansing,0,0,0,0,1006.922
+50,cot,MultiQuery,Lansing,Lansing,1,1,1,0,1.071
+50,nocot,MultiQuery,Lansing,Lansing,1,1,1,0,1.071
+51,cot,Vanilla,Dutch,Dutch,1,1,1,0,0.523
+51,nocot,Vanilla,Dutch,Dutch,1,1,1,0,0.523
+51,cot,SVSF,NOT FOUND,Dutch,0,0,0,1,0.837
+51,nocot,SVSF,Dutch,Dutch,1,1,1,0,0.837
+51,cot,MMR,NOT FOUND,Dutch,0,0,0,1,0.754
+51,nocot,MMR,Dutch,Dutch,1,1,1,0,0.754
+51,cot,Rerank,Dutch,Dutch,1,1,1,0,52.778
+51,nocot,Rerank,Dutch,Dutch,1,1,1,0,52.778
+51,cot,RerankBGE,Dutch,Dutch,1,1,1,0,1081.78
+51,nocot,RerankBGE,Dutch,Dutch,1,1,1,0,1081.78
+51,cot,MultiQuery,Dutch,Dutch,1,1,1,0,0.997
+51,nocot,MultiQuery,Dutch,Dutch,1,1,1,0,0.997
+52,cot,Vanilla,NOT FOUND,Kebnekaise,0,0,0,1,0.603
+52,nocot,Vanilla,Mount Everest,Kebnekaise,0,0,0,0,0.603
+52,cot,SVSF,NOT FOUND,Kebnekaise,0,0,0,1,1.084
+52,nocot,SVSF,NOT FOUND,Kebnekaise,0,0,0,1,1.084
+52,cot,MMR,NOT FOUND,Kebnekaise,0,0,0,1,1.02
+52,nocot,MMR,Kebnekaise,Kebnekaise,1,1,1,0,1.02
+52,cot,Rerank,Kebnekaise,Kebnekaise,1,1,1,0,48.338
+52,nocot,Rerank,Kebnekaise,Kebnekaise,1,1,1,0,48.338
+52,cot,RerankBGE,NOT FOUND,Kebnekaise,0,0,0,1,988.074
+52,nocot,RerankBGE,Kebnekaise,Kebnekaise,1,1,1,0,988.074
+52,cot,MultiQuery,NOT FOUND,Kebnekaise,0,0,0,1,1.239
+52,nocot,MultiQuery,Mount Logan,Kebnekaise,0,0,0,0,1.239
+53,cot,Vanilla,The prompt asks for an element named after a city related to Niels Bohr. We know Bohr won the Nobel Prize in Physics. The context mentions Rhenium being named after the Rhine river. It also mentions D,72,0,0,0,0,0.55
+53,nocot,Vanilla,75,72,0,0,0,0,0.55
+53,cot,SVSF,NOT FOUND,72,0,0,0,1,1.054
+53,nocot,SVSF,75,72,0,0,0,0,1.054
+53,cot,MMR,87,72,0,0,0,0,1.021
+53,nocot,MMR,87,72,0,0,0,0,1.021
+53,cot,Rerank,NOT FOUND,72,0,0,0,1,51.989
+53,nocot,Rerank,75,72,0,0,0,0,51.989
+53,cot,RerankBGE,72,72,1,1,1,0,1061.619
+53,nocot,RerankBGE,72,72,1,1,1,0,1061.619
+53,cot,MultiQuery,NOT FOUND,72,0,0,0,1,1.109
+53,nocot,MultiQuery,75,72,0,0,0,0,1.109
+54,cot,Vanilla,NOT FOUND,Wellington,0,0,0,1,0.579
+54,nocot,Vanilla,Ottawa,Wellington,0,0,0,0,0.579
+54,cot,SVSF,NOT FOUND,Wellington,0,0,0,1,1.107
+54,nocot,SVSF,Ottawa,Wellington,0,0,0,0,1.107
+54,cot,MMR,Wellington,Wellington,1,1,1,0,1.037
+54,nocot,MMR,Pukerua Bay,Wellington,0,0,0,0,1.037
+54,cot,Rerank,NOT FOUND,Wellington,0,0,0,1,60.091
+54,nocot,Rerank,Pukerua Bay,Wellington,0,0,0,0,60.091
+54,cot,RerankBGE,Washington D.C.,Wellington,0,0,0,0,1106.93
+54,nocot,RerankBGE,"Cincinnati, Ohio",Wellington,0,0,0,0,1106.93
+54,cot,MultiQuery,NOT FOUND,Wellington,0,0,0,1,1.061
+54,nocot,MultiQuery,Ottawa,Wellington,0,0,0,0,1.061
+55,cot,Vanilla,River Seine,Seine,1,1,1,0,0.581
+55,nocot,Vanilla,Seine,Seine,1,1,1,0,0.581
+55,cot,SVSF,Seine,Seine,1,1,1,0,1.067
+55,nocot,SVSF,Seine,Seine,1,1,1,0,1.067
+55,cot,MMR,River Seine,Seine,1,1,1,0,1.037
+55,nocot,MMR,River Seine,Seine,1,1,1,0,1.037
+55,cot,Rerank,River Liffey,Seine,0,0,0,0,50.539
+55,nocot,Rerank,River Liffey,Seine,0,0,0,0,50.539
+55,cot,RerankBGE,NOT FOUND,Seine,0,0,0,1,1065.022
+55,nocot,RerankBGE,River Thames,Seine,0,0,0,0,1065.022
+55,cot,MultiQuery,River Seine,Seine,1,1,1,0,1.155
+55,nocot,MultiQuery,River Seine,Seine,1,1,1,0,1.155
+56,cot,Vanilla,Md,Md,1,1,1,0,0.635
+56,nocot,Vanilla,Md,Md,1,1,1,0,0.635
+56,cot,SVSF,Md,Md,1,1,1,0,1.058
+56,nocot,SVSF,Md,Md,1,1,1,0,1.058
+56,cot,MMR,Md,Md,1,1,1,0,1.009
+56,nocot,MMR,Md,Md,1,1,1,0,1.009
+56,cot,Rerank,Md,Md,1,1,1,0,51.636
+56,nocot,Rerank,Md,Md,1,1,1,0,51.636
+56,cot,RerankBGE,Md,Md,1,1,1,0,1015.682
+56,nocot,RerankBGE,Md,Md,1,1,1,0,1015.682
+56,cot,MultiQuery,Md,Md,1,1,1,0,1.067
+56,nocot,MultiQuery,Md,Md,1,1,1,0,1.067
+57,cot,Vanilla,Baroque,Baroque,1,1,1,0,0.553
+57,nocot,Vanilla,Baroque,Baroque,1,1,1,0,0.553
+57,cot,SVSF,Baroque,Baroque,1,1,1,0,1.067
+57,nocot,SVSF,Baroque,Baroque,1,1,1,0,1.067
+57,cot,MMR,Baroque,Baroque,1,1,1,0,1.022
+57,nocot,MMR,Baroque,Baroque,1,1,1,0,1.022
+57,cot,Rerank,Baroque,Baroque,1,1,1,0,49.982
+57,nocot,Rerank,Baroque,Baroque,1,1,1,0,49.982
+57,cot,RerankBGE,Gothic,Baroque,0,0,0,0,1034.437
+57,nocot,RerankBGE,Gothic,Baroque,0,0,0,0,1034.437
+57,cot,MultiQuery,Baroque,Baroque,1,1,1,0,1.082
+57,nocot,MultiQuery,Baroque,Baroque,1,1,1,0,1.082
+58,cot,Vanilla,Ulysses S. Grant,Democratic Party,0,0,0,0,0.579
+58,nocot,Vanilla,Ulysses S. Grant,Democratic Party,0,0,0,0,0.579
+58,cot,SVSF,NOT FOUND,Democratic Party,0,0,0,1,1.347
+58,nocot,SVSF,Ulysses S. Grant,Democratic Party,0,0,0,0,1.347
+58,cot,MMR,NOT FOUND,Democratic Party,0,0,0,1,1.56
+58,nocot,MMR,Republican Party,Democratic Party,0,0,0,0,1.56
+58,cot,Rerank,Republican,Democratic Party,0,0,0,0,53.135
+58,nocot,Rerank,Republican Party,Democratic Party,0,0,0,0,53.135
+58,cot,RerankBGE,Republican,Democratic Party,0,0,0,0,1041.449
+58,nocot,RerankBGE,Republican Party,Democratic Party,0,0,0,0,1041.449
+58,cot,MultiQuery,Democratic Party,Democratic Party,1,1,1,0,1.055
+58,nocot,MultiQuery,Democratic Party,Democratic Party,1,1,1,0,1.055
+59,cot,Vanilla,Springfield,Springfield,1,1,1,0,0.586
+59,nocot,Vanilla,Chicago,Springfield,0,0,0,0,0.586
+59,cot,SVSF,Springfield,Springfield,1,1,1,0,1.055
+59,nocot,SVSF,"Chicago, Illinois",Springfield,0,0,0,0,1.055
+59,cot,MMR,Springfield,Springfield,1,1,1,0,0.995
+59,nocot,MMR,Springfield,Springfield,1,1,1,0,0.995
+59,cot,Rerank,Springfield,Springfield,1,1,1,0,49.444
+59,nocot,Rerank,Springfield,Springfield,1,1,1,0,49.444
+59,cot,RerankBGE,NOT FOUND,Springfield,0,0,0,1,1006.31
+59,nocot,RerankBGE,Springfield,Springfield,1,1,1,0,1006.31
+59,cot,MultiQuery,Springfield,Springfield,1,1,1,0,1.098
+59,nocot,MultiQuery,"Chicago, Illinois",Springfield,0,0,0,0,1.098
+60,cot,Vanilla,London,London,1,1,1,0,0.555
+60,nocot,Vanilla,Sydney,London,0,0,0,0,0.555
+60,cot,SVSF,London,London,1,1,1,0,1.482
+60,nocot,SVSF,Rome,London,0,0,0,0,1.482
+60,cot,MMR,NOT FOUND,London,0,0,0,1,1.548
+60,nocot,MMR,Canberra,London,0,0,0,0,1.548
+60,cot,Rerank,Canberra,London,0,0,0,0,53.5
+60,nocot,Rerank,Canberra,London,0,0,0,0,53.5
+60,cot,RerankBGE,NOT FOUND,London,0,0,0,1,1033.373
+60,nocot,RerankBGE,Rome,London,0,0,0,0,1033.373
+60,cot,MultiQuery,London,London,1,1,1,0,0.99
+60,nocot,MultiQuery,Sydney,London,0,0,0,0,0.99
+61,cot,Vanilla,Paris,Paris,1,1,1,0,0.562
+61,nocot,Vanilla,Milan,Paris,0,0,0,0,0.562
+61,cot,SVSF,Paris,Paris,1,1,1,0,0.819
+61,nocot,SVSF,Milan,Paris,0,0,0,0,0.819
+61,cot,MMR,Paris,Paris,1,1,1,0,0.77
+61,nocot,MMR,Paris,Paris,1,1,1,0,0.77
+61,cot,Rerank,Paris,Paris,1,1,1,0,51.551
+61,nocot,Rerank,Paris,Paris,1,1,1,0,51.551
+61,cot,RerankBGE,Paris,Paris,1,1,1,0,1054.962
+61,nocot,RerankBGE,Paris,Paris,1,1,1,0,1054.962
+61,cot,MultiQuery,Paris,Paris,1,1,1,0,1.087
+61,nocot,MultiQuery,Milan,Paris,0,0,0,0,1.087
+62,cot,Vanilla,London,Bloemfontein,0,0,0,0,0.608
+62,nocot,Vanilla,London,Bloemfontein,0,0,0,0,0.608
+62,cot,SVSF,NOT FOUND,Bloemfontein,0,0,0,1,1.048
+62,nocot,SVSF,England,Bloemfontein,0,0,0,0,1.048
+62,cot,MMR,NOT FOUND,Bloemfontein,0,0,0,1,1.025
+62,nocot,MMR,London,Bloemfontein,0,0,0,0,1.025
+62,cot,Rerank,London,Bloemfontein,0,0,0,0,49.457
+62,nocot,Rerank,Paris,Bloemfontein,0,0,0,0,49.457
+62,cot,RerankBGE,NOT FOUND,Bloemfontein,0,0,0,1,968.019
+62,nocot,RerankBGE,London,Bloemfontein,0,0,0,0,968.019
+62,cot,MultiQuery,London,Bloemfontein,0,0,0,0,1.066
+62,nocot,MultiQuery,London,Bloemfontein,0,0,0,0,1.066
+63,cot,Vanilla,NOT FOUND,Mount Rysy,0,0,0,1,0.566
+63,nocot,Vanilla,Denali,Mount Rysy,0,0,0,0,0.566
+63,cot,SVSF,NOT FOUND,Mount Rysy,0,0,0,1,1.054
+63,nocot,SVSF,Denali,Mount Rysy,0,0,0,0,1.054
+63,cot,MMR,NOT FOUND,Mount Rysy,0,0,0,1,0.994
+63,nocot,MMR,Mount Elbrus,Mount Rysy,0,0,0,0,0.994
+63,cot,Rerank,NOT FOUND,Mount Rysy,0,0,0,1,48.141
+63,nocot,Rerank,NOT FOUND,Mount Rysy,0,0,0,1,48.141
+63,cot,RerankBGE,Mount Elbrus,Mount Rysy,0,0,0,0,996.829
+63,nocot,RerankBGE,Mount Elbrus,Mount Rysy,0,0,0,0,996.829
+63,cot,MultiQuery,Denali,Mount Rysy,0,0,0,0,1.134
+63,nocot,MultiQuery,Mount Elbrus,Mount Rysy,0,0,0,0,1.134
+64,cot,Vanilla,Toropa River,Votka River,0,0,0,0,0.571
+64,nocot,Vanilla,Votka River,Votka River,1,1,1,0,0.571
+64,cot,SVSF,Toropa River,Votka River,0,0,0,0,1.096
+64,nocot,SVSF,Votka River,Votka River,1,1,1,0,1.096
+64,cot,MMR,NOT FOUND,Votka River,0,0,0,1,1.015
+64,nocot,MMR,Yamuna,Votka River,0,0,0,0,1.015
+64,cot,Rerank,NOT FOUND,Votka River,0,0,0,1,48.439
+64,nocot,Rerank,Arno River,Votka River,0,0,0,0,48.439
+64,cot,RerankBGE,NOT FOUND,Votka River,0,0,0,1,980.267
+64,nocot,RerankBGE,Arno River,Votka River,0,0,0,0,980.267
+64,cot,MultiQuery,Votka River,Votka River,1,1,1,0,0.982
+64,nocot,MultiQuery,Votka River,Votka River,1,1,1,0,0.982
+65,cot,Vanilla,NOT FOUND,Ramsay MacDonald,0,0,0,1,0.561
+65,nocot,Vanilla,Stanley Baldwin,Ramsay MacDonald,0,0,0,0,0.561
+65,cot,SVSF,NOT FOUND,Ramsay MacDonald,0,0,0,1,0.821
+65,nocot,SVSF,NOT FOUND,Ramsay MacDonald,0,0,0,1,0.821
+65,cot,MMR,NOT FOUND,Ramsay MacDonald,0,0,0,1,0.745
+65,nocot,MMR,Stanley Baldwin,Ramsay MacDonald,0,0,0,0,0.745
+65,cot,Rerank,James Ramsay MacDonald,Ramsay MacDonald,1,1,1,0,52.177
+65,nocot,Rerank,James Ramsay MacDonald,Ramsay MacDonald,1,1,1,0,52.177
+65,cot,RerankBGE,James Ramsay MacDonald,Ramsay MacDonald,1,1,1,0,1004.08
+65,nocot,RerankBGE,James Ramsay MacDonald,Ramsay MacDonald,1,1,1,0,1004.08
+65,cot,MultiQuery,Stanley Baldwin,Ramsay MacDonald,0,0,0,0,0.975
+65,nocot,MultiQuery,Stanley Baldwin,Ramsay MacDonald,0,0,0,0,0.975
+66,cot,Vanilla,United States dollar,United States dollar,1,1,1,0,0.558
+66,nocot,Vanilla,United States dollar,United States dollar,1,1,1,0,0.558
+66,cot,SVSF,United States dollar,United States dollar,1,1,1,0,1.062
+66,nocot,SVSF,United States dollar,United States dollar,1,1,1,0,1.062
+66,cot,MMR,United States dollar,United States dollar,1,1,1,0,1.018
+66,nocot,MMR,United States dollar,United States dollar,1,1,1,0,1.018
+66,cot,Rerank,United States dollar,United States dollar,1,1,1,0,47.988
+66,nocot,Rerank,United States dollar,United States dollar,1,1,1,0,47.988
+66,cot,RerankBGE,United States dollar,United States dollar,1,1,1,0,965.275
+66,nocot,RerankBGE,United States dollar,United States dollar,1,1,1,0,965.275
+66,cot,MultiQuery,United States dollar,United States dollar,1,1,1,0,1.142
+66,nocot,MultiQuery,United States dollar,United States dollar,1,1,1,0,1.142
+67,cot,Vanilla,HMS Beagle,HMS Beagle,1,1,1,0,0.523
+67,nocot,Vanilla,HMS Beagle,HMS Beagle,1,1,1,0,0.523
+67,cot,SVSF,HMS Beagle,HMS Beagle,1,1,1,0,1.061
+67,nocot,SVSF,HMS Beagle,HMS Beagle,1,1,1,0,1.061
+67,cot,MMR,Voyage of the Beagle,HMS Beagle,0,0,0,0,1.015
+67,nocot,MMR,Voyage of the Beagle,HMS Beagle,0,0,0,0,1.015
+67,cot,Rerank,HMS Beagle,HMS Beagle,1,1,1,0,48.525
+67,nocot,Rerank,HMS Beagle,HMS Beagle,1,1,1,0,48.525
+67,cot,RerankBGE,HMS Beagle,HMS Beagle,1,1,1,0,1026.254
+67,nocot,RerankBGE,HMS Beagle,HMS Beagle,1,1,1,0,1026.254
+67,cot,MultiQuery,HMS Beagle,HMS Beagle,1,1,1,0,1.286
+67,nocot,MultiQuery,HMS Beagle,HMS Beagle,1,1,1,0,1.286
+68,cot,Vanilla,Montevideo,Montevideo,1,1,1,0,0.54
+68,nocot,Vanilla,Montevideo,Montevideo,1,1,1,0,0.54
+68,cot,SVSF,Montevideo,Montevideo,1,1,1,0,1.054
+68,nocot,SVSF,Montevideo,Montevideo,1,1,1,0,1.054
+68,cot,MMR,NOT FOUND,Montevideo,0,0,0,1,1.005
+68,nocot,MMR,Montevideo,Montevideo,1,1,1,0,1.005
+68,cot,Rerank,Buenos Aires,Montevideo,0,0,0,0,49.015
+68,nocot,Rerank,Montevideo,Montevideo,1,1,1,0,49.015
+68,cot,RerankBGE,Montevideo,Montevideo,1,1,1,0,963.683
+68,nocot,RerankBGE,Montevideo,Montevideo,1,1,1,0,963.683
+68,cot,MultiQuery,Montevideo,Montevideo,1,1,1,0,1.078
+68,nocot,MultiQuery,Montevideo,Montevideo,1,1,1,0,1.078
+69,cot,Vanilla,Lyndon B. Johnson,Lyndon B. Johnson,1,1,1,0,0.57
+69,nocot,Vanilla,Dwight D. Eisenhower,Lyndon B. Johnson,0,0,0,0,0.57
+69,cot,SVSF,Lyndon B. Johnson,Lyndon B. Johnson,1,1,1,0,0.808
+69,nocot,SVSF,Dwight D. Eisenhower,Lyndon B. Johnson,0,0,0,0,0.808
+69,cot,MMR,John F. Kennedy,Lyndon B. Johnson,0,0,0,0,0.746
+69,nocot,MMR,Eisenhower,Lyndon B. Johnson,0,0,0,0,0.746
+69,cot,Rerank,John F. Kennedy,Lyndon B. Johnson,0,0,0,0,50.005
+69,nocot,Rerank,Eisenhower,Lyndon B. Johnson,0,0,0,0,50.005
+69,cot,RerankBGE,Lyndon B. Johnson,Lyndon B. Johnson,1,1,1,0,1028.305
+69,nocot,RerankBGE,Lyndon B. Johnson,Lyndon B. Johnson,1,1,1,0,1028.305
+69,cot,MultiQuery,Lyndon B. Johnson,Lyndon B. Johnson,1,1,1,0,0.943
+69,nocot,MultiQuery,Eisenhower,Lyndon B. Johnson,0,0,0,0,0.943
+70,cot,Vanilla,Vistula,Vistula River,0,1,1,0,0.576
+70,nocot,Vanilla,Seine River,Vistula River,0,0,0,0,0.576
+70,cot,SVSF,Vistula River,Vistula River,1,1,1,0,0.813
+70,nocot,SVSF,River Cam,Vistula River,0,0,0,0,0.813
+70,cot,MMR,NOT FOUND,Vistula River,0,0,0,1,0.735
+70,nocot,MMR,Seine River,Vistula River,0,0,0,0,0.735
+70,cot,Rerank,River Cam,Vistula River,0,0,0,0,48.806
+70,nocot,Rerank,River Cam,Vistula River,0,0,0,0,48.806
+70,cot,RerankBGE,NOT FOUND,Vistula River,0,0,0,1,1003.844
+70,nocot,RerankBGE,River Cam,Vistula River,0,0,0,0,1003.844
+70,cot,MultiQuery,Let’s re-examine the context for clues about where polonium was discovered and who made the discovery. There is no direct link between polonium and Ernest Lawrence or Berkeley. The question asks for a,Vistula River,0,0,0,0,1.035
+70,nocot,MultiQuery,Seine River,Vistula River,0,0,0,0,1.035
+71,cot,Vanilla,Todt Hill,Todt Hill,1,1,1,0,0.514
+71,nocot,Vanilla,Mount Whitney,Todt Hill,0,0,0,0,0.514
+71,cot,SVSF,Todt Hill,Todt Hill,1,1,1,0,1.13
+71,nocot,SVSF,Todt Hill,Todt Hill,1,1,1,0,1.13
+71,cot,MMR,Mount Whitney,Todt Hill,0,0,0,0,1.075
+71,nocot,MMR,Mount Whitney,Todt Hill,0,0,0,0,1.075
+71,cot,Rerank,Todt Hill,Todt Hill,1,1,1,0,59.001
+71,nocot,Rerank,Todt Hill,Todt Hill,1,1,1,0,59.001
+71,cot,RerankBGE,Todt Hill,Todt Hill,1,1,1,0,1183.892
+71,nocot,RerankBGE,Todt Hill,Todt Hill,1,1,1,0,1183.892
+71,cot,MultiQuery,Mount Greylock,Todt Hill,0,0,0,0,1.036
+71,nocot,MultiQuery,Todt Hill,Todt Hill,1,1,1,0,1.036
+72,cot,Vanilla,NOT FOUND,1854,0,0,0,1,0.821
+72,nocot,Vanilla,1962,1854,0,0,0,0,0.821
+72,cot,SVSF,NOT FOUND,1854,0,0,0,1,1.308
+72,nocot,SVSF,1996,1854,0,0,0,0,1.308
+72,cot,MMR,1784,1854,0,0,0,0,1.225
+72,nocot,MMR,1962,1854,0,0,0,0,1.225
+72,cot,Rerank,1854,1854,1,1,1,0,59.562
+72,nocot,Rerank,1854,1854,1,1,1,0,59.562
+72,cot,RerankBGE,1854,1854,1,1,1,0,1165.479
+72,nocot,RerankBGE,1854,1854,1,1,1,0,1165.479
+72,cot,MultiQuery,1854,1854,1,1,1,0,1.186
+72,nocot,MultiQuery,1854,1854,1,1,1,0,1.186
+73,cot,Vanilla,River Thames,River Thames,1,1,1,0,0.635
+73,nocot,Vanilla,River Thames,River Thames,1,1,1,0,0.635
+73,cot,SVSF,River Thames,River Thames,1,1,1,0,1.145
+73,nocot,SVSF,River Thames,River Thames,1,1,1,0,1.145
+73,cot,MMR,River Thames,River Thames,1,1,1,0,1.064
+73,nocot,MMR,River Thames,River Thames,1,1,1,0,1.064
+73,cot,Rerank,River Thames,River Thames,1,1,1,0,59.451
+73,nocot,Rerank,River Thames,River Thames,1,1,1,0,59.451
+73,cot,RerankBGE,River Thames,River Thames,1,1,1,0,1178.39
+73,nocot,RerankBGE,River Thames,River Thames,1,1,1,0,1178.39
+73,cot,MultiQuery,River Thames,River Thames,1,1,1,0,0.962
+73,nocot,MultiQuery,River Thames,River Thames,1,1,1,0,0.962
+74,cot,Vanilla,Mount Narodnaya,Mount Narodnaya,1,1,1,0,0.58
+74,nocot,Vanilla,Mount Narodnaya,Mount Narodnaya,1,1,1,0,0.58
+74,cot,SVSF,Mount Narodnaya,Mount Narodnaya,1,1,1,0,1.096
+74,nocot,SVSF,Mount Narodnaya,Mount Narodnaya,1,1,1,0,1.096
+74,cot,MMR,Mount Narodnaya,Mount Narodnaya,1,1,1,0,1.024
+74,nocot,MMR,Mount Narodnaya,Mount Narodnaya,1,1,1,0,1.024
+74,cot,Rerank,Mount Narodnaya,Mount Narodnaya,1,1,1,0,53.636
+74,nocot,Rerank,Mount Narodnaya,Mount Narodnaya,1,1,1,0,53.636
+74,cot,RerankBGE,Mount Narodnaya,Mount Narodnaya,1,1,1,0,1081.32
+74,nocot,RerankBGE,Mount Narodnaya,Mount Narodnaya,1,1,1,0,1081.32
+74,cot,MultiQuery,Mount Narodnaya,Mount Narodnaya,1,1,1,0,0.907
+74,nocot,MultiQuery,Mount Narodnaya,Mount Narodnaya,1,1,1,0,0.907
+75,cot,Vanilla,NOT FOUND,Lactuca sativa,0,0,0,1,0.591
+75,nocot,Vanilla,NOT FOUND,Lactuca sativa,0,0,0,1,0.591
+75,cot,SVSF,NOT FOUND,Lactuca sativa,0,0,0,1,0.806
+75,nocot,SVSF,NOT FOUND,Lactuca sativa,0,0,0,1,0.806
+75,cot,MMR,Lactuca sativa,Lactuca sativa,1,1,1,0,0.758
+75,nocot,MMR,Lactuca sativa,Lactuca sativa,1,1,1,0,0.758
+75,cot,Rerank,Lactuca sativa,Lactuca sativa,1,1,1,0,54.197
+75,nocot,Rerank,Lactuca sativa,Lactuca sativa,1,1,1,0,54.197
+75,cot,RerankBGE,Lactuca sativa,Lactuca sativa,1,1,1,0,1157.645
+75,nocot,RerankBGE,Lactuca sativa,Lactuca sativa,1,1,1,0,1157.645
+75,cot,MultiQuery,Lactuca sativa,Lactuca sativa,1,1,1,0,0.991
+75,nocot,MultiQuery,Lactuca sativa,Lactuca sativa,1,1,1,0,0.991
+76,cot,Vanilla,Colorado,California,0,0,0,0,0.569
+76,nocot,Vanilla,Colorado,California,0,0,0,0,0.569
+76,cot,SVSF,California,California,1,1,1,0,1.04
+76,nocot,SVSF,Massachusetts,California,0,0,0,0,1.04
+76,cot,MMR,California,California,1,1,1,0,1.008
+76,nocot,MMR,California,California,1,1,1,0,1.008
+76,cot,Rerank,NOT FOUND,California,0,0,0,1,52.886
+76,nocot,Rerank,Massachusetts,California,0,0,0,0,52.886
+76,cot,RerankBGE,California,California,1,1,1,0,1113.225
+76,nocot,RerankBGE,California,California,1,1,1,0,1113.225
+76,cot,MultiQuery,New Jersey,California,0,0,0,0,1.15
+76,nocot,MultiQuery,New Jersey,California,0,0,0,0,1.15
+77,cot,Vanilla,Pope,The Pope,1,1,1,0,0.561
+77,nocot,Vanilla,Louis XVI,The Pope,0,0,0,0,0.561
+77,cot,SVSF,Pope,The Pope,1,1,1,0,1.934
+77,nocot,SVSF,Louis XVI,The Pope,0,0,0,0,1.934
+77,cot,MMR,Pope,The Pope,1,1,1,0,1.54
+77,nocot,MMR,Pope,The Pope,1,1,1,0,1.54
+77,cot,Rerank,The Pope,The Pope,1,1,1,0,53.247
+77,nocot,Rerank,The Pope,The Pope,1,1,1,0,53.247
+77,cot,RerankBGE,The Pope,The Pope,1,1,1,0,1032.608
+77,nocot,RerankBGE,The Pope,The Pope,1,1,1,0,1032.608
+77,cot,MultiQuery,The Pope,The Pope,1,1,1,0,0.946
+77,nocot,MultiQuery,The Pope,The Pope,1,1,1,0,0.946
+78,cot,Vanilla,Cape Town,Cape Town,1,1,1,0,0.569
+78,nocot,Vanilla,Cape Town,Cape Town,1,1,1,0,0.569
+78,cot,SVSF,Cape Town,Cape Town,1,1,1,0,1.045
+78,nocot,SVSF,Cape Town,Cape Town,1,1,1,0,1.045
+78,cot,MMR,Cape Town,Cape Town,1,1,1,0,1.023
+78,nocot,MMR,Cape Town,Cape Town,1,1,1,0,1.023
+78,cot,Rerank,Cape Town,Cape Town,1,1,1,0,53.979
+78,nocot,Rerank,Cape Town,Cape Town,1,1,1,0,53.979
+78,cot,RerankBGE,Cape Town,Cape Town,1,1,1,0,1014.27
+78,nocot,RerankBGE,Cape Town,Cape Town,1,1,1,0,1014.27
+78,cot,MultiQuery,Cape Town,Cape Town,1,1,1,0,1.122
+78,nocot,MultiQuery,Cape Town,Cape Town,1,1,1,0,1.122
+79,cot,Vanilla,NOT FOUND,Richard Saunders,0,0,0,1,0.555
+79,nocot,Vanilla,pseudonym,Richard Saunders,0,0,0,0,0.555
+79,cot,SVSF,NOT FOUND,Richard Saunders,0,0,0,1,1.061
+79,nocot,SVSF,pseudonym,Richard Saunders,0,0,0,0,1.061
+79,cot,MMR,NOT FOUND,Richard Saunders,0,0,0,1,1.03
+79,nocot,MMR,pseudonym,Richard Saunders,0,0,0,0,1.03
+79,cot,Rerank,Poor Richard,Richard Saunders,0,0,0,0,52.701
+79,nocot,Rerank,Poor Richard,Richard Saunders,0,0,0,0,52.701
+79,cot,RerankBGE,Poor Richard,Richard Saunders,0,0,0,0,1064.399
+79,nocot,RerankBGE,Poor Richard,Richard Saunders,0,0,0,0,1064.399
+79,cot,MultiQuery,NOT FOUND,Richard Saunders,0,0,0,1,0.968
+79,nocot,MultiQuery,pseudonym,Richard Saunders,0,0,0,0,0.968
+80,cot,Vanilla,Madrid,Madrid,1,1,1,0,0.529
+80,nocot,Vanilla,Santiago,Madrid,0,0,0,0,0.529
+80,cot,SVSF,NOT FOUND,Madrid,0,0,0,1,0.808
+80,nocot,SVSF,Santiago,Madrid,0,0,0,0,0.808
+80,cot,MMR,Madrid,Madrid,1,1,1,0,0.74
+80,nocot,MMR,Madrid,Madrid,1,1,1,0,0.74
+80,cot,Rerank,NOT FOUND,Madrid,0,0,0,1,57.304
+80,nocot,Rerank,Madrid,Madrid,1,1,1,0,57.304
+80,cot,RerankBGE,Paris,Madrid,0,0,0,0,1075.923
+80,nocot,RerankBGE,Paris,Madrid,0,0,0,0,1075.923
+80,cot,MultiQuery,NOT FOUND,Madrid,0,0,0,1,0.952
+80,nocot,MultiQuery,Santiago,Madrid,0,0,0,0,0.952
+81,cot,Vanilla,Queen Victoria,Queen Victoria,1,1,1,0,0.572
+81,nocot,Vanilla,Queen Victoria,Queen Victoria,1,1,1,0,0.572
+81,cot,SVSF,Queen Victoria,Queen Victoria,1,1,1,0,0.83
+81,nocot,SVSF,Queen Victoria,Queen Victoria,1,1,1,0,0.83
+81,cot,MMR,Queen Victoria,Queen Victoria,1,1,1,0,0.786
+81,nocot,MMR,Queen Victoria,Queen Victoria,1,1,1,0,0.786
+81,cot,Rerank,NOT FOUND,Queen Victoria,0,0,0,1,51.508
+81,nocot,Rerank,NOT FOUND,Queen Victoria,0,0,0,1,51.508
+81,cot,RerankBGE,Queen Victoria,Queen Victoria,1,1,1,0,1002.223
+81,nocot,RerankBGE,Queen Victoria,Queen Victoria,1,1,1,0,1002.223
+81,cot,MultiQuery,Queen Victoria,Queen Victoria,1,1,1,0,0.982
+81,nocot,MultiQuery,Queen Victoria,Queen Victoria,1,1,1,0,0.982
+82,cot,Vanilla,NOT FOUND,Albany,0,0,0,1,0.557
+82,nocot,Vanilla,Columbus,Albany,0,0,0,0,0.557
+82,cot,SVSF,NOT FOUND,Albany,0,0,0,1,1.103
+82,nocot,SVSF,Columbus,Albany,0,0,0,0,1.103
+82,cot,MMR,NOT FOUND,Albany,0,0,0,1,1.022
+82,nocot,MMR,Albany,Albany,1,1,1,0,1.022
+82,cot,Rerank,Albany,Albany,1,1,1,0,55.192
+82,nocot,Rerank,Portland,Albany,0,0,0,0,55.192
+82,cot,RerankBGE,NOT FOUND,Albany,0,0,0,1,1036.531
+82,nocot,RerankBGE,Albany,Albany,1,1,1,0,1036.531
+82,cot,MultiQuery,New York City,Albany,0,0,0,0,1.071
+82,nocot,MultiQuery,New York City,Albany,0,0,0,0,1.071
+83,cot,Vanilla,Mexican peso,Mexican peso,1,1,1,0,0.555
+83,nocot,Vanilla,Mexican peso,Mexican peso,1,1,1,0,0.555
+83,cot,SVSF,Mexican peso,Mexican peso,1,1,1,0,1.686
+83,nocot,SVSF,Mexican peso,Mexican peso,1,1,1,0,1.686
+83,cot,MMR,NOT FOUND,Mexican peso,0,0,0,1,1.545
+83,nocot,MMR,peso,Mexican peso,0,1,1,0,1.545
+83,cot,Rerank,NOT FOUND,Mexican peso,0,0,0,1,51.72
+83,nocot,Rerank,Italian Lira,Mexican peso,0,0,0,0,51.72
+83,cot,RerankBGE,Peso,Mexican peso,0,1,1,0,1004.76
+83,nocot,RerankBGE,Pound sterling,Mexican peso,0,0,0,0,1004.76
+83,cot,MultiQuery,Mexican peso,Mexican peso,1,1,1,0,1.133
+83,nocot,MultiQuery,Mexican peso,Mexican peso,1,1,1,0,1.133
+84,cot,Vanilla,Canberra,Canberra,1,1,1,0,0.567
+84,nocot,Vanilla,Australia,Canberra,0,0,0,0,0.567
+84,cot,SVSF,Canberra,Canberra,1,1,1,0,0.796
+84,nocot,SVSF,Australia,Canberra,0,0,0,0,0.796
+84,cot,MMR,NOT FOUND,Canberra,0,0,0,1,0.751
+84,nocot,MMR,Moscow,Canberra,0,0,0,0,0.751
+84,cot,Rerank,Canberra,Canberra,1,1,1,0,49.854
+84,nocot,Rerank,Canberra,Canberra,1,1,1,0,49.854
+84,cot,RerankBGE,NOT FOUND,Canberra,0,0,0,1,1046.015
+84,nocot,RerankBGE,Canberra,Canberra,1,1,1,0,1046.015
+84,cot,MultiQuery,NOT FOUND,Canberra,0,0,0,1,1.089
+84,nocot,MultiQuery,Moscow,Canberra,0,0,0,0,1.089
+85,cot,Vanilla,Pound sterling,Danish krone,0,0,0,0,0.527
+85,nocot,Vanilla,Pound sterling,Danish krone,0,0,0,0,0.527
+85,cot,SVSF,NOT FOUND,Danish krone,0,0,0,1,0.793
+85,nocot,SVSF,Pound sterling,Danish krone,0,0,0,0,0.793
+85,cot,MMR,NOT FOUND,Danish krone,0,0,0,1,0.739
+85,nocot,MMR,Australian dollar,Danish krone,0,0,0,0,0.739
+85,cot,Rerank,NOT FOUND,Danish krone,0,0,0,1,50.288
+85,nocot,Rerank,Pound sterling,Danish krone,0,0,0,0,50.288
+85,cot,RerankBGE,Danish krone,Danish krone,1,1,1,0,1024.505
+85,nocot,RerankBGE,Norwegian krone,Danish krone,0,0,0,0,1024.505
+85,cot,MultiQuery,NOT FOUND,Danish krone,0,0,0,1,1.062
+85,nocot,MultiQuery,Indian Rupee,Danish krone,0,0,0,0,1.062
+86,cot,Vanilla,NOT FOUND,Mountain View,0,0,0,1,0.547
+86,nocot,Vanilla,"Hawthorne, California",Mountain View,0,0,0,0,0.547
+86,cot,SVSF,NOT FOUND,Mountain View,0,0,0,1,0.801
+86,nocot,SVSF,"Hawthorne, California",Mountain View,0,0,0,0,0.801
+86,cot,MMR,"Hawthorne, California",Mountain View,0,0,0,0,0.768
+86,nocot,MMR,"Hawthorne, California",Mountain View,0,0,0,0,0.768
+86,cot,Rerank,"Mountain View, California",Mountain View,1,1,1,0,49.578
+86,nocot,Rerank,Mountain View,Mountain View,1,1,1,0,49.578
+86,cot,RerankBGE,"Mountain View, California",Mountain View,1,1,1,0,1028.497
+86,nocot,RerankBGE,Mountain View,Mountain View,1,1,1,0,1028.497
+86,cot,MultiQuery,"Menlo Park, California",Mountain View,0,0,0,0,0.978
+86,nocot,MultiQuery,Menlo Park,Mountain View,0,0,0,0,0.978
+87,cot,Vanilla,Spree,Spree,1,1,1,0,0.558
+87,nocot,Vanilla,Spree,Spree,1,1,1,0,0.558
+87,cot,SVSF,NOT FOUND,Spree,0,0,0,1,0.788
+87,nocot,SVSF,Veneto,Spree,0,0,0,0,0.788
+87,cot,MMR,Tagus,Spree,0,0,0,0,0.741
+87,nocot,MMR,Manzanares,Spree,0,0,0,0,0.741
+87,cot,Rerank,NOT FOUND,Spree,0,0,0,1,50.378
+87,nocot,Rerank,Tagus River,Spree,0,0,0,0,50.378
+87,cot,RerankBGE,NOT FOUND,Spree,0,0,0,1,1025.075
+87,nocot,RerankBGE,River Seine,Spree,0,0,0,0,1025.075
+87,cot,MultiQuery,Spree,Spree,1,1,1,0,0.987
+87,nocot,MultiQuery,Spree river,Spree,1,1,1,0,0.987
+88,cot,Vanilla,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.539
+88,nocot,Vanilla,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.539
+88,cot,SVSF,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,0.772
+88,nocot,SVSF,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,0.772
+88,cot,MMR,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.746
+88,nocot,MMR,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,0.746
+88,cot,Rerank,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,47.887
+88,nocot,Rerank,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,47.887
+88,cot,RerankBGE,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,1002.569
+88,nocot,RerankBGE,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,1002.569
+88,cot,MultiQuery,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,0.953
+88,nocot,MultiQuery,Abraham Lincoln,Dwight D. Eisenhower,0,0,0,0,0.953
+89,cot,Vanilla,Spanish,Spanish,1,1,1,0,0.561
+89,nocot,Vanilla,Spanish,Spanish,1,1,1,0,0.561
+89,cot,SVSF,Spanish,Spanish,1,1,1,0,1.045
+89,nocot,SVSF,Spanish,Spanish,1,1,1,0,1.045
+89,cot,MMR,Spanish,Spanish,1,1,1,0,1.004
+89,nocot,MMR,Spanish,Spanish,1,1,1,0,1.004
+89,cot,Rerank,Spanish,Spanish,1,1,1,0,50.591
+89,nocot,Rerank,Spanish,Spanish,1,1,1,0,50.591
+89,cot,RerankBGE,French,Spanish,0,0,0,0,1034.624
+89,nocot,RerankBGE,French,Spanish,0,0,0,0,1034.624
+89,cot,MultiQuery,Spanish,Spanish,1,1,1,0,0.959
+89,nocot,MultiQuery,Spanish,Spanish,1,1,1,0,0.959
+90,cot,Vanilla,Euro,Euro,1,1,1,0,0.566
+90,nocot,Vanilla,Pound Sterling,Euro,0,0,0,0,0.566
+90,cot,SVSF,Euro,Euro,1,1,1,0,0.814
+90,nocot,SVSF,Pound Sterling,Euro,0,0,0,0,0.814
+90,cot,MMR,NOT FOUND,Euro,0,0,0,1,0.755
+90,nocot,MMR,Saint Helena pound,Euro,0,0,0,0,0.755
+90,cot,Rerank,Euro,Euro,1,1,1,0,48.741
+90,nocot,Rerank,Pound sterling,Euro,0,0,0,0,48.741
+90,cot,RerankBGE,Pound Sterling,Euro,0,0,0,0,965.381
+90,nocot,RerankBGE,Pound Sterling,Euro,0,0,0,0,965.381
+90,cot,MultiQuery,Euro,Euro,1,1,1,0,0.974
+90,nocot,MultiQuery,Pound Sterling,Euro,0,0,0,0,0.974
+91,cot,Vanilla,NOT FOUND,Franklin D. Roosevelt,0,0,0,1,0.553
+91,nocot,Vanilla,Dwight D. Eisenhower,Franklin D. Roosevelt,0,0,0,0,0.553
+91,cot,SVSF,Franklin D. Roosevelt,Franklin D. Roosevelt,1,1,1,0,0.785
+91,nocot,SVSF,Dwight D. Eisenhower,Franklin D. Roosevelt,0,0,0,0,0.785
+91,cot,MMR,Dwight D. Eisenhower,Franklin D. Roosevelt,0,0,0,0,0.753
+91,nocot,MMR,Dwight D. Eisenhower,Franklin D. Roosevelt,0,0,0,0,0.753
+91,cot,Rerank,NOT FOUND,Franklin D. Roosevelt,0,0,0,1,48.461
+91,nocot,Rerank,Dwight D. Eisenhower,Franklin D. Roosevelt,0,0,0,0,48.461
+91,cot,RerankBGE,Franklin D. Roosevelt,Franklin D. Roosevelt,1,1,1,0,971.13
+91,nocot,RerankBGE,Glenn T. Seaborg,Franklin D. Roosevelt,0,0,0,0,971.13
+91,cot,MultiQuery,Franklin D. Roosevelt,Franklin D. Roosevelt,1,1,1,0,0.956
+91,nocot,MultiQuery,Dwight D. Eisenhower,Franklin D. Roosevelt,0,0,0,0,0.956
+92,cot,Vanilla,Pico da Neblina,Mount Hoverla,0,0,0,0,0.563
+92,nocot,Vanilla,Pico da Neblina,Mount Hoverla,0,0,0,0,0.563
+92,cot,SVSF,Pico da Neblina,Mount Hoverla,0,0,0,0,0.782
+92,nocot,SVSF,Pico da Neblina,Mount Hoverla,0,0,0,0,0.782
+92,cot,MMR,NOT FOUND,Mount Hoverla,0,0,0,1,1.711
+92,nocot,MMR,Sněžka,Mount Hoverla,0,0,0,0,1.711
+92,cot,Rerank,NOT FOUND,Mount Hoverla,0,0,0,1,49.627
+92,nocot,Rerank,Pico da Neblina,Mount Hoverla,0,0,0,0,49.627
+92,cot,RerankBGE,NOT FOUND,Mount Hoverla,0,0,0,1,998.48
+92,nocot,RerankBGE,Pico da Neblina,Mount Hoverla,0,0,0,0,998.48
+92,cot,MultiQuery,NOT FOUND,Mount Hoverla,0,0,0,1,0.987
+92,nocot,MultiQuery,Pico da Neblina,Mount Hoverla,0,0,0,0,0.987
+93,cot,Vanilla,NOT FOUND,67,0,0,0,1,0.535
+93,nocot,Vanilla,94,67,0,0,0,0,0.535
+93,cot,SVSF,71,67,0,0,0,0,0.778
+93,nocot,SVSF,94,67,0,0,0,0,0.778
+93,cot,MMR,67,67,1,1,1,0,0.74
+93,nocot,MMR,94,67,0,0,0,0,0.74
+93,cot,Rerank,67,67,1,1,1,0,48.372
+93,nocot,Rerank,94,67,0,0,0,0,48.372
+93,cot,RerankBGE,67,67,1,1,1,0,1007.517
+93,nocot,RerankBGE,67,67,1,1,1,0,1007.517
+93,cot,MultiQuery,71,67,0,0,0,0,1.13
+93,nocot,MultiQuery,94,67,0,0,0,0,1.13
+94,cot,Vanilla,Tokugawa Shogunate,Tokugawa Shogunate,1,1,1,0,0.572
+94,nocot,Vanilla,Tokugawa shogunate,Tokugawa Shogunate,1,1,1,0,0.572
+94,cot,SVSF,Tokugawa shogunate,Tokugawa Shogunate,1,1,1,0,0.803
+94,nocot,SVSF,NOT FOUND,Tokugawa Shogunate,0,0,0,1,0.803
+94,cot,MMR,Tokugawa shogunate,Tokugawa Shogunate,1,1,1,0,0.76
+94,nocot,MMR,Edo period,Tokugawa Shogunate,0,0,0,0,0.76
+94,cot,Rerank,Tokugawa Shogunate,Tokugawa Shogunate,1,1,1,0,49.465
+94,nocot,Rerank,Empire of Japan,Tokugawa Shogunate,0,0,0,0,49.465
+94,cot,RerankBGE,Tokugawa Shogunate,Tokugawa Shogunate,1,1,1,0,1007.777
+94,nocot,RerankBGE,Tokugawa Shogunate,Tokugawa Shogunate,1,1,1,0,1007.777
+94,cot,MultiQuery,Tokugawa shogunate,Tokugawa Shogunate,1,1,1,0,1.06
+94,nocot,MultiQuery,Empire of Japan,Tokugawa Shogunate,0,0,0,0,1.06
+95,cot,Vanilla,Pearl River,Alabama River,0,0,0,0,0.557
+95,nocot,Vanilla,Pearl River,Alabama River,0,0,0,0,0.557
+95,cot,SVSF,Pearl River,Alabama River,0,0,0,0,0.807
+95,nocot,SVSF,Pearl River,Alabama River,0,0,0,0,0.807
+95,cot,MMR,Missouri River,Alabama River,0,0,0,0,0.783
+95,nocot,MMR,Mississippi River,Alabama River,0,0,0,0,0.783
+95,cot,Rerank,Alabama River,Alabama River,1,1,1,0,52.174
+95,nocot,Rerank,Alabama River,Alabama River,1,1,1,0,52.174
+95,cot,RerankBGE,Alabama River,Alabama River,1,1,1,0,1013.43
+95,nocot,RerankBGE,Alabama River,Alabama River,1,1,1,0,1013.43
+95,cot,MultiQuery,Mississippi River,Alabama River,0,0,0,0,0.988
+95,nocot,MultiQuery,Alabama River,Alabama River,1,1,1,0,0.988
+96,cot,Vanilla,Canberra,"Washington, D.C.",0,0,0,0,0.602
+96,nocot,Vanilla,Ottawa,"Washington, D.C.",0,0,0,0,0.602
+96,cot,SVSF,Washington D.C.,"Washington, D.C.",1,1,1,0,1.05
+96,nocot,SVSF,Ottawa,"Washington, D.C.",0,0,0,0,1.05
+96,cot,MMR,Canberra,"Washington, D.C.",0,0,0,0,1.02
+96,nocot,MMR,Ajaccio,"Washington, D.C.",0,0,0,0,1.02
+96,cot,Rerank,Canberra,"Washington, D.C.",0,0,0,0,50.018
+96,nocot,Rerank,Sydney,"Washington, D.C.",0,0,0,0,50.018
+96,cot,RerankBGE,Canberra,"Washington, D.C.",0,0,0,0,1034.114
+96,nocot,RerankBGE,Canberra,"Washington, D.C.",0,0,0,0,1034.114
+96,cot,MultiQuery,Ottawa,"Washington, D.C.",0,0,0,0,0.948
+96,nocot,MultiQuery,Ottawa,"Washington, D.C.",0,0,0,0,0.948
+97,cot,Vanilla,Pound sterling,Pound sterling,1,1,1,0,0.669
+97,nocot,Vanilla,Pound sterling,Pound sterling,1,1,1,0,0.669
+97,cot,SVSF,Pound sterling,Pound sterling,1,1,1,0,0.857
+97,nocot,SVSF,Pound sterling,Pound sterling,1,1,1,0,0.857
+97,cot,MMR,Pound sterling,Pound sterling,1,1,1,0,0.794
+97,nocot,MMR,Pound sterling,Pound sterling,1,1,1,0,0.794
+97,cot,Rerank,Pound sterling,Pound sterling,1,1,1,0,49.234
+97,nocot,Rerank,Pound sterling,Pound sterling,1,1,1,0,49.234
+97,cot,RerankBGE,Pound sterling,Pound sterling,1,1,1,0,1001.38
+97,nocot,RerankBGE,Pound sterling,Pound sterling,1,1,1,0,1001.38
+97,cot,MultiQuery,Pound sterling,Pound sterling,1,1,1,0,1.109
+97,nocot,MultiQuery,Pound sterling,Pound sterling,1,1,1,0,1.109
+98,cot,Vanilla,95,95,1,1,1,0,0.57
+98,nocot,Vanilla,95,95,1,1,1,0,0.57
+98,cot,SVSF,NOT FOUND,95,0,0,0,1,0.803
+98,nocot,SVSF,111,95,0,0,0,0,0.803
+98,cot,MMR,95,95,1,1,1,0,0.732
+98,nocot,MMR,95,95,1,1,1,0,0.732
+98,cot,Rerank,95,95,1,1,1,0,52.177
+98,nocot,Rerank,63,95,0,0,0,0,52.177
+98,cot,RerankBGE,63,95,0,0,0,0,1015.587
+98,nocot,RerankBGE,63,95,0,0,0,0,1015.587
+98,cot,MultiQuery,111,95,0,0,0,0,0.977
+98,nocot,MultiQuery,111,95,0,0,0,0,0.977
+99,cot,Vanilla,Titania,Titania,1,1,1,0,0.571
+99,nocot,Vanilla,Triton,Titania,0,0,0,0,0.571
+99,cot,SVSF,Titania,Titania,1,1,1,0,0.807
+99,nocot,SVSF,Titania,Titania,1,1,1,0,0.807
+99,cot,MMR,Titania,Titania,1,1,1,0,0.742
+99,nocot,MMR,Triton,Titania,0,0,0,0,0.742
+99,cot,Rerank,Titania,Titania,1,1,1,0,47.461
+99,nocot,Rerank,Titania,Titania,1,1,1,0,47.461
+99,cot,RerankBGE,Titania,Titania,1,1,1,0,987.91
+99,nocot,RerankBGE,Titania,Titania,1,1,1,0,987.91
+99,cot,MultiQuery,Titania,Titania,1,1,1,0,1.048
+99,nocot,MultiQuery,Triton,Titania,0,0,0,0,1.048
+100,cot,Vanilla,New Zealand dollar,New Zealand dollar,1,1,1,0,0.61
+100,nocot,Vanilla,New Zealand dollar,New Zealand dollar,1,1,1,0,0.61
+100,cot,SVSF,US Dollar,New Zealand dollar,0,0,0,0,1.053
+100,nocot,SVSF,Euro,New Zealand dollar,0,0,0,0,1.053
+100,cot,MMR,Euro,New Zealand dollar,0,0,0,0,1.016
+100,nocot,MMR,Euro,New Zealand dollar,0,0,0,0,1.016
+100,cot,Rerank,NOT FOUND,New Zealand dollar,0,0,0,1,50.844
+100,nocot,Rerank,Norwegian krone,New Zealand dollar,0,0,0,0,50.844
+100,cot,RerankBGE,NOT FOUND,New Zealand dollar,0,0,0,1,1037.267
+100,nocot,RerankBGE,Czech koruna,New Zealand dollar,0,0,0,0,1037.267
+100,cot,MultiQuery,New Zealand dollar,New Zealand dollar,1,1,1,0,1.054
+100,nocot,MultiQuery,Euro,New Zealand dollar,0,0,0,0,1.054
+101,cot,Vanilla,Baltic Sea,Baltic Sea,1,1,1,0,0.559
+101,nocot,Vanilla,Baltic Sea,Baltic Sea,1,1,1,0,0.559
+101,cot,SVSF,Baltic Sea,Baltic Sea,1,1,1,0,0.801
+101,nocot,SVSF,Baltic Sea,Baltic Sea,1,1,1,0,0.801
+101,cot,MMR,NOT FOUND,Baltic Sea,0,0,0,1,0.76
+101,nocot,MMR,Gulf of Finland,Baltic Sea,0,0,0,0,0.76
+101,cot,Rerank,Baltic Sea,Baltic Sea,1,1,1,0,49.545
+101,nocot,Rerank,Baltic Sea,Baltic Sea,1,1,1,0,49.545
+101,cot,RerankBGE,Baltic Sea,Baltic Sea,1,1,1,0,994.317
+101,nocot,RerankBGE,Neva River,Baltic Sea,0,0,0,0,994.317
+101,cot,MultiQuery,Baltic Sea,Baltic Sea,1,1,1,0,0.906
+101,nocot,MultiQuery,Baltic Sea,Baltic Sea,1,1,1,0,0.906
+102,cot,Vanilla,Giovanni Spadolini,Giovanni Spadolini,1,1,1,0,0.61
+102,nocot,Vanilla,Margaret Thatcher,Giovanni Spadolini,0,0,0,0,0.61
+102,cot,SVSF,Giovanni Spadolini,Giovanni Spadolini,1,1,1,0,1.048
+102,nocot,SVSF,Giovanni Spadolini,Giovanni Spadolini,1,1,1,0,1.048
+102,cot,MMR,Margaret Thatcher,Giovanni Spadolini,0,0,0,0,1.011
+102,nocot,MMR,Margaret Thatcher,Giovanni Spadolini,0,0,0,0,1.011
+102,cot,Rerank,Margaret Thatcher,Giovanni Spadolini,0,0,0,0,49.489
+102,nocot,Rerank,Giovanni Spadolini,Giovanni Spadolini,1,1,1,0,49.489
+102,cot,RerankBGE,Giovanni Spadolini,Giovanni Spadolini,1,1,1,0,981.747
+102,nocot,RerankBGE,Giovanni Spadolini,Giovanni Spadolini,1,1,1,0,981.747
+102,cot,MultiQuery,Margaret Thatcher,Giovanni Spadolini,0,0,0,0,0.971
+102,nocot,MultiQuery,Margaret Thatcher,Giovanni Spadolini,0,0,0,0,0.971
+103,cot,Vanilla,12,Group 12,0,1,1,0,0.583
+103,nocot,Vanilla,Group 12,Group 12,1,1,1,0,0.583
+103,cot,SVSF,12,Group 12,0,1,1,0,0.79
+103,nocot,SVSF,Group 12,Group 12,1,1,1,0,0.79
+103,cot,MMR,NOT FOUND,Group 12,0,0,0,1,0.724
+103,nocot,MMR,112,Group 12,0,0,0,0,0.724
+103,cot,Rerank,Group 12,Group 12,1,1,1,0,48.747
+103,nocot,Rerank,Group 12,Group 12,1,1,1,0,48.747
+103,cot,RerankBGE,Group 11,Group 12,0,0,0,0,1005.787
+103,nocot,RerankBGE,Group 12,Group 12,1,1,1,0,1005.787
+103,cot,MultiQuery,12,Group 12,0,1,1,0,1.052
+103,nocot,MultiQuery,Group 12,Group 12,1,1,1,0,1.052
+104,cot,Vanilla,NOT FOUND,Chesapeake Bay,0,0,0,1,0.585
+104,nocot,Vanilla,Chesapeake Bay,Chesapeake Bay,1,1,1,0,0.585
+104,cot,SVSF,Chesapeake Bay,Chesapeake Bay,1,1,1,0,1.052
+104,nocot,SVSF,Chesapeake Bay,Chesapeake Bay,1,1,1,0,1.052
+104,cot,MMR,Chesapeake Bay,Chesapeake Bay,1,1,1,0,1.019
+104,nocot,MMR,Chesapeake Bay,Chesapeake Bay,1,1,1,0,1.019
+104,cot,Rerank,NOT FOUND,Chesapeake Bay,0,0,0,1,49.778
+104,nocot,Rerank,Chesapeake Bay,Chesapeake Bay,1,1,1,0,49.778
+104,cot,RerankBGE,NOT FOUND,Chesapeake Bay,0,0,0,1,1006.663
+104,nocot,RerankBGE,Chesapeake Bay,Chesapeake Bay,1,1,1,0,1006.663
+104,cot,MultiQuery,Chesapeake Bay,Chesapeake Bay,1,1,1,0,1.421
+104,nocot,MultiQuery,Chesapeake Bay,Chesapeake Bay,1,1,1,0,1.421
+105,cot,Vanilla,George II,George II,1,1,1,0,0.641
+105,nocot,Vanilla,George II of Great Britain,George II,1,1,1,0,0.641
+105,cot,SVSF,George II,George II,1,1,1,0,1.084
+105,nocot,SVSF,George II of Great Britain,George II,1,1,1,0,1.084
+105,cot,MMR,George II,George II,1,1,1,0,1.029
+105,nocot,MMR,George II,George II,1,1,1,0,1.029
+105,cot,Rerank,George II,George II,1,1,1,0,48.836
+105,nocot,Rerank,George II of Great Britain,George II,1,1,1,0,48.836
+105,cot,RerankBGE,George II,George II,1,1,1,0,968.694
+105,nocot,RerankBGE,George II of Great Britain,George II,1,1,1,0,968.694
+105,cot,MultiQuery,George II,George II,1,1,1,0,1.092
+105,nocot,MultiQuery,George II of Great Britain,George II,1,1,1,0,1.092
+106,cot,Vanilla,NOT FOUND,Ottawa River,0,0,0,1,0.54
+106,nocot,Vanilla,Danube River,Ottawa River,0,0,0,0,0.54
+106,cot,SVSF,Potomac River,Ottawa River,0,0,0,0,1.201
+106,nocot,SVSF,Potomac River,Ottawa River,0,0,0,0,1.201
+106,cot,MMR,Potomac River,Ottawa River,0,0,0,0,1.011
+106,nocot,MMR,Danube River,Ottawa River,0,0,0,0,1.011
+106,cot,Rerank,NOT FOUND,Ottawa River,0,0,0,1,49.478
+106,nocot,Rerank,Black Sea,Ottawa River,0,0,0,0,49.478
+106,cot,RerankBGE,NOT FOUND,Ottawa River,0,0,0,1,1003.006
+106,nocot,RerankBGE,Pearl River,Ottawa River,0,0,0,0,1003.006
+106,cot,MultiQuery,Ottawa River,Ottawa River,1,1,1,0,1.108
+106,nocot,MultiQuery,Ottawa River,Ottawa River,1,1,1,0,1.108
+107,cot,Vanilla,NOT FOUND,50,0,0,0,1,0.541
+107,nocot,Vanilla,110,50,0,0,0,0,0.541
+107,cot,SVSF,NOT FOUND,50,0,0,0,1,1.055
+107,nocot,SVSF,110,50,0,0,0,0,1.055
+107,cot,MMR,50,50,1,1,1,0,0.991
+107,nocot,MMR,50,50,1,1,1,0,0.991
+107,cot,Rerank,50,50,1,1,1,0,52.007
+107,nocot,Rerank,30,50,0,0,0,0,52.007
+107,cot,RerankBGE,50,50,1,1,1,0,1064.28
+107,nocot,RerankBGE,30,50,0,0,0,0,1064.28
+107,cot,MultiQuery,50,50,1,1,1,0,1.058
+107,nocot,MultiQuery,50,50,1,1,1,0,1.058
+108,cot,Vanilla,Signal de Botrange,Signal de Botrange,1,1,1,0,0.588
+108,nocot,Vanilla,NOT FOUND,Signal de Botrange,0,0,0,1,0.588
+108,cot,SVSF,Signal de Botrange,Signal de Botrange,1,1,1,0,1.086
+108,nocot,SVSF,NOT FOUND,Signal de Botrange,0,0,0,1,1.086
+108,cot,MMR,NOT FOUND,Signal de Botrange,0,0,0,1,1.0
+108,nocot,MMR,Mount Everest,Signal de Botrange,0,0,0,0,1.0
+108,cot,Rerank,NOT FOUND,Signal de Botrange,0,0,0,1,48.227
+108,nocot,Rerank,Mount Everest,Signal de Botrange,0,0,0,0,48.227
+108,cot,RerankBGE,NOT FOUND,Signal de Botrange,0,0,0,1,973.359
+108,nocot,RerankBGE,Mont Blanc,Signal de Botrange,0,0,0,0,973.359
+108,cot,MultiQuery,Signal de Botrange,Signal de Botrange,1,1,1,0,1.426
+108,nocot,MultiQuery,Mont Blanc,Signal de Botrange,0,0,0,0,1.426
+109,cot,Vanilla,Bruce Beresford,Bruce Beresford,1,1,1,0,0.558
+109,nocot,Vanilla,Bruce Beresford,Bruce Beresford,1,1,1,0,0.558
+109,cot,SVSF,Bruce Beresford,Bruce Beresford,1,1,1,0,1.081
+109,nocot,SVSF,Bruce Beresford,Bruce Beresford,1,1,1,0,1.081
+109,cot,MMR,NOT FOUND,Bruce Beresford,0,0,0,1,1.062
+109,nocot,MMR,Bruce Beresford,Bruce Beresford,1,1,1,0,1.062
+109,cot,Rerank,Bruce Beresford,Bruce Beresford,1,1,1,0,49.407
+109,nocot,Rerank,Tony Scott,Bruce Beresford,0,0,0,0,49.407
+109,cot,RerankBGE,Oliver Stone,Bruce Beresford,0,0,0,0,966.26
+109,nocot,RerankBGE,Bruce Beresford,Bruce Beresford,1,1,1,0,966.26
+109,cot,MultiQuery,Oliver Stone,Bruce Beresford,0,0,0,0,1.091
+109,nocot,MultiQuery,Bruce Beresford,Bruce Beresford,1,1,1,0,1.091
+110,cot,Vanilla,NOT FOUND,Black Elk Peak,0,0,0,1,0.598
+110,nocot,Vanilla,Denali,Black Elk Peak,0,0,0,0,0.598
+110,cot,SVSF,Denali,Black Elk Peak,0,0,0,0,1.059
+110,nocot,SVSF,Denali,Black Elk Peak,0,0,0,0,1.059
+110,cot,MMR,"7,244 feet (2,208 m)",Black Elk Peak,0,0,0,0,0.99
+110,nocot,MMR,South Dakota,Black Elk Peak,0,0,0,0,0.99
+110,cot,Rerank,Black Elk Peak,Black Elk Peak,1,1,1,0,48.752
+110,nocot,Rerank,Black Elk Peak,Black Elk Peak,1,1,1,0,48.752
+110,cot,RerankBGE,Mount Whitney,Black Elk Peak,0,0,0,0,1003.411
+110,nocot,RerankBGE,Mount Whitney,Black Elk Peak,0,0,0,0,1003.411
+110,cot,MultiQuery,Denali,Black Elk Peak,0,0,0,0,1.128
+110,nocot,MultiQuery,Denali,Black Elk Peak,0,0,0,0,1.128
+111,cot,Vanilla,Barcelona,Barcelona,1,1,1,0,0.541
+111,nocot,Vanilla,Figueres,Barcelona,0,0,0,0,0.541
+111,cot,SVSF,NOT FOUND,Barcelona,0,0,0,1,1.042
+111,nocot,SVSF,Figueres,Barcelona,0,0,0,0,1.042
+111,cot,MMR,NOT FOUND,Barcelona,0,0,0,1,0.999
+111,nocot,MMR,Figueres,Barcelona,0,0,0,0,0.999
+111,cot,Rerank,Seville,Barcelona,0,0,0,0,50.389
+111,nocot,Rerank,Figueres,Barcelona,0,0,0,0,50.389
+111,cot,RerankBGE,NOT FOUND,Barcelona,0,0,0,1,1051.034
+111,nocot,RerankBGE,Seville,Barcelona,0,0,0,0,1051.034
+111,cot,MultiQuery,NOT FOUND,Barcelona,0,0,0,1,1.078
+111,nocot,MultiQuery,Seville,Barcelona,0,0,0,0,1.078
+112,cot,Vanilla,France,France,1,1,1,0,0.591
+112,nocot,Vanilla,France,France,1,1,1,0,0.591
+112,cot,SVSF,France,France,1,1,1,0,0.791
+112,nocot,SVSF,France,France,1,1,1,0,0.791
+112,cot,MMR,Switzerland,France,0,0,0,0,0.779
+112,nocot,MMR,Switzerland,France,0,0,0,0,0.779
+112,cot,Rerank,Switzerland,France,0,0,0,0,47.875
+112,nocot,Rerank,Switzerland,France,0,0,0,0,47.875
+112,cot,RerankBGE,France,France,1,1,1,0,1027.055
+112,nocot,RerankBGE,France,France,1,1,1,0,1027.055
+112,cot,MultiQuery,France,France,1,1,1,0,0.911
+112,nocot,MultiQuery,France,France,1,1,1,0,0.911
+113,cot,Vanilla,NOT FOUND,Valladolid,0,0,0,1,0.538
+113,nocot,Vanilla,Minas Gerais,Valladolid,0,0,0,0,0.538
+113,cot,SVSF,NOT FOUND,Valladolid,0,0,0,1,0.787
+113,nocot,SVSF,Madrid,Valladolid,0,0,0,0,0.787
+113,cot,MMR,Madrid,Valladolid,0,0,0,0,0.742
+113,nocot,MMR,"Chicago, Illinois",Valladolid,0,0,0,0,0.742
+113,cot,Rerank,Madrid,Valladolid,0,0,0,0,50.343
+113,nocot,Rerank,Madrid,Valladolid,0,0,0,0,50.343
+113,cot,RerankBGE,Valladolid,Valladolid,1,1,1,0,984.324
+113,nocot,RerankBGE,Valladolid,Valladolid,1,1,1,0,984.324
+113,cot,MultiQuery,NOT FOUND,Valladolid,0,0,0,1,0.96
+113,nocot,MultiQuery,Dunston,Valladolid,0,0,0,0,0.96
+114,cot,Vanilla,NOT FOUND,Puerperal fever,0,0,0,1,0.611
+114,nocot,Vanilla,died mere days after giving birth to her,Puerperal fever,0,0,0,0,0.611
+114,cot,SVSF,NOT FOUND,Puerperal fever,0,0,0,1,0.806
+114,nocot,SVSF,died mere days after giving birth to her,Puerperal fever,0,0,0,0,0.806
+114,cot,MMR,puerperal fever,Puerperal fever,1,1,1,0,0.749
+114,nocot,MMR,puerperal fever,Puerperal fever,1,1,1,0,0.749
+114,cot,Rerank,Puerperal fever,Puerperal fever,1,1,1,0,49.32
+114,nocot,Rerank,Puerperal fever,Puerperal fever,1,1,1,0,49.32
+114,cot,RerankBGE,childbirth,Puerperal fever,0,0,0,0,1015.901
+114,nocot,RerankBGE,died mere days after giving birth,Puerperal fever,0,0,0,0,1015.901
+114,cot,MultiQuery,Died shortly after childbirth,Puerperal fever,0,0,1,0,0.935
+114,nocot,MultiQuery,died mere days after giving birth to her,Puerperal fever,0,0,0,0,0.935
+115,cot,Vanilla,Gloucestershire,Gloucestershire,1,1,1,0,0.546
+115,nocot,Vanilla,Gloucestershire,Gloucestershire,1,1,1,0,0.546
+115,cot,SVSF,Gloucestershire,Gloucestershire,1,1,1,0,0.849
+115,nocot,SVSF,Gloucestershire,Gloucestershire,1,1,1,0,0.849
+115,cot,MMR,Gloucestershire,Gloucestershire,1,1,1,0,0.77
+115,nocot,MMR,Gloucestershire,Gloucestershire,1,1,1,0,0.77
+115,cot,Rerank,Gloucestershire,Gloucestershire,1,1,1,0,48.881
+115,nocot,Rerank,Gloucestershire,Gloucestershire,1,1,1,0,48.881
+115,cot,RerankBGE,Gloucestershire,Gloucestershire,1,1,1,0,974.232
+115,nocot,RerankBGE,Gloucestershire,Gloucestershire,1,1,1,0,974.232
+115,cot,MultiQuery,Gloucestershire,Gloucestershire,1,1,1,0,0.968
+115,nocot,MultiQuery,Gloucestershire,Gloucestershire,1,1,1,0,0.968
+116,cot,Vanilla,NOT FOUND,Constanța,0,0,0,1,0.554
+116,nocot,Vanilla,Tomis,Constanța,0,0,1,0,0.554
+116,cot,SVSF,NOT FOUND,Constanța,0,0,0,1,0.795
+116,nocot,SVSF,Tomis,Constanța,0,0,1,0,0.795
+116,cot,MMR,Brindisi,Constanța,0,0,0,0,0.745
+116,nocot,MMR,Brundisium,Constanța,0,0,0,0,0.745
+116,cot,Rerank,NOT FOUND,Constanța,0,0,0,1,46.962
+116,nocot,Rerank,Brundisium,Constanța,0,0,0,0,46.962
+116,cot,RerankBGE,Constanța,Constanța,1,1,1,0,1013.408
+116,nocot,RerankBGE,Constanța,Constanța,1,1,1,0,1013.408
+116,cot,MultiQuery,NOT FOUND,Constanța,0,0,0,1,0.971
+116,nocot,MultiQuery,Tomis,Constanța,0,0,1,0,0.971
+117,cot,Vanilla,Maywood,Maywood,1,1,1,0,0.545
+117,nocot,Vanilla,Maywood,Maywood,1,1,1,0,0.545
+117,cot,SVSF,Maywood,Maywood,1,1,1,0,0.828
+117,nocot,SVSF,Maywood,Maywood,1,1,1,0,0.828
+117,cot,MMR,Maywood,Maywood,1,1,1,0,0.81
+117,nocot,MMR,Maywood,Maywood,1,1,1,0,0.81
+117,cot,Rerank,Maywood,Maywood,1,1,1,0,48.377
+117,nocot,Rerank,Maywood,Maywood,1,1,1,0,48.377
+117,cot,RerankBGE,Maywood,Maywood,1,1,1,0,982.102
+117,nocot,RerankBGE,Maywood,Maywood,1,1,1,0,982.102
+117,cot,MultiQuery,Maywood,Maywood,1,1,1,0,1.003
+117,nocot,MultiQuery,Maywood,Maywood,1,1,1,0,1.003
+118,cot,Vanilla,Adelaide,Adelaide,1,1,1,0,0.554
+118,nocot,Vanilla,Salzburg,Adelaide,0,0,0,0,0.554
+118,cot,SVSF,Adelaide,Adelaide,1,1,1,0,1.514
+118,nocot,SVSF,Salzburg,Adelaide,0,0,0,0,1.514
+118,cot,MMR,Adelaide,Adelaide,1,1,1,0,1.562
+118,nocot,MMR,Adelaide,Adelaide,1,1,1,0,1.562
+118,cot,Rerank,Adelaide,Adelaide,1,1,1,0,51.041
+118,nocot,Rerank,Adelaide,Adelaide,1,1,1,0,51.041
+118,cot,RerankBGE,Adelaide,Adelaide,1,1,1,0,967.518
+118,nocot,RerankBGE,Adelaide,Adelaide,1,1,1,0,967.518
+118,cot,MultiQuery,Adelaide,Adelaide,1,1,1,0,1.105
+118,nocot,MultiQuery,Adelaide,Adelaide,1,1,1,0,1.105
+119,cot,Vanilla,NOT FOUND,Brown thrasher,0,0,0,1,0.567
+119,nocot,Vanilla,California quail,Brown thrasher,0,0,0,0,0.567
+119,cot,SVSF,Georgia,Brown thrasher,0,0,0,0,0.795
+119,nocot,SVSF,California quail,Brown thrasher,0,0,0,0,0.795
+119,cot,MMR,Brown thrasher,Brown thrasher,1,1,1,0,0.792
+119,nocot,MMR,Brown thrasher,Brown thrasher,1,1,1,0,0.792
+119,cot,Rerank,NOT FOUND,Brown thrasher,0,0,0,1,46.595
+119,nocot,Rerank,Northern Bobwhite,Brown thrasher,0,0,0,0,46.595
+119,cot,RerankBGE,California quail,Brown thrasher,0,0,0,0,965.613
+119,nocot,RerankBGE,brown thrasher,Brown thrasher,1,1,1,0,965.613
+119,cot,MultiQuery,brown thrasher,Brown thrasher,1,1,1,0,0.971
+119,nocot,MultiQuery,brown thrasher,Brown thrasher,1,1,1,0,0.971
+120,cot,Vanilla,NOT FOUND,Robert Benton,0,0,0,1,0.585
+120,nocot,Vanilla,Francis Ford Coppola,Robert Benton,0,0,0,0,0.585
+120,cot,SVSF,Robert Benton,Robert Benton,1,1,1,0,1.376
+120,nocot,SVSF,Francis Ford Coppola,Robert Benton,0,0,0,0,1.376
+120,cot,MMR,NOT FOUND,Robert Benton,0,0,0,1,1.528
+120,nocot,MMR,Francis Ford Coppola,Robert Benton,0,0,0,0,1.528
+120,cot,Rerank,Francis Ford Coppola,Robert Benton,0,0,0,0,51.79
+120,nocot,Rerank,Francis Ford Coppola,Robert Benton,0,0,0,0,51.79
+120,cot,RerankBGE,NOT FOUND,Robert Benton,0,0,0,1,1015.572
+120,nocot,RerankBGE,Francis Ford Coppola,Robert Benton,0,0,0,0,1015.572
+120,cot,MultiQuery,NOT FOUND,Robert Benton,0,0,0,1,0.958
+120,nocot,MultiQuery,Francis Ford Coppola,Robert Benton,0,0,0,0,0.958
+121,cot,Vanilla,Northampton,Northampton,1,1,1,0,0.58
+121,nocot,Vanilla,Northampton,Northampton,1,1,1,0,0.58
+121,cot,SVSF,Northampton,Northampton,1,1,1,0,1.848
+121,nocot,SVSF,Northampton,Northampton,1,1,1,0,1.848
+121,cot,MMR,Northampton,Northampton,1,1,1,0,1.524
+121,nocot,MMR,Northampton,Northampton,1,1,1,0,1.524
+121,cot,Rerank,Northampton,Northampton,1,1,1,0,50.19
+121,nocot,Rerank,Northampton,Northampton,1,1,1,0,50.19
+121,cot,RerankBGE,Northampton,Northampton,1,1,1,0,1042.366
+121,nocot,RerankBGE,Northampton,Northampton,1,1,1,0,1042.366
+121,cot,MultiQuery,Northampton,Northampton,1,1,1,0,0.971
+121,nocot,MultiQuery,"Chicago, Illinois",Northampton,0,0,0,0,0.971
+122,cot,Vanilla,Beijing,Yichang,0,0,0,0,0.526
+122,nocot,Vanilla,Beijing,Yichang,0,0,0,0,0.526
+122,cot,SVSF,Beijing,Yichang,0,0,0,0,0.801
+122,nocot,SVSF,Beijing,Yichang,0,0,0,0,0.801
+122,cot,MMR,NOT FOUND,Yichang,0,0,0,1,0.755
+122,nocot,MMR,Beijing,Yichang,0,0,0,0,0.755
+122,cot,Rerank,NOT FOUND,Yichang,0,0,0,1,47.029
+122,nocot,Rerank,Beijing,Yichang,0,0,0,0,47.029
+122,cot,RerankBGE,Yichang,Yichang,1,1,1,0,1006.537
+122,nocot,RerankBGE,Yichang,Yichang,1,1,1,0,1006.537
+122,cot,MultiQuery,Beijing,Yichang,0,0,0,0,0.987
+122,nocot,MultiQuery,Beijing,Yichang,0,0,0,0,0.987
+123,cot,Vanilla,NOT FOUND,Royal Society of London,0,0,0,1,0.561
+123,nocot,Vanilla,French Academy of Sciences,Royal Society of London,0,0,0,0,0.561
+123,cot,SVSF,French Academy of Sciences,Royal Society of London,0,0,0,0,0.804
+123,nocot,SVSF,French Academy of Sciences,Royal Society of London,0,0,0,0,0.804
+123,cot,MMR,Royal Society of London,Royal Society of London,1,1,1,0,0.79
+123,nocot,MMR,Royal Society of London,Royal Society of London,1,1,1,0,0.79
+123,cot,Rerank,NOT FOUND,Royal Society of London,0,0,0,1,52.447
+123,nocot,Rerank,French Academy of Sciences,Royal Society of London,0,0,0,0,52.447
+123,cot,RerankBGE,NOT FOUND,Royal Society of London,0,0,0,1,1036.27
+123,nocot,RerankBGE,Cavendish Laboratory,Royal Society of London,0,0,0,0,1036.27
+123,cot,MultiQuery,French Academy of Sciences,Royal Society of London,0,0,0,0,0.949
+123,nocot,MultiQuery,French Academy of Sciences,Royal Society of London,0,0,0,0,0.949
+124,cot,Vanilla,Bihar,Bihar,1,1,1,0,0.533
+124,nocot,Vanilla,Bihar,Bihar,1,1,1,0,0.533
+124,cot,SVSF,Bihar,Bihar,1,1,1,0,0.782
+124,nocot,SVSF,Bihar,Bihar,1,1,1,0,0.782
+124,cot,MMR,NOT FOUND,Bihar,0,0,0,1,0.729
+124,nocot,MMR,Bihar,Bihar,1,1,1,0,0.729
+124,cot,Rerank,NOT FOUND,Bihar,0,0,0,1,52.812
+124,nocot,Rerank,NOT FOUND,Bihar,0,0,0,1,52.812
+124,cot,RerankBGE,Bihar,Bihar,1,1,1,0,1001.813
+124,nocot,RerankBGE,West Bengal,Bihar,0,0,0,0,1001.813
+124,cot,MultiQuery,NOT FOUND,Bihar,0,0,0,1,1.04
+124,nocot,MultiQuery,Bihar,Bihar,1,1,1,0,1.04
+125,cot,Vanilla,River Thames,River Cam,0,0,0,0,0.575
+125,nocot,Vanilla,River Thames,River Cam,0,0,0,0,0.575
+125,cot,SVSF,River Thames,River Cam,0,0,0,0,0.775
+125,nocot,SVSF,River Thames,River Cam,0,0,0,0,0.775
+125,cot,MMR,River Cam,River Cam,1,1,1,0,0.747
+125,nocot,MMR,River Cam,River Cam,1,1,1,0,0.747
+125,cot,Rerank,River Thames,River Cam,0,0,0,0,51.247
+125,nocot,Rerank,River Thames,River Cam,0,0,0,0,51.247
+125,cot,RerankBGE,River,River Cam,0,1,0,0,1056.198
+125,nocot,RerankBGE,River Thames,River Cam,0,0,0,0,1056.198
+125,cot,MultiQuery,River Thames,River Cam,0,0,0,0,0.976
+125,nocot,MultiQuery,River Thames,River Cam,0,0,0,0,0.976
+126,cot,Vanilla,sterling silver,Sterling silver,1,1,1,0,0.546
+126,nocot,Vanilla,silver and nickel,Sterling silver,0,0,0,0,0.546
+126,cot,SVSF,sterling silver,Sterling silver,1,1,1,0,1.776
+126,nocot,SVSF,silver and nickel,Sterling silver,0,0,0,0,1.776
+126,cot,MMR,silver and nickel,Sterling silver,0,0,0,0,1.729
+126,nocot,MMR,silver and nickel,Sterling silver,0,0,0,0,1.729
+126,cot,Rerank,sterling silver,Sterling silver,1,1,1,0,52.634
+126,nocot,Rerank,sterling silver,Sterling silver,1,1,1,0,52.634
+126,cot,RerankBGE,sterling silver,Sterling silver,1,1,1,0,1042.924
+126,nocot,RerankBGE,sterling silver,Sterling silver,1,1,1,0,1042.924
+126,cot,MultiQuery,sterling silver,Sterling silver,1,1,1,0,0.962
+126,nocot,MultiQuery,silver and nickel,Sterling silver,0,0,0,0,0.962
+127,cot,Vanilla,Bern,Bern,1,1,1,0,0.556
+127,nocot,Vanilla,Bern,Bern,1,1,1,0,0.556
+127,cot,SVSF,Bern,Bern,1,1,1,0,0.787
+127,nocot,SVSF,Bern,Bern,1,1,1,0,0.787
+127,cot,MMR,Bern,Bern,1,1,1,0,0.756
+127,nocot,MMR,Rome,Bern,0,0,0,0,0.756
+127,cot,Rerank,Bern,Bern,1,1,1,0,50.45
+127,nocot,Rerank,Bern,Bern,1,1,1,0,50.45
+127,cot,RerankBGE,Bern,Bern,1,1,1,0,1035.529
+127,nocot,RerankBGE,Bern,Bern,1,1,1,0,1035.529
+127,cot,MultiQuery,Bern,Bern,1,1,1,0,0.967
+127,nocot,MultiQuery,Bern,Bern,1,1,1,0,0.967
+128,cot,Vanilla,NOT FOUND,Paris,0,0,0,1,0.551
+128,nocot,Vanilla,France,Paris,0,0,0,0,0.551
+128,cot,SVSF,NOT FOUND,Paris,0,0,0,1,0.799
+128,nocot,SVSF,Vienna,Paris,0,0,0,0,0.799
+128,cot,MMR,NOT FOUND,Paris,0,0,0,1,0.739
+128,nocot,MMR,Copenhagen,Paris,0,0,0,0,0.739
+128,cot,Rerank,Paris,Paris,1,1,1,0,52.178
+128,nocot,Rerank,Paris,Paris,1,1,1,0,52.178
+128,cot,RerankBGE,NOT FOUND,Paris,0,0,0,1,1063.061
+128,nocot,RerankBGE,French,Paris,0,0,0,0,1063.061
+128,cot,MultiQuery,NOT FOUND,Paris,0,0,0,1,1.094
+128,nocot,MultiQuery,Paris,Paris,1,1,1,0,1.094
+129,cot,Vanilla,Menlo Park,Menlo Park,1,1,1,0,0.56
+129,nocot,Vanilla,Menlo Park,Menlo Park,1,1,1,0,0.56
+129,cot,SVSF,Menlo Park,Menlo Park,1,1,1,0,1.056
+129,nocot,SVSF,Menlo Park,Menlo Park,1,1,1,0,1.056
+129,cot,MMR,NOT FOUND,Menlo Park,0,0,0,1,0.988
+129,nocot,MMR,Princeton,Menlo Park,0,0,0,0,0.988
+129,cot,Rerank,Menlo Park,Menlo Park,1,1,1,0,51.595
+129,nocot,Rerank,Menlo Park,Menlo Park,1,1,1,0,51.595
+129,cot,RerankBGE,Menlo Park,Menlo Park,1,1,1,0,1041.648
+129,nocot,RerankBGE,Menlo Park,Menlo Park,1,1,1,0,1041.648
+129,cot,MultiQuery,Menlo Park,Menlo Park,1,1,1,0,0.939
+129,nocot,MultiQuery,Menlo Park,Menlo Park,1,1,1,0,0.939
+130,cot,Vanilla,Washington D.C.,"Washington, D.C.",1,1,1,0,0.563
+130,nocot,Vanilla,New Jersey,"Washington, D.C.",0,0,0,0,0.563
+130,cot,SVSF,Washington D.C.,"Washington, D.C.",1,1,1,0,0.804
+130,nocot,SVSF,New Jersey,"Washington, D.C.",0,0,0,0,0.804
+130,cot,MMR,NOT FOUND,"Washington, D.C.",0,0,0,1,0.769
+130,nocot,MMR,Lisbon,"Washington, D.C.",0,0,0,0,0.769
+130,cot,Rerank,NOT FOUND,"Washington, D.C.",0,0,0,1,47.824
+130,nocot,Rerank,New Jersey,"Washington, D.C.",0,0,0,0,47.824
+130,cot,RerankBGE,Washington D.C.,"Washington, D.C.",1,1,1,0,1003.231
+130,nocot,RerankBGE,New Jersey,"Washington, D.C.",0,0,0,0,1003.231
+130,cot,MultiQuery,"Washington, D.C.","Washington, D.C.",1,1,1,0,0.972
+130,nocot,MultiQuery,New Jersey,"Washington, D.C.",0,0,0,0,0.972
+131,cot,Vanilla,Yangtze River,Vantaa River,0,0,0,0,0.583
+131,nocot,Vanilla,Yangtze River,Vantaa River,0,0,0,0,0.583
+131,cot,SVSF,Vistula,Vantaa River,0,0,0,0,0.793
+131,nocot,SVSF,Yangtze River,Vantaa River,0,0,0,0,0.793
+131,cot,MMR,Vistula,Vantaa River,0,0,0,0,0.78
+131,nocot,MMR,Vistula River,Vantaa River,0,0,0,0,0.78
+131,cot,Rerank,"Let’s re-examine the provided texts for any clues about what river flows through Rome. The text states ""The nation's capital and largest city is Rome..."". It doesn't explicitly state which river flows",Vantaa River,0,0,0,0,48.2
+131,nocot,Rerank,Yangtze River,Vantaa River,0,0,0,0,48.2
+131,cot,RerankBGE,Vantaa River,Vantaa River,1,1,1,0,998.066
+131,nocot,RerankBGE,Moskva River,Vantaa River,0,0,0,0,998.066
+131,cot,MultiQuery,NOT FOUND,Vantaa River,0,0,0,1,1.121
+131,nocot,MultiQuery,Yangtze River,Vantaa River,0,0,0,0,1.121
+132,cot,Vanilla,Texas,Connecticut,0,0,0,0,0.573
+132,nocot,Vanilla,Texas,Connecticut,0,0,0,0,0.573
+132,cot,SVSF,Texas,Connecticut,0,0,0,0,1.056
+132,nocot,SVSF,Texas,Connecticut,0,0,0,0,1.056
+132,cot,MMR,South Dakota,Connecticut,0,0,0,0,1.041
+132,nocot,MMR,Texas,Connecticut,0,0,0,0,1.041
+132,cot,Rerank,Connecticut,Connecticut,1,1,1,0,49.128
+132,nocot,Rerank,Connecticut,Connecticut,1,1,1,0,49.128
+132,cot,RerankBGE,Connecticut,Connecticut,1,1,1,0,984.248
+132,nocot,RerankBGE,Connecticut,Connecticut,1,1,1,0,984.248
+132,cot,MultiQuery,Connecticut,Connecticut,1,1,1,0,1.023
+132,nocot,MultiQuery,Connecticut,Connecticut,1,1,1,0,1.023
+133,cot,Vanilla,92,92,1,1,1,0,0.559
+133,nocot,Vanilla,92,92,1,1,1,0,0.559
+133,cot,SVSF,92,92,1,1,1,0,1.056
+133,nocot,SVSF,92,92,1,1,1,0,1.056
+133,cot,MMR,92,92,1,1,1,0,0.997
+133,nocot,MMR,92,92,1,1,1,0,0.997
+133,cot,Rerank,92,92,1,1,1,0,48.596
+133,nocot,Rerank,92,92,1,1,1,0,48.596
+133,cot,RerankBGE,92,92,1,1,1,0,1041.709
+133,nocot,RerankBGE,92,92,1,1,1,0,1041.709
+133,cot,MultiQuery,92,92,1,1,1,0,0.941
+133,nocot,MultiQuery,92,92,1,1,1,0,0.941
+134,cot,Vanilla,Indian Rupee,Euro,0,0,0,0,0.545
+134,nocot,Vanilla,Indian Rupee,Euro,0,0,0,0,0.545
+134,cot,SVSF,Indian Rupee,Euro,0,0,0,0,0.795
+134,nocot,SVSF,Saint Helena pound,Euro,0,0,0,0,0.795
+134,cot,MMR,Indian Rupee,Euro,0,0,0,0,0.75
+134,nocot,MMR,Indian Rupee,Euro,0,0,0,0,0.75
+134,cot,Rerank,Indian Rupee,Euro,0,0,0,0,47.967
+134,nocot,Rerank,Indian Rupee,Euro,0,0,0,0,47.967
+134,cot,RerankBGE,NOT FOUND,Euro,0,0,0,1,1026.741
+134,nocot,RerankBGE,Indian Rupee,Euro,0,0,0,0,1026.741
+134,cot,MultiQuery,Saint Helena pound,Euro,0,0,0,0,1.1
+134,nocot,MultiQuery,Saint Helena pound,Euro,0,0,0,0,1.1
+135,cot,Vanilla,84,84,1,1,1,0,0.616
+135,nocot,Vanilla,84,84,1,1,1,0,0.616
+135,cot,SVSF,84,84,1,1,1,0,0.798
+135,nocot,SVSF,72,84,0,0,0,0,0.798
+135,cot,MMR,72,84,0,0,0,0,0.751
+135,nocot,MMR,72,84,0,0,0,0,0.751
+135,cot,Rerank,84,84,1,1,1,0,48.474
+135,nocot,Rerank,84,84,1,1,1,0,48.474
+135,cot,RerankBGE,71,84,0,0,0,0,1001.348
+135,nocot,RerankBGE,72,84,0,0,0,0,1001.348
+135,cot,MultiQuery,84,84,1,1,1,0,0.999
+135,nocot,MultiQuery,72,84,0,0,0,0,0.999
+136,cot,Vanilla,Shah Jahan,Aurangzeb,0,0,0,0,0.554
+136,nocot,Vanilla,Shah Jahan,Aurangzeb,0,0,0,0,0.554
+136,cot,SVSF,Shah Jahan,Aurangzeb,0,0,0,0,1.046
+136,nocot,SVSF,Shah Jahan,Aurangzeb,0,0,0,0,1.046
+136,cot,MMR,Shah Jahan,Aurangzeb,0,0,0,0,0.998
+136,nocot,MMR,Shah Jahan,Aurangzeb,0,0,0,0,0.998
+136,cot,Rerank,Shah Jahan,Aurangzeb,0,0,0,0,49.446
+136,nocot,Rerank,Shah Jahan,Aurangzeb,0,0,0,0,49.446
+136,cot,RerankBGE,NOT FOUND,Aurangzeb,0,0,0,1,986.614
+136,nocot,RerankBGE,Shah Jahan,Aurangzeb,0,0,0,0,986.614
+136,cot,MultiQuery,Shah Jahan,Aurangzeb,0,0,0,0,0.979
+136,nocot,MultiQuery,Shah Jahan,Aurangzeb,0,0,0,0,0.979
+137,cot,Vanilla,NOT FOUND,Stockholm,0,0,0,1,0.538
+137,nocot,Vanilla,Stockholm,Stockholm,1,1,1,0,0.538
+137,cot,SVSF,NOT FOUND,Stockholm,0,0,0,1,0.814
+137,nocot,SVSF,Stockholm,Stockholm,1,1,1,0,0.814
+137,cot,MMR,Paris,Stockholm,0,0,0,0,0.781
+137,nocot,MMR,Stockholm,Stockholm,1,1,1,0,0.781
+137,cot,Rerank,Stockholm,Stockholm,1,1,1,0,48.825
+137,nocot,Rerank,Buenos Aires,Stockholm,0,0,0,0,48.825
+137,cot,RerankBGE,Stockholm,Stockholm,1,1,1,0,1040.092
+137,nocot,RerankBGE,Stockholm,Stockholm,1,1,1,0,1040.092
+137,cot,MultiQuery,Warsaw,Stockholm,0,0,0,0,0.954
+137,nocot,MultiQuery,Warsaw,Stockholm,0,0,0,0,0.954
+138,cot,Vanilla,Pablo Picasso,Leonardo da Vinci,0,0,0,0,0.87
+138,nocot,Vanilla,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,0.87
+138,cot,SVSF,NOT FOUND,Leonardo da Vinci,0,0,0,1,0.808
+138,nocot,SVSF,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,0.808
+138,cot,MMR,Pablo Picasso,Leonardo da Vinci,0,0,0,0,0.746
+138,nocot,MMR,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,0.746
+138,cot,Rerank,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,52.611
+138,nocot,Rerank,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,52.611
+138,cot,RerankBGE,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,1029.693
+138,nocot,RerankBGE,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,1029.693
+138,cot,MultiQuery,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,1.128
+138,nocot,MultiQuery,Leonardo da Vinci,Leonardo da Vinci,1,1,1,0,1.128
+139,cot,Vanilla,Vltava River,Vltava,1,1,1,0,0.547
+139,nocot,Vanilla,Vltava River,Vltava,1,1,1,0,0.547
+139,cot,SVSF,Vltava River,Vltava,1,1,1,0,1.8
+139,nocot,SVSF,Vltava River,Vltava,1,1,1,0,1.8
+139,cot,MMR,Vltava,Vltava,1,1,1,0,1.538
+139,nocot,MMR,Vltava River,Vltava,1,1,1,0,1.538
+139,cot,Rerank,NOT FOUND,Vltava,0,0,0,1,55.177
+139,nocot,Rerank,Vltava River,Vltava,1,1,1,0,55.177
+139,cot,RerankBGE,Vltava,Vltava,1,1,1,0,1032.072
+139,nocot,RerankBGE,Vltava River,Vltava,1,1,1,0,1032.072
+139,cot,MultiQuery,Vltava River,Vltava,1,1,1,0,0.978
+139,nocot,MultiQuery,Vltava River,Vltava,1,1,1,0,0.978
+140,cot,Vanilla,63,72,0,0,0,0,0.537
+140,nocot,Vanilla,101,72,0,0,0,0,0.537
+140,cot,SVSF,63,72,0,0,0,0,1.03
+140,nocot,SVSF,101,72,0,0,0,0,1.03
+140,cot,MMR,71,72,0,0,0,0,0.994
+140,nocot,MMR,71,72,0,0,0,0,0.994
+140,cot,Rerank,72,72,1,1,1,0,52.224
+140,nocot,Rerank,72,72,1,1,1,0,52.224
+140,cot,RerankBGE,72,72,1,1,1,0,1067.802
+140,nocot,RerankBGE,72,72,1,1,1,0,1067.802
+140,cot,MultiQuery,63,72,0,0,0,0,0.982
+140,nocot,MultiQuery,63,72,0,0,0,0,0.982
+141,cot,Vanilla,Arno,Tiber,0,0,0,0,0.573
+141,nocot,Vanilla,Arno River,Tiber,0,0,0,0,0.573
+141,cot,SVSF,Tiber,Tiber,1,1,1,0,0.78
+141,nocot,SVSF,Tiber,Tiber,1,1,1,0,0.78
+141,cot,MMR,Arno River,Tiber,0,0,0,0,0.763
+141,nocot,MMR,Arno River,Tiber,0,0,0,0,0.763
+141,cot,Rerank,Arno River,Tiber,0,0,0,0,48.572
+141,nocot,Rerank,Arno River,Tiber,0,0,0,0,48.572
+141,cot,RerankBGE,Arno River,Tiber,0,0,0,0,988.66
+141,nocot,RerankBGE,Arno River,Tiber,0,0,0,0,988.66
+141,cot,MultiQuery,Arno River,Tiber,0,0,0,0,1.576
+141,nocot,MultiQuery,Arno River,Tiber,0,0,0,0,1.576
+142,cot,Vanilla,Seine River,Río de la Plata,0,0,0,0,0.541
+142,nocot,Vanilla,Seine River,Río de la Plata,0,0,0,0,0.541
+142,cot,SVSF,Río de la Plata,Río de la Plata,1,1,1,0,0.786
+142,nocot,SVSF,Seine River,Río de la Plata,0,0,0,0,0.786
+142,cot,MMR,NOT FOUND,Río de la Plata,0,0,0,1,0.75
+142,nocot,MMR,Seine River,Río de la Plata,0,0,0,0,0.75
+142,cot,Rerank,NOT FOUND,Río de la Plata,0,0,0,1,48.173
+142,nocot,Rerank,Seine River,Río de la Plata,0,0,0,0,48.173
+142,cot,RerankBGE,Río de la Plata,Río de la Plata,1,1,1,0,1030.572
+142,nocot,RerankBGE,Río de la Plata,Río de la Plata,1,1,1,0,1030.572
+142,cot,MultiQuery,Seine River,Río de la Plata,0,0,0,0,1.037
+142,nocot,MultiQuery,Seine River,Río de la Plata,0,0,0,0,1.037
+143,cot,Vanilla,NOT FOUND,George III,0,0,0,1,0.536
+143,nocot,Vanilla,NOT FOUND,George III,0,0,0,1,0.536
+143,cot,SVSF,George II,George III,0,0,0,0,1.433
+143,nocot,SVSF,George II of Great Britain,George III,0,0,0,0,1.433
+143,cot,MMR,NOT FOUND,George III,0,0,0,1,1.519
+143,nocot,MMR,NOT FOUND,George III,0,0,0,1,1.519
+143,cot,Rerank,NOT FOUND,George III,0,0,0,1,49.484
+143,nocot,Rerank,Henry Cavendish,George III,0,0,0,0,49.484
+143,cot,RerankBGE,George III,George III,1,1,1,0,1032.763
+143,nocot,RerankBGE,King George III,George III,1,1,1,0,1032.763
+143,cot,MultiQuery,NOT FOUND,George III,0,0,0,1,1.492
+143,nocot,MultiQuery,NOT FOUND,George III,0,0,0,1,1.492
+144,cot,Vanilla,NOT FOUND,River Thames,0,0,0,1,0.575
+144,nocot,Vanilla,Neva River,River Thames,0,0,0,0,0.575
+144,cot,SVSF,NOT FOUND,River Thames,0,0,0,1,1.499
+144,nocot,SVSF,Potomac River,River Thames,0,0,0,0,1.499
+144,cot,MMR,Potomac River,River Thames,0,0,0,0,1.561
+144,nocot,MMR,River Thames,River Thames,1,1,1,0,1.561
+144,cot,Rerank,NOT FOUND,River Thames,0,0,0,1,48.987
+144,nocot,Rerank,River Seine,River Thames,0,0,0,0,48.987
+144,cot,RerankBGE,River Seine,River Thames,0,0,0,0,1008.334
+144,nocot,RerankBGE,Seine,River Thames,0,0,0,0,1008.334
+144,cot,MultiQuery,Potomac River,River Thames,0,0,0,0,1.633
+144,nocot,MultiQuery,Potomac River,River Thames,0,0,0,0,1.633
+145,cot,Vanilla,Woodrow Wilson,Woodrow Wilson,1,1,1,0,0.559
+145,nocot,Vanilla,Woodrow Wilson,Woodrow Wilson,1,1,1,0,0.559
+145,cot,SVSF,Woodrow Wilson,Woodrow Wilson,1,1,1,0,2.017
+145,nocot,SVSF,Woodrow Wilson,Woodrow Wilson,1,1,1,0,2.017
+145,cot,MMR,Woodrow Wilson,Woodrow Wilson,1,1,1,0,1.974
+145,nocot,MMR,Woodrow Wilson,Woodrow Wilson,1,1,1,0,1.974
+145,cot,Rerank,Woodrow Wilson,Woodrow Wilson,1,1,1,0,52.794
+145,nocot,Rerank,Woodrow Wilson,Woodrow Wilson,1,1,1,0,52.794
+145,cot,RerankBGE,Woodrow Wilson,Woodrow Wilson,1,1,1,0,1002.235
+145,nocot,RerankBGE,Woodrow Wilson,Woodrow Wilson,1,1,1,0,1002.235
+145,cot,MultiQuery,Woodrow Wilson,Woodrow Wilson,1,1,1,0,1.092
+145,nocot,MultiQuery,Woodrow Wilson,Woodrow Wilson,1,1,1,0,1.092
+146,cot,Vanilla,New York City,New York City,1,1,1,0,0.543
+146,nocot,Vanilla,New York City,New York City,1,1,1,0,0.543
+146,cot,SVSF,New York City,New York City,1,1,1,0,1.061
+146,nocot,SVSF,New York City,New York City,1,1,1,0,1.061
+146,cot,MMR,New York City,New York City,1,1,1,0,0.999
+146,nocot,MMR,New York City,New York City,1,1,1,0,0.999
+146,cot,Rerank,New York City,New York City,1,1,1,0,48.398
+146,nocot,Rerank,New York City,New York City,1,1,1,0,48.398
+146,cot,RerankBGE,New York City,New York City,1,1,1,0,1033.173
+146,nocot,RerankBGE,New York City,New York City,1,1,1,0,1033.173
+146,cot,MultiQuery,New York City,New York City,1,1,1,0,0.961
+146,nocot,MultiQuery,New York City,New York City,1,1,1,0,0.961
+147,cot,Vanilla,NOT FOUND,On the Origin of Species,0,0,0,1,0.577
+147,nocot,Vanilla,Charles Darwin,On the Origin of Species,0,0,0,0,0.577
+147,cot,SVSF,NOT FOUND,On the Origin of Species,0,0,0,1,0.793
+147,nocot,SVSF,Charles Darwin,On the Origin of Species,0,0,0,0,0.793
+147,cot,MMR,On the Origin of Species,On the Origin of Species,1,1,1,0,0.769
+147,nocot,MMR,On the Origin of Species,On the Origin of Species,1,1,1,0,0.769
+147,cot,Rerank,On the Origin of Species,On the Origin of Species,1,1,1,0,52.863
+147,nocot,Rerank,On the Origin of Species,On the Origin of Species,1,1,1,0,52.863
+147,cot,RerankBGE,On the Origin of Species,On the Origin of Species,1,1,1,0,1054.825
+147,nocot,RerankBGE,On the Origin of Species,On the Origin of Species,1,1,1,0,1054.825
+147,cot,MultiQuery,On the Origin of Species,On the Origin of Species,1,1,1,0,0.948
+147,nocot,MultiQuery,On the Origin of Species,On the Origin of Species,1,1,1,0,0.948
+148,cot,Vanilla,Wheeler Peak,Wheeler Peak,1,1,1,0,0.515
+148,nocot,Vanilla,Wheeler Peak,Wheeler Peak,1,1,1,0,0.515
+148,cot,SVSF,Wheeler Peak,Wheeler Peak,1,1,1,0,0.78
+148,nocot,SVSF,Wheeler Peak,Wheeler Peak,1,1,1,0,0.78
+148,cot,MMR,Wheeler Peak,Wheeler Peak,1,1,1,0,0.745
+148,nocot,MMR,Wheeler Peak,Wheeler Peak,1,1,1,0,0.745
+148,cot,Rerank,Wheeler Peak,Wheeler Peak,1,1,1,0,48.716
+148,nocot,Rerank,Wheeler Peak,Wheeler Peak,1,1,1,0,48.716
+148,cot,RerankBGE,Wheeler Peak,Wheeler Peak,1,1,1,0,984.675
+148,nocot,RerankBGE,Wheeler Peak,Wheeler Peak,1,1,1,0,984.675
+148,cot,MultiQuery,NOT FOUND,Wheeler Peak,0,0,0,1,0.96
+148,nocot,MultiQuery,Boundary Peak,Wheeler Peak,0,0,0,0,0.96
+149,cot,Vanilla,reigning Inca emperor,Atahualpa,0,0,0,0,0.611
+149,nocot,Vanilla,Inca emperor,Atahualpa,0,0,0,0,0.611
+149,cot,SVSF,reigning Inca emperor,Atahualpa,0,0,0,0,1.046
+149,nocot,SVSF,Inca emperor,Atahualpa,0,0,0,0,1.046
+149,cot,MMR,reigning Inca emperor,Atahualpa,0,0,0,0,1.554
+149,nocot,MMR,Inca emperor,Atahualpa,0,0,0,0,1.554
+149,cot,Rerank,Atahualpa,Atahualpa,1,1,1,0,53.078
+149,nocot,Rerank,Atahualpa,Atahualpa,1,1,1,0,53.078
+149,cot,RerankBGE,Atahualpa,Atahualpa,1,1,1,0,1063.896
+149,nocot,RerankBGE,Atahualpa,Atahualpa,1,1,1,0,1063.896
+149,cot,MultiQuery,reigning Inca emperor,Atahualpa,0,0,0,0,1.084
+149,nocot,MultiQuery,Inca emperor,Atahualpa,0,0,0,0,1.084
+150,cot,Vanilla,Moscow,Wellington,0,0,0,0,0.587
+150,nocot,Vanilla,Prague,Wellington,0,0,0,0,0.587
+150,cot,SVSF,NOT FOUND,Wellington,0,0,0,1,0.79
+150,nocot,SVSF,Moscow,Wellington,0,0,0,0,0.79
+150,cot,MMR,NOT FOUND,Wellington,0,0,0,1,0.747
+150,nocot,MMR,Prague,Wellington,0,0,0,0,0.747
+150,cot,Rerank,NOT FOUND,Wellington,0,0,0,1,47.863
+150,nocot,Rerank,England,Wellington,0,0,0,0,47.863
+150,cot,RerankBGE,NOT FOUND,Wellington,0,0,0,1,964.273
+150,nocot,RerankBGE,Dole,Wellington,0,0,0,0,964.273
+150,cot,MultiQuery,NOT FOUND,Wellington,0,0,0,1,1.123
+150,nocot,MultiQuery,London,Wellington,0,0,0,0,1.123
+151,cot,Vanilla,King George V,George V,1,1,1,0,0.547
+151,nocot,Vanilla,King George V,George V,1,1,1,0,0.547
+151,cot,SVSF,King George V,George V,1,1,1,0,1.045
+151,nocot,SVSF,King George V,George V,1,1,1,0,1.045
+151,cot,MMR,King George V,George V,1,1,1,0,1.015
+151,nocot,MMR,King George V,George V,1,1,1,0,1.015
+151,cot,Rerank,NOT FOUND,George V,0,0,0,1,49.59
+151,nocot,Rerank,George II of Great Britain,George V,0,0,0,0,49.59
+151,cot,RerankBGE,NOT FOUND,George V,0,0,0,1,986.568
+151,nocot,RerankBGE,Edward VII,George V,0,0,0,0,986.568
+151,cot,MultiQuery,King George V,George V,1,1,1,0,1.473
+151,nocot,MultiQuery,King George V,George V,1,1,1,0,1.473
+152,cot,Vanilla,Mont Blanc,Mont Blanc,1,1,1,0,0.55
+152,nocot,Vanilla,Mont Blanc,Mont Blanc,1,1,1,0,0.55
+152,cot,SVSF,Mont Blanc,Mont Blanc,1,1,1,0,1.053
+152,nocot,SVSF,Mont Blanc,Mont Blanc,1,1,1,0,1.053
+152,cot,MMR,Mont Blanc,Mont Blanc,1,1,1,0,0.999
+152,nocot,MMR,Mont Blanc,Mont Blanc,1,1,1,0,0.999
+152,cot,Rerank,Mont Blanc,Mont Blanc,1,1,1,0,50.461
+152,nocot,Rerank,Mont Blanc,Mont Blanc,1,1,1,0,50.461
+152,cot,RerankBGE,Mont Blanc,Mont Blanc,1,1,1,0,983.511
+152,nocot,RerankBGE,Mont Blanc,Mont Blanc,1,1,1,0,983.511
+152,cot,MultiQuery,Mont Blanc,Mont Blanc,1,1,1,0,0.904
+152,nocot,MultiQuery,Mont Blanc,Mont Blanc,1,1,1,0,0.904
+153,cot,Vanilla,Herbert Hoover,Herbert Hoover,1,1,1,0,0.567
+153,nocot,Vanilla,Herbert Hoover,Herbert Hoover,1,1,1,0,0.567
+153,cot,SVSF,Herbert Hoover,Herbert Hoover,1,1,1,0,0.801
+153,nocot,SVSF,Herbert Hoover,Herbert Hoover,1,1,1,0,0.801
+153,cot,MMR,NOT FOUND,Herbert Hoover,0,0,0,1,0.732
+153,nocot,MMR,Herbert Hoover,Herbert Hoover,1,1,1,0,0.732
+153,cot,Rerank,Herbert Hoover,Herbert Hoover,1,1,1,0,47.473
+153,nocot,Rerank,Herbert Hoover,Herbert Hoover,1,1,1,0,47.473
+153,cot,RerankBGE,Herbert Hoover,Herbert Hoover,1,1,1,0,980.749
+153,nocot,RerankBGE,Herbert Hoover,Herbert Hoover,1,1,1,0,980.749
+153,cot,MultiQuery,NOT FOUND,Herbert Hoover,0,0,0,1,0.955
+153,nocot,MultiQuery,Dwight D. Eisenhower,Herbert Hoover,0,0,0,0,0.955
+154,cot,Vanilla,NOT FOUND,Euro,0,0,0,1,0.522
+154,nocot,Vanilla,Euro,Euro,1,1,1,0,0.522
+154,cot,SVSF,Euro,Euro,1,1,1,0,2.015
+154,nocot,SVSF,Euro,Euro,1,1,1,0,2.015
+154,cot,MMR,Euro,Euro,1,1,1,0,3.23
+154,nocot,MMR,Euro,Euro,1,1,1,0,3.23
+154,cot,Rerank,Euro,Euro,1,1,1,0,52.278
+154,nocot,Rerank,Euro,Euro,1,1,1,0,52.278
+154,cot,RerankBGE,Euro,Euro,1,1,1,0,988.732
+154,nocot,RerankBGE,Euro,Euro,1,1,1,0,988.732
+154,cot,MultiQuery,Euro,Euro,1,1,1,0,1.047
+154,nocot,MultiQuery,Euro,Euro,1,1,1,0,1.047
+155,cot,Vanilla,NOT FOUND,English,0,0,0,1,0.562
+155,nocot,Vanilla,English,English,1,1,1,0,0.562
+155,cot,SVSF,English,English,1,1,1,0,1.054
+155,nocot,SVSF,Italian,English,0,0,0,0,1.054
+155,cot,MMR,French,English,0,0,0,0,0.995
+155,nocot,MMR,French,English,0,0,0,0,0.995
+155,cot,Rerank,English,English,1,1,1,0,48.402
+155,nocot,Rerank,English,English,1,1,1,0,48.402
+155,cot,RerankBGE,Italian,English,0,0,0,0,1035.749
+155,nocot,RerankBGE,Italian,English,0,0,0,0,1035.749
+155,cot,MultiQuery,NOT FOUND,English,0,0,0,1,1.081
+155,nocot,MultiQuery,English,English,1,1,1,0,1.081
+156,cot,Vanilla,"Washington, D.C.",New Delhi,0,0,0,0,0.547
+156,nocot,Vanilla,Bern,New Delhi,0,0,0,0,0.547
+156,cot,SVSF,"Washington, D.C.",New Delhi,0,0,0,0,0.783
+156,nocot,SVSF,Bern,New Delhi,0,0,0,0,0.783
+156,cot,MMR,NOT FOUND,New Delhi,0,0,0,1,0.775
+156,nocot,MMR,Warsaw,New Delhi,0,0,0,0,0.775
+156,cot,Rerank,NOT FOUND,New Delhi,0,0,0,1,50.171
+156,nocot,Rerank,London,New Delhi,0,0,0,0,50.171
+156,cot,RerankBGE,NOT FOUND,New Delhi,0,0,0,1,1026.783
+156,nocot,RerankBGE,Warsaw,New Delhi,0,0,0,0,1026.783
+156,cot,MultiQuery,New Delhi,New Delhi,1,1,1,0,0.96
+156,nocot,MultiQuery,London,New Delhi,0,0,0,0,0.96
+157,cot,Vanilla,Fungi,Fungi,1,1,1,0,0.556
+157,nocot,Vanilla,Fungi,Fungi,1,1,1,0,0.556
+157,cot,SVSF,Fungi,Fungi,1,1,1,0,1.065
+157,nocot,SVSF,Fungi,Fungi,1,1,1,0,1.065
+157,cot,MMR,Fungi,Fungi,1,1,1,0,1.031
+157,nocot,MMR,Fungi,Fungi,1,1,1,0,1.031
+157,cot,Rerank,Fungi,Fungi,1,1,1,0,48.644
+157,nocot,Rerank,Fungi,Fungi,1,1,1,0,48.644
+157,cot,RerankBGE,Fungi,Fungi,1,1,1,0,1002.809
+157,nocot,RerankBGE,Fungi,Fungi,1,1,1,0,1002.809
+157,cot,MultiQuery,Fungi,Fungi,1,1,1,0,0.967
+157,nocot,MultiQuery,Fungi,Fungi,1,1,1,0,0.967
+158,cot,Vanilla,Indian Ocean,Indian Ocean,1,1,1,0,0.54
+158,nocot,Vanilla,Indian Ocean,Indian Ocean,1,1,1,0,0.54
+158,cot,SVSF,Indian Ocean,Indian Ocean,1,1,1,0,0.785
+158,nocot,SVSF,Indian Ocean,Indian Ocean,1,1,1,0,0.785
+158,cot,MMR,Indian Ocean,Indian Ocean,1,1,1,0,0.742
+158,nocot,MMR,Indian Ocean,Indian Ocean,1,1,1,0,0.742
+158,cot,Rerank,Indian Ocean,Indian Ocean,1,1,1,0,48.739
+158,nocot,Rerank,Indian Ocean,Indian Ocean,1,1,1,0,48.739
+158,cot,RerankBGE,Indian Ocean,Indian Ocean,1,1,1,0,949.496
+158,nocot,RerankBGE,Indian Ocean,Indian Ocean,1,1,1,0,949.496
+158,cot,MultiQuery,Indian Ocean,Indian Ocean,1,1,1,0,0.919
+158,nocot,MultiQuery,Indian Ocean,Indian Ocean,1,1,1,0,0.919
+159,cot,Vanilla,I. M. Pei,I. M. Pei,1,1,1,0,0.547
+159,nocot,Vanilla,I. M. Pei,I. M. Pei,1,1,1,0,0.547
+159,cot,SVSF,I. M. Pei,I. M. Pei,1,1,1,0,0.774
+159,nocot,SVSF,I. M. Pei,I. M. Pei,1,1,1,0,0.774
+159,cot,MMR,I. M. Pei,I. M. Pei,1,1,1,0,0.737
+159,nocot,MMR,I. M. Pei,I. M. Pei,1,1,1,0,0.737
+159,cot,Rerank,I. M. Pei,I. M. Pei,1,1,1,0,47.874
+159,nocot,Rerank,I. M. Pei,I. M. Pei,1,1,1,0,47.874
+159,cot,RerankBGE,I. M. Pei,I. M. Pei,1,1,1,0,996.815
+159,nocot,RerankBGE,I. M. Pei,I. M. Pei,1,1,1,0,996.815
+159,cot,MultiQuery,I. M. Pei,I. M. Pei,1,1,1,0,0.981
+159,nocot,MultiQuery,I. M. Pei,I. M. Pei,1,1,1,0,0.981
+160,cot,Vanilla,Columbus,Columbus,1,1,1,0,0.537
+160,nocot,Vanilla,Cincinnati,Columbus,0,0,0,0,0.537
+160,cot,SVSF,Columbus,Columbus,1,1,1,0,0.797
+160,nocot,SVSF,Cincinnati,Columbus,0,0,0,0,0.797
+160,cot,MMR,NOT FOUND,Columbus,0,0,0,1,0.756
+160,nocot,MMR,"Lansing, Michigan",Columbus,0,0,0,0,0.756
+160,cot,Rerank,NOT FOUND,Columbus,0,0,0,1,49.932
+160,nocot,Rerank,"Glen Ridge, New Jersey",Columbus,0,0,0,0,49.932
+160,cot,RerankBGE,Columbus,Columbus,1,1,1,0,969.31
+160,nocot,RerankBGE,Columbus,Columbus,1,1,1,0,969.31
+160,cot,MultiQuery,Columbus,Columbus,1,1,1,0,0.955
+160,nocot,MultiQuery,Cincinnati,Columbus,0,0,0,0,0.955
+161,cot,Vanilla,NOT FOUND,Queen Victoria,0,0,0,1,0.556
+161,nocot,Vanilla,NOT FOUND,Queen Victoria,0,0,0,1,0.556
+161,cot,SVSF,NOT FOUND,Queen Victoria,0,0,0,1,0.791
+161,nocot,SVSF,NOT FOUND,Queen Victoria,0,0,0,1,0.791
+161,cot,MMR,NOT FOUND,Queen Victoria,0,0,0,1,0.745
+161,nocot,MMR,NOT FOUND,Queen Victoria,0,0,0,1,0.745
+161,cot,Rerank,Queen Victoria,Queen Victoria,1,1,1,0,49.688
+161,nocot,Rerank,King Edward VII,Queen Victoria,0,0,0,0,49.688
+161,cot,RerankBGE,NOT FOUND,Queen Victoria,0,0,0,1,984.093
+161,nocot,RerankBGE,King Edward VII,Queen Victoria,0,0,0,0,984.093
+161,cot,MultiQuery,NOT FOUND,Queen Victoria,0,0,0,1,0.91
+161,nocot,MultiQuery,NOT FOUND,Queen Victoria,0,0,0,1,0.91
+162,cot,Vanilla,<thinking>The question asks for the capital city of the country that won the FIFA World Cup in the year the Space Shuttle Challenger disaster occurred. The context mentions two FIFA World Cups: 1958 a,Buenos Aires,0,0,0,0,0.549
+162,nocot,Vanilla,Edinburgh,Buenos Aires,0,0,0,0,0.549
+162,cot,SVSF,Berlin,Buenos Aires,0,0,0,0,0.786
+162,nocot,SVSF,Edinburgh,Buenos Aires,0,0,0,0,0.786
+162,cot,MMR,Buenos Aires,Buenos Aires,1,1,1,0,0.755
+162,nocot,MMR,Buenos Aires,Buenos Aires,1,1,1,0,0.755
+162,cot,Rerank,NOT FOUND,Buenos Aires,0,0,0,1,48.058
+162,nocot,Rerank,Mexico City,Buenos Aires,0,0,0,0,48.058
+162,cot,RerankBGE,Brasília,Buenos Aires,0,0,0,0,984.616
+162,nocot,RerankBGE,Brasília,Buenos Aires,0,0,0,0,984.616
+162,cot,MultiQuery,Berlin,Buenos Aires,0,0,0,0,0.992
+162,nocot,MultiQuery,Edinburgh,Buenos Aires,0,0,0,0,0.992
+163,cot,Vanilla,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.543
+163,nocot,Vanilla,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.543
+163,cot,SVSF,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.808
+163,nocot,SVSF,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.808
+163,cot,MMR,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.762
+163,nocot,MMR,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,0.762
+163,cot,Rerank,Dwight D. Eisenhower,Dwight D. Eisenhower,1,1,1,0,48.143
+163,nocot,Rerank,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,48.143
+163,cot,RerankBGE,NOT FOUND,Dwight D. Eisenhower,0,0,0,1,987.205
+163,nocot,RerankBGE,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,987.205
+163,cot,MultiQuery,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.974
+163,nocot,MultiQuery,Harry S. Truman,Dwight D. Eisenhower,0,0,0,0,0.974
+164,cot,Vanilla,NOT FOUND,Mount Hoverla,0,0,0,1,0.566
+164,nocot,Vanilla,Hoverla,Mount Hoverla,0,1,1,0,0.566
+164,cot,SVSF,NOT FOUND,Mount Hoverla,0,0,0,1,0.807
+164,nocot,SVSF,Hoverla,Mount Hoverla,0,1,1,0,0.807
+164,cot,MMR,NOT FOUND,Mount Hoverla,0,0,0,1,0.742
+164,nocot,MMR,Sněžka,Mount Hoverla,0,0,0,0,0.742
+164,cot,Rerank,NOT FOUND,Mount Hoverla,0,0,0,1,49.228
+164,nocot,Rerank,Sněžka,Mount Hoverla,0,0,0,0,49.228
+164,cot,RerankBGE,Sněžka,Mount Hoverla,0,0,0,0,989.72
+164,nocot,RerankBGE,Sněžka,Mount Hoverla,0,0,0,0,989.72
+164,cot,MultiQuery,NOT FOUND,Mount Hoverla,0,0,0,1,0.932
+164,nocot,MultiQuery,Mount Whitney,Mount Hoverla,0,0,0,0,0.932
+165,cot,Vanilla,Moscow,Moscow,1,1,1,0,0.541
+165,nocot,Vanilla,Moscow,Moscow,1,1,1,0,0.541
+165,cot,SVSF,Moscow,Moscow,1,1,1,0,0.816
+165,nocot,SVSF,Moscow,Moscow,1,1,1,0,0.816
+165,cot,MMR,Moscow,Moscow,1,1,1,0,0.749
+165,nocot,MMR,New Delhi,Moscow,0,0,0,0,0.749
+165,cot,Rerank,Moscow,Moscow,1,1,1,0,48.499
+165,nocot,Rerank,Moscow,Moscow,1,1,1,0,48.499
+165,cot,RerankBGE,Moscow,Moscow,1,1,1,0,1036.197
+165,nocot,RerankBGE,Moscow,Moscow,1,1,1,0,1036.197
+165,cot,MultiQuery,Moscow,Moscow,1,1,1,0,1.06
+165,nocot,MultiQuery,Moscow,Moscow,1,1,1,0,1.06
+166,cot,Vanilla,Ho,Ho,1,1,1,0,0.583
+166,nocot,Vanilla,Hf,Ho,0,0,0,0,0.583
+166,cot,SVSF,Ho,Ho,1,1,1,0,0.784
+166,nocot,SVSF,Hf,Ho,0,0,0,0,0.784
+166,cot,MMR,Hf,Ho,0,0,0,0,0.76
+166,nocot,MMR,Hf,Ho,0,0,0,0,0.76
+166,cot,Rerank,NOT FOUND,Ho,0,0,0,1,49.595
+166,nocot,Rerank,Hf,Ho,0,0,0,0,49.595
+166,cot,RerankBGE,Hf,Ho,0,0,0,0,965.708
+166,nocot,RerankBGE,Hf,Ho,0,0,0,0,965.708
+166,cot,MultiQuery,Hf,Ho,0,0,0,0,0.986
+166,nocot,MultiQuery,Hf,Ho,0,0,0,0,0.986
+167,cot,Vanilla,NOT FOUND,Brussels,0,0,0,1,0.624
+167,nocot,Vanilla,Waterloo,Brussels,0,0,0,0,0.624
+167,cot,SVSF,NOT FOUND,Brussels,0,0,0,1,0.867
+167,nocot,SVSF,Waterloo,Brussels,0,0,0,0,0.867
+167,cot,MMR,Waterloo,Brussels,0,0,0,0,0.784
+167,nocot,MMR,Brussels,Brussels,1,1,1,0,0.784
+167,cot,Rerank,NOT FOUND,Brussels,0,0,0,1,50.771
+167,nocot,Rerank,Waterloo,Brussels,0,0,0,0,50.771
+167,cot,RerankBGE,Paris,Brussels,0,0,0,0,1029.486
+167,nocot,RerankBGE,Bern,Brussels,0,0,0,0,1029.486
+167,cot,MultiQuery,NOT FOUND,Brussels,0,0,0,1,1.539
+167,nocot,MultiQuery,Waterloo,Brussels,0,0,0,0,1.539
+168,cot,Vanilla,Argentine peso,United States dollar,0,0,0,0,0.548
+168,nocot,Vanilla,Argentine peso,United States dollar,0,0,0,0,0.548
+168,cot,SVSF,NOT FOUND,United States dollar,0,0,0,1,0.809
+168,nocot,SVSF,Argentine peso,United States dollar,0,0,0,0,0.809
+168,cot,MMR,NOT FOUND,United States dollar,0,0,0,1,0.756
+168,nocot,MMR,Argentine peso,United States dollar,0,0,0,0,0.756
+168,cot,Rerank,NOT FOUND,United States dollar,0,0,0,1,48.859
+168,nocot,Rerank,Argentine peso,United States dollar,0,0,0,0,48.859
+168,cot,RerankBGE,NOT FOUND,United States dollar,0,0,0,1,1062.384
+168,nocot,RerankBGE,Argentine peso,United States dollar,0,0,0,0,1062.384
+168,cot,MultiQuery,United States dollar,United States dollar,1,1,1,0,0.952
+168,nocot,MultiQuery,United States dollar,United States dollar,1,1,1,0,0.952
+169,cot,Vanilla,NOT FOUND,River Thames,0,0,0,1,0.561
+169,nocot,Vanilla,River Cam,River Thames,0,0,0,0,0.561
+169,cot,SVSF,NOT FOUND,River Thames,0,0,0,1,1.032
+169,nocot,SVSF,River Thames,River Thames,1,1,1,0,1.032
+169,cot,MMR,NOT FOUND,River Thames,0,0,0,1,1.014
+169,nocot,MMR,River Cam,River Thames,0,0,0,0,1.014
+169,cot,Rerank,NOT FOUND,River Thames,0,0,0,1,49.614
+169,nocot,Rerank,River Thames,River Thames,1,1,1,0,49.614
+169,cot,RerankBGE,Potomac River,River Thames,0,0,0,0,1037.461
+169,nocot,RerankBGE,Potomac River,River Thames,0,0,0,0,1037.461
+169,cot,MultiQuery,River Thames,River Thames,1,1,1,0,1.043
+169,nocot,MultiQuery,River Cam,River Thames,0,0,0,0,1.043
+170,cot,Vanilla,River Manzanares,Manzanares,1,1,1,0,0.529
+170,nocot,Vanilla,River Manzanares,Manzanares,1,1,1,0,0.529
+170,cot,SVSF,River Manzanares,Manzanares,1,1,1,0,0.777
+170,nocot,SVSF,River Manzanares,Manzanares,1,1,1,0,0.777
+170,cot,MMR,River Manzanares,Manzanares,1,1,1,0,0.744
+170,nocot,MMR,River Manzanares,Manzanares,1,1,1,0,0.744
+170,cot,Rerank,River Manzanares,Manzanares,1,1,1,0,48.892
+170,nocot,Rerank,River Manzanares,Manzanares,1,1,1,0,48.892
+170,cot,RerankBGE,River Manzanares,Manzanares,1,1,1,0,1014.541
+170,nocot,RerankBGE,River Manzanares,Manzanares,1,1,1,0,1014.541
+170,cot,MultiQuery,NOT FOUND,Manzanares,0,0,0,1,0.965
+170,nocot,MultiQuery,River Thames,Manzanares,0,0,0,0,0.965
+171,cot,Vanilla,Np,U,0,0,0,0,0.588
+171,nocot,Vanilla,Np,U,0,0,0,0,0.588
+171,cot,SVSF,Np,U,0,0,0,0,1.076
+171,nocot,SVSF,Np,U,0,0,0,0,1.076
+171,cot,MMR,Sn,U,0,0,0,0,1.012
+171,nocot,MMR,Sn,U,0,0,0,0,1.012
+171,cot,Rerank,Np,U,0,0,0,0,50.109
+171,nocot,Rerank,Np,U,0,0,0,0,50.109
+171,cot,RerankBGE,U,U,1,1,1,0,1047.458
+171,nocot,RerankBGE,U,U,1,1,1,0,1047.458
+171,cot,MultiQuery,Sn,U,0,0,0,0,0.989
+171,nocot,MultiQuery,Sn,U,0,0,0,0,0.989
+172,cot,Vanilla,Lisbon,Lisbon,1,1,1,0,1.338
+172,nocot,Vanilla,Lisbon,Lisbon,1,1,1,0,1.338
+172,cot,SVSF,Lisbon,Lisbon,1,1,1,0,1.95
+172,nocot,SVSF,Lisbon,Lisbon,1,1,1,0,1.95
+172,cot,MMR,Lisbon,Lisbon,1,1,1,0,1.021
+172,nocot,MMR,Lisbon,Lisbon,1,1,1,0,1.021
+172,cot,Rerank,Lisbon,Lisbon,1,1,1,0,47.183
+172,nocot,Rerank,Lisbon,Lisbon,1,1,1,0,47.183
+172,cot,RerankBGE,Lisbon,Lisbon,1,1,1,0,965.529
+172,nocot,RerankBGE,Lisbon,Lisbon,1,1,1,0,965.529
+172,cot,MultiQuery,Lisbon,Lisbon,1,1,1,0,1.089
+172,nocot,MultiQuery,Lisbon,Lisbon,1,1,1,0,1.089
+173,cot,Vanilla,Danube,Miljacka,0,0,0,0,0.543
+173,nocot,Vanilla,River Shannon,Miljacka,0,0,0,0,0.543
+173,cot,SVSF,NOT FOUND,Miljacka,0,0,0,1,0.802
+173,nocot,SVSF,River Shannon,Miljacka,0,0,0,0,0.802
+173,cot,MMR,NOT FOUND,Miljacka,0,0,0,1,0.752
+173,nocot,MMR,Ottawa River,Miljacka,0,0,0,0,0.752
+173,cot,Rerank,NOT FOUND,Miljacka,0,0,0,1,48.225
+173,nocot,Rerank,River Thames,Miljacka,0,0,0,0,48.225
+173,cot,RerankBGE,NOT FOUND,Miljacka,0,0,0,1,1014.163
+173,nocot,RerankBGE,River Shannon,Miljacka,0,0,0,0,1014.163
+173,cot,MultiQuery,NOT FOUND,Miljacka,0,0,0,1,0.931
+173,nocot,MultiQuery,NOT FOUND,Miljacka,0,0,0,1,0.931
+174,cot,Vanilla,Emperor Francis I,Francis I,1,1,1,0,0.569
+174,nocot,Vanilla,Emperor Francis I,Francis I,1,1,1,0,0.569
+174,cot,SVSF,Emperor Francis I,Francis I,1,1,1,0,0.801
+174,nocot,SVSF,Emperor Francis I,Francis I,1,1,1,0,0.801
+174,cot,MMR,Ferdinand I,Francis I,0,0,0,0,0.739
+174,nocot,MMR,Emperor Francis I,Francis I,1,1,1,0,0.739
+174,cot,Rerank,Emperor Francis I,Francis I,1,1,1,0,51.478
+174,nocot,Rerank,Emperor Francis I,Francis I,1,1,1,0,51.478
+174,cot,RerankBGE,Emperor Francis I,Francis I,1,1,1,0,1045.574
+174,nocot,RerankBGE,Emperor Francis I,Francis I,1,1,1,0,1045.574
+174,cot,MultiQuery,NOT FOUND,Francis I,0,0,0,1,1.095
+174,nocot,MultiQuery,Emperor Francis I,Francis I,1,1,1,0,1.095
+175,cot,Vanilla,Euro,Euro,1,1,1,0,0.581
+175,nocot,Vanilla,Euro,Euro,1,1,1,0,0.581
+175,cot,SVSF,Euro,Euro,1,1,1,0,0.84
+175,nocot,SVSF,Euro,Euro,1,1,1,0,0.84
+175,cot,MMR,Euro,Euro,1,1,1,0,0.776
+175,nocot,MMR,Euro,Euro,1,1,1,0,0.776
+175,cot,Rerank,Euro,Euro,1,1,1,0,51.57
+175,nocot,Rerank,Euro,Euro,1,1,1,0,51.57
+175,cot,RerankBGE,Euro,Euro,1,1,1,0,1009.667
+175,nocot,RerankBGE,Euro,Euro,1,1,1,0,1009.667
+175,cot,MultiQuery,Euro,Euro,1,1,1,0,1.118
+175,nocot,MultiQuery,Euro,Euro,1,1,1,0,1.118
+176,cot,Vanilla,NOT FOUND,84,0,0,0,1,0.579
+176,nocot,Vanilla,88,84,0,0,0,0,0.579
+176,cot,SVSF,88,84,0,0,0,0,1.578
+176,nocot,SVSF,88,84,0,0,0,0,1.578
+176,cot,MMR,100,84,0,0,0,0,1.504
+176,nocot,MMR,111,84,0,0,0,0,1.504
+176,cot,Rerank,84,84,1,1,1,0,50.297
+176,nocot,Rerank,84,84,1,1,1,0,50.297
+176,cot,RerankBGE,84,84,1,1,1,0,1022.709
+176,nocot,RerankBGE,84,84,1,1,1,0,1022.709
+176,cot,MultiQuery,84,84,1,1,1,0,1.146
+176,nocot,MultiQuery,84,84,1,1,1,0,1.146
+177,cot,Vanilla,Ajaccio,Ajaccio,1,1,1,0,0.582
+177,nocot,Vanilla,Ajaccio,Ajaccio,1,1,1,0,0.582
+177,cot,SVSF,Paris,Ajaccio,0,0,0,0,0.785
+177,nocot,SVSF,Paris,Ajaccio,0,0,0,0,0.785
+177,cot,MMR,Ajaccio,Ajaccio,1,1,1,0,0.75
+177,nocot,MMR,Ajaccio,Ajaccio,1,1,1,0,0.75
+177,cot,Rerank,Ajaccio,Ajaccio,1,1,1,0,50.302
+177,nocot,Rerank,Ajaccio,Ajaccio,1,1,1,0,50.302
+177,cot,RerankBGE,Brussels,Ajaccio,0,0,0,0,1037.741
+177,nocot,RerankBGE,Brussels,Ajaccio,0,0,0,0,1037.741
+177,cot,MultiQuery,Ajaccio,Ajaccio,1,1,1,0,1.006
+177,nocot,MultiQuery,Ajaccio,Ajaccio,1,1,1,0,1.006
+178,cot,Vanilla,Spree,White Elster,0,0,0,0,0.554
+178,nocot,Vanilla,Vltava River,White Elster,0,0,0,0,0.554
+178,cot,SVSF,Spree,White Elster,0,0,0,0,1.949
+178,nocot,SVSF,Vltava River,White Elster,0,0,0,0,1.949
+178,cot,MMR,NOT FOUND,White Elster,0,0,0,1,1.527
+178,nocot,MMR,Spree River,White Elster,0,0,0,0,1.527
+178,cot,Rerank,Spree,White Elster,0,0,0,0,49.302
+178,nocot,Rerank,Spree River,White Elster,0,0,0,0,49.302
+178,cot,RerankBGE,NOT FOUND,White Elster,0,0,0,1,1027.632
+178,nocot,RerankBGE,Spree River,White Elster,0,0,0,0,1027.632
+178,cot,MultiQuery,Spree River,White Elster,0,0,0,0,1.125
+178,nocot,MultiQuery,Spree River,White Elster,0,0,0,0,1.125
+179,cot,Vanilla,Ag,Ag,1,1,1,0,0.55
+179,nocot,Vanilla,Ag,Ag,1,1,1,0,0.55
+179,cot,SVSF,Ag,Ag,1,1,1,0,1.055
+179,nocot,SVSF,Ag,Ag,1,1,1,0,1.055
+179,cot,MMR,Ag,Ag,1,1,1,0,1.0
+179,nocot,MMR,Ag,Ag,1,1,1,0,1.0
+179,cot,Rerank,Ag,Ag,1,1,1,0,51.338
+179,nocot,Rerank,Ag,Ag,1,1,1,0,51.338
+179,cot,RerankBGE,Ag,Ag,1,1,1,0,1032.007
+179,nocot,RerankBGE,Ag,Ag,1,1,1,0,1032.007
+179,cot,MultiQuery,Ag,Ag,1,1,1,0,0.963
+179,nocot,MultiQuery,Ag,Ag,1,1,1,0,0.963
+180,cot,Vanilla,William Howard Taft,William Howard Taft,1,1,1,0,0.577
+180,nocot,Vanilla,George W. Bush,William Howard Taft,0,0,0,0,0.577
+180,cot,SVSF,NOT FOUND,William Howard Taft,0,0,0,1,0.816
+180,nocot,SVSF,NOT FOUND,William Howard Taft,0,0,0,1,0.816
+180,cot,MMR,NOT FOUND,William Howard Taft,0,0,0,1,0.749
+180,nocot,MMR,George W. Bush,William Howard Taft,0,0,0,0,0.749
+180,cot,Rerank,William Howard Taft,William Howard Taft,1,1,1,0,48.944
+180,nocot,Rerank,George W. Bush,William Howard Taft,0,0,0,0,48.944
+180,cot,RerankBGE,Franklin D. Roosevelt,William Howard Taft,0,0,0,0,950.256
+180,nocot,RerankBGE,William Howard Taft,William Howard Taft,1,1,1,0,950.256
+180,cot,MultiQuery,Franklin Delano Roosevelt,William Howard Taft,0,0,0,0,0.981
+180,nocot,MultiQuery,George W. Bush,William Howard Taft,0,0,0,0,0.981
+181,cot,Vanilla,Lisbon,Vienna,0,0,0,0,0.565
+181,nocot,Vanilla,Tokugawa Shogunate,Vienna,0,0,0,0,0.565
+181,cot,SVSF,Vienna,Vienna,1,1,1,0,1.052
+181,nocot,SVSF,Austria-Hungary,Vienna,0,0,0,0,1.052
+181,cot,MMR,NOT FOUND,Vienna,0,0,0,1,1.012
+181,nocot,MMR,Vienna,Vienna,1,1,1,0,1.012
+181,cot,Rerank,Vienna,Vienna,1,1,1,0,51.689
+181,nocot,Rerank,Austro-Hungarian Empire,Vienna,0,0,0,0,51.689
+181,cot,RerankBGE,Vienna,Vienna,1,1,1,0,1040.483
+181,nocot,RerankBGE,Vienna,Vienna,1,1,1,0,1040.483
+181,cot,MultiQuery,Vienna,Vienna,1,1,1,0,0.982
+181,nocot,MultiQuery,Prague,Vienna,0,0,0,0,0.982
+182,cot,Vanilla,NOT FOUND,The Bronx,0,0,0,1,0.56
+182,nocot,Vanilla,Manhattan,The Bronx,0,0,0,0,0.56
+182,cot,SVSF,NOT FOUND,The Bronx,0,0,0,1,0.823
+182,nocot,SVSF,Manhattan,The Bronx,0,0,0,0,0.823
+182,cot,MMR,NOT FOUND,The Bronx,0,0,0,1,0.788
+182,nocot,MMR,Manhattan,The Bronx,0,0,0,0,0.788
+182,cot,Rerank,The Bronx,The Bronx,1,1,1,0,51.89
+182,nocot,Rerank,The Bronx,The Bronx,1,1,1,0,51.89
+182,cot,RerankBGE,The Bronx,The Bronx,1,1,1,0,967.449
+182,nocot,RerankBGE,The Bronx,The Bronx,1,1,1,0,967.449
+182,cot,MultiQuery,NOT FOUND,The Bronx,0,0,0,1,0.961
+182,nocot,MultiQuery,Manhattan,The Bronx,0,0,0,0,0.961
+183,cot,Vanilla,NOT FOUND,San Diego,0,0,0,1,0.583
+183,nocot,Vanilla,La Jolla,San Diego,0,0,0,0,0.583
+183,cot,SVSF,NOT FOUND,San Diego,0,0,0,1,0.791
+183,nocot,SVSF,La Jolla,San Diego,0,0,0,0,0.791
+183,cot,MMR,NOT FOUND,San Diego,0,0,0,1,0.739
+183,nocot,MMR,La Jolla,San Diego,0,0,0,0,0.739
+183,cot,Rerank,La Jolla,San Diego,0,0,0,0,47.544
+183,nocot,Rerank,La Jolla,San Diego,0,0,0,0,47.544
+183,cot,RerankBGE,La Jolla,San Diego,0,0,0,0,1032.92
+183,nocot,RerankBGE,La Jolla,San Diego,0,0,0,0,1032.92
+183,cot,MultiQuery,NOT FOUND,San Diego,0,0,0,1,0.953
+183,nocot,MultiQuery,La Jolla,San Diego,0,0,0,0,0.953
+184,cot,Vanilla,Karl Marx,Karl Marx,1,1,1,0,0.551
+184,nocot,Vanilla,Karl Marx,Karl Marx,1,1,1,0,0.551
+184,cot,SVSF,Karl Marx,Karl Marx,1,1,1,0,0.776
+184,nocot,SVSF,Karl Marx,Karl Marx,1,1,1,0,0.776
+184,cot,MMR,Karl Marx,Karl Marx,1,1,1,0,0.742
+184,nocot,MMR,Karl Marx,Karl Marx,1,1,1,0,0.742
+184,cot,Rerank,Karl Marx,Karl Marx,1,1,1,0,48.815
+184,nocot,Rerank,Karl Marx,Karl Marx,1,1,1,0,48.815
+184,cot,RerankBGE,Karl Marx,Karl Marx,1,1,1,0,1044.197
+184,nocot,RerankBGE,Karl Marx,Karl Marx,1,1,1,0,1044.197
+184,cot,MultiQuery,Karl Marx,Karl Marx,1,1,1,0,0.997
+184,nocot,MultiQuery,Karl Marx,Karl Marx,1,1,1,0,0.997
+185,cot,Vanilla,Top Gun,Top Gun,1,1,1,0,0.538
+185,nocot,Vanilla,Top Gun,Top Gun,1,1,1,0,0.538
+185,cot,SVSF,Top Gun,Top Gun,1,1,1,0,0.805
+185,nocot,SVSF,Top Gun,Top Gun,1,1,1,0,0.805
+185,cot,MMR,Top Gun,Top Gun,1,1,1,0,0.746
+185,nocot,MMR,Top Gun,Top Gun,1,1,1,0,0.746
+185,cot,Rerank,Top Gun,Top Gun,1,1,1,0,47.73
+185,nocot,Rerank,Top Gun,Top Gun,1,1,1,0,47.73
+185,cot,RerankBGE,Top Gun,Top Gun,1,1,1,0,974.092
+185,nocot,RerankBGE,Top Gun,Top Gun,1,1,1,0,974.092
+185,cot,MultiQuery,Top Gun,Top Gun,1,1,1,0,1.055
+185,nocot,MultiQuery,Top Gun,Top Gun,1,1,1,0,1.055
+186,cot,Vanilla,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,0.555
+186,nocot,Vanilla,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,0.555
+186,cot,SVSF,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,1.642
+186,nocot,SVSF,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,1.642
+186,cot,MMR,Isabella of Angoulême,Fontevraud Abbey,0,0,0,0,1.544
+186,nocot,MMR,Isabella of Angoulême,Fontevraud Abbey,0,0,0,0,1.544
+186,cot,Rerank,Magna Carta,Fontevraud Abbey,0,0,0,0,50.587
+186,nocot,Rerank,Isabella of Angoulême,Fontevraud Abbey,0,0,0,0,50.587
+186,cot,RerankBGE,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,1014.665
+186,nocot,RerankBGE,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,1014.665
+186,cot,MultiQuery,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,0.954
+186,nocot,MultiQuery,Fontevraud Abbey,Fontevraud Abbey,1,1,1,0,0.954
+187,cot,Vanilla,Danube River,Black Sea,0,0,0,0,0.542
+187,nocot,Vanilla,Danube River,Black Sea,0,0,0,0,0.542
+187,cot,SVSF,Danube River,Black Sea,0,0,0,0,0.78
+187,nocot,SVSF,Danube River,Black Sea,0,0,0,0,0.78
+187,cot,MMR,Bohai Sea,Black Sea,0,0,0,0,0.739
+187,nocot,MMR,Danube River,Black Sea,0,0,0,0,0.739
+187,cot,Rerank,Black Sea,Black Sea,1,1,1,0,49.29
+187,nocot,Rerank,Black Sea,Black Sea,1,1,1,0,49.29
+187,cot,RerankBGE,Danube River,Black Sea,0,0,0,0,984.253
+187,nocot,RerankBGE,Danube River,Black Sea,0,0,0,0,984.253
+187,cot,MultiQuery,Black Sea,Black Sea,1,1,1,0,1.604
+187,nocot,MultiQuery,Black Sea,Black Sea,1,1,1,0,1.604
+188,cot,Vanilla,NOT FOUND,Zhytomyr,0,0,0,1,0.547
+188,nocot,Vanilla,Moscow,Zhytomyr,0,0,0,0,0.547
+188,cot,SVSF,NOT FOUND,Zhytomyr,0,0,0,1,0.793
+188,nocot,SVSF,London,Zhytomyr,0,0,0,0,0.793
+188,cot,MMR,NOT FOUND,Zhytomyr,0,0,0,1,0.72
+188,nocot,MMR,London,Zhytomyr,0,0,0,0,0.72
+188,cot,Rerank,NOT FOUND,Zhytomyr,0,0,0,1,48.804
+188,nocot,Rerank,London,Zhytomyr,0,0,0,0,48.804
+188,cot,RerankBGE,Zhytomyr,Zhytomyr,1,1,1,0,974.934
+188,nocot,RerankBGE,Zhytomyr,Zhytomyr,1,1,1,0,974.934
+188,cot,MultiQuery,Zhytomyr,Zhytomyr,1,1,1,0,0.974
+188,nocot,MultiQuery,Zhytomyr,Zhytomyr,1,1,1,0,0.974
+189,cot,Vanilla,Alexander the Great,Alexander the Great,1,1,1,0,0.553
+189,nocot,Vanilla,Alexander the Great,Alexander the Great,1,1,1,0,0.553
+189,cot,SVSF,Alexander the Great,Alexander the Great,1,1,1,0,0.768
+189,nocot,SVSF,Alexander the Great,Alexander the Great,1,1,1,0,0.768
+189,cot,MMR,Alexander the Great,Alexander the Great,1,1,1,0,0.743
+189,nocot,MMR,Alexander the Great,Alexander the Great,1,1,1,0,0.743
+189,cot,Rerank,Alexander the Great,Alexander the Great,1,1,1,0,49.134
+189,nocot,Rerank,Alexander the Great,Alexander the Great,1,1,1,0,49.134
+189,cot,RerankBGE,Alexander the Great,Alexander the Great,1,1,1,0,1017.758
+189,nocot,RerankBGE,Alexander the Great,Alexander the Great,1,1,1,0,1017.758
+189,cot,MultiQuery,Alexander the Great,Alexander the Great,1,1,1,0,0.969
+189,nocot,MultiQuery,Alexander the Great,Alexander the Great,1,1,1,0,0.969
+190,cot,Vanilla,104,67,0,0,0,0,0.557
+190,nocot,Vanilla,104,67,0,0,0,0,0.557
+190,cot,SVSF,104,67,0,0,0,0,1.067
+190,nocot,SVSF,104,67,0,0,0,0,1.067
+190,cot,MMR,The question asks for the atomic number of an element named after a city,67,0,0,1,0,0.998
+190,nocot,MMR,102,67,0,0,0,0,0.998
+190,cot,Rerank,104,67,0,0,0,0,51.07
+190,nocot,Rerank,104,67,0,0,0,0,51.07
+190,cot,RerankBGE,"The question asks for the atomic number of an element named after a city that hosted the Summer Olympics in 1912. The context does not provide this information directly. However, it mentions ""Element ",67,0,0,0,0,1026.671
+190,nocot,RerankBGE,106,67,0,0,0,0,1026.671
+190,cot,MultiQuery,104,67,0,0,0,0,1.008
+190,nocot,MultiQuery,104,67,0,0,0,0,1.008
+191,cot,Vanilla,Mont Blanc,Mount Teide,0,0,0,0,0.593
+191,nocot,Vanilla,Mont Blanc,Mount Teide,0,0,0,0,0.593
+191,cot,SVSF,NOT FOUND,Mount Teide,0,0,0,1,1.055
+191,nocot,SVSF,Denali,Mount Teide,0,0,0,0,1.055
+191,cot,MMR,Mont Blanc,Mount Teide,0,0,0,0,0.991
+191,nocot,MMR,Mont Blanc,Mount Teide,0,0,0,0,0.991
+191,cot,Rerank,Mulhacén,Mount Teide,0,0,0,0,47.826
+191,nocot,Rerank,Ojos del Salado,Mount Teide,0,0,0,0,47.826
+191,cot,RerankBGE,NOT FOUND,Mount Teide,0,0,0,1,1018.865
+191,nocot,RerankBGE,Denali,Mount Teide,0,0,0,0,1018.865
+191,cot,MultiQuery,Ojos del Salado,Mount Teide,0,0,0,0,0.988
+191,nocot,MultiQuery,Ojos del Salado,Mount Teide,0,0,0,0,0.988
+192,cot,Vanilla,NOT FOUND,Brasília,0,0,0,1,0.541
+192,nocot,Vanilla,Buenos Aires,Brasília,0,0,0,0,0.541
+192,cot,SVSF,Buenos Aires,Brasília,0,0,0,0,1.049
+192,nocot,SVSF,Buenos Aires,Brasília,0,0,0,0,1.049
+192,cot,MMR,NOT FOUND,Brasília,0,0,0,1,1.002
+192,nocot,MMR,Buenos Aires,Brasília,0,0,0,0,1.002
+192,cot,Rerank,NOT FOUND,Brasília,0,0,0,1,49.547
+192,nocot,Rerank,Paris,Brasília,0,0,0,0,49.547
+192,cot,RerankBGE,Brasília,Brasília,1,1,1,0,973.083
+192,nocot,RerankBGE,Buenos Aires,Brasília,0,0,0,0,973.083
+192,cot,MultiQuery,Buenos Aires,Brasília,0,0,0,0,1.098
+192,nocot,MultiQuery,Buenos Aires,Brasília,0,0,0,0,1.098
+193,cot,Vanilla,Bh,Rf,0,0,0,0,0.532
+193,nocot,Vanilla,Bh,Rf,0,0,0,0,0.532
+193,cot,SVSF,Bh,Rf,0,0,0,0,1.064
+193,nocot,SVSF,Bh,Rf,0,0,0,0,1.064
+193,cot,MMR,Ds,Rf,0,0,0,0,1.007
+193,nocot,MMR,Ds,Rf,0,0,0,0,1.007
+193,cot,Rerank,Bh,Rf,0,0,0,0,49.609
+193,nocot,Rerank,Bh,Rf,0,0,0,0,49.609
+193,cot,RerankBGE,Bh,Rf,0,0,0,0,1009.832
+193,nocot,RerankBGE,Bh,Rf,0,0,0,0,1009.832
+193,cot,MultiQuery,Bh,Rf,0,0,0,0,0.982
+193,nocot,MultiQuery,Bh,Rf,0,0,0,0,0.982
+194,cot,Vanilla,Pound Sterling,Pound sterling,1,1,1,0,0.561
+194,nocot,Vanilla,British,Pound sterling,0,0,0,0,0.561
+194,cot,SVSF,Pound Sterling,Pound sterling,1,1,1,0,1.724
+194,nocot,SVSF,British,Pound sterling,0,0,0,0,1.724
+194,cot,MMR,Saint Helena pound,Pound sterling,0,0,0,0,1.487
+194,nocot,MMR,Saint Helena pound,Pound sterling,0,0,0,0,1.487
+194,cot,Rerank,Pound,Pound sterling,0,1,1,0,50.155
+194,nocot,Rerank,Saint Helena pound,Pound sterling,0,0,0,0,50.155
+194,cot,RerankBGE,Euro,Pound sterling,0,0,0,0,1050.555
+194,nocot,RerankBGE,Euro,Pound sterling,0,0,0,0,1050.555
+194,cot,MultiQuery,Euro,Pound sterling,0,0,0,0,0.974
+194,nocot,MultiQuery,Euro,Pound sterling,0,0,0,0,0.974
+195,cot,Vanilla,Elbe River,Spree,0,0,0,0,0.533
+195,nocot,Vanilla,Elbe River,Spree,0,0,0,0,0.533
+195,cot,SVSF,Elbe River,Spree,0,0,0,0,0.807
+195,nocot,SVSF,Elbe River,Spree,0,0,0,0,0.807
+195,cot,MMR,NOT FOUND,Spree,0,0,0,1,0.793
+195,nocot,MMR,Yangtze River,Spree,0,0,0,0,0.793
+195,cot,Rerank,Spree,Spree,1,1,1,0,49.293
+195,nocot,Rerank,Elbe,Spree,0,0,0,0,49.293
+195,cot,RerankBGE,Spree,Spree,1,1,1,0,1029.018
+195,nocot,RerankBGE,Spree,Spree,1,1,1,0,1029.018
+195,cot,MultiQuery,Elbe River,Spree,0,0,0,0,1.13
+195,nocot,MultiQuery,Elbe River,Spree,0,0,0,0,1.13
+196,cot,Vanilla,Calvin Coolidge,Calvin Coolidge,1,1,1,0,0.562
+196,nocot,Vanilla,Dwight D. Eisenhower,Calvin Coolidge,0,0,0,0,0.562
+196,cot,SVSF,Calvin Coolidge,Calvin Coolidge,1,1,1,0,1.038
+196,nocot,SVSF,Dwight D. Eisenhower,Calvin Coolidge,0,0,0,0,1.038
+196,cot,MMR,NOT FOUND,Calvin Coolidge,0,0,0,1,1.007
+196,nocot,MMR,Dwight D. Eisenhower,Calvin Coolidge,0,0,0,0,1.007
+196,cot,Rerank,NOT FOUND,Calvin Coolidge,0,0,0,1,51.004
+196,nocot,Rerank,Dwight D. Eisenhower,Calvin Coolidge,0,0,0,0,51.004
+196,cot,RerankBGE,NOT FOUND,Calvin Coolidge,0,0,0,1,1010.699
+196,nocot,RerankBGE,Dwight D. Eisenhower,Calvin Coolidge,0,0,0,0,1010.699
+196,cot,MultiQuery,Calvin Coolidge,Calvin Coolidge,1,1,1,0,0.98
+196,nocot,MultiQuery,Dwight D. Eisenhower,Calvin Coolidge,0,0,0,0,0.98
+197,cot,Vanilla,NOT FOUND,Tallahassee,0,0,0,1,0.581
+197,nocot,Vanilla,Dodoma,Tallahassee,0,0,0,0,0.581
+197,cot,SVSF,NOT FOUND,Tallahassee,0,0,0,1,0.808
+197,nocot,SVSF,Dodoma,Tallahassee,0,0,0,0,0.808
+197,cot,MMR,NOT FOUND,Tallahassee,0,0,0,1,0.733
+197,nocot,MMR,Dodoma,Tallahassee,0,0,0,0,0.733
+197,cot,Rerank,Tallahassee,Tallahassee,1,1,1,0,48.53
+197,nocot,Rerank,Florida,Tallahassee,0,0,0,0,48.53
+197,cot,RerankBGE,Tallahassee,Tallahassee,1,1,1,0,977.033
+197,nocot,RerankBGE,Tallahassee,Tallahassee,1,1,1,0,977.033
+197,cot,MultiQuery,NOT FOUND,Tallahassee,0,0,0,1,1.062
+197,nocot,MultiQuery,Dodoma,Tallahassee,0,0,0,0,1.062
+198,cot,Vanilla,NOT FOUND,Andes,0,0,0,1,0.556
+198,nocot,Vanilla,Caucasus Mountains,Andes,0,0,0,0,0.556
+198,cot,SVSF,NOT FOUND,Andes,0,0,0,1,0.81
+198,nocot,SVSF,Caucasus Mountains,Andes,0,0,0,0,0.81
+198,cot,MMR,Caucasus Mountains,Andes,0,0,0,0,0.778
+198,nocot,MMR,Caucasus Mountains,Andes,0,0,0,0,0.778
+198,cot,Rerank,NOT FOUND,Andes,0,0,0,1,50.24
+198,nocot,Rerank,Caucasus Mountains,Andes,0,0,0,0,50.24
+198,cot,RerankBGE,Andes,Andes,1,1,1,0,1037.833
+198,nocot,RerankBGE,Andes,Andes,1,1,1,0,1037.833
+198,cot,MultiQuery,Andes,Andes,1,1,1,0,0.99
+198,nocot,MultiQuery,Andes mountain range,Andes,1,1,1,0,0.99
+199,cot,Vanilla,Montgomery,New Delhi,0,0,0,0,0.536
+199,nocot,Vanilla,St. Paul,New Delhi,0,0,0,0,0.536
+199,cot,SVSF,NOT FOUND,New Delhi,0,0,0,1,0.784
+199,nocot,SVSF,England,New Delhi,0,0,0,0,0.784
+199,cot,MMR,NOT FOUND,New Delhi,0,0,0,1,0.775
+199,nocot,MMR,London,New Delhi,0,0,0,0,0.775
+199,cot,Rerank,NOT FOUND,New Delhi,0,0,0,1,50.344
+199,nocot,Rerank,Copenhagen,New Delhi,0,0,0,0,50.344
+199,cot,RerankBGE,Copenhagen,New Delhi,0,0,0,0,1039.335
+199,nocot,RerankBGE,Copenhagen,New Delhi,0,0,0,0,1039.335
+199,cot,MultiQuery,New Delhi,New Delhi,1,1,1,0,0.965
+199,nocot,MultiQuery,Motihari,New Delhi,0,0,0,0,0.965

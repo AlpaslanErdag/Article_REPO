@@ -2,7 +2,7 @@
 # app_final_v11.py — SVSF Benchmark Suite (A100 Optimized, Vectorized & Strict EM)
 # Port: 5010 | History: history_v11.csv + history_v11.json
 # Baseline: Vanilla, MMR, Cross-Encoder, Multi-Query | UI: index_v11 + history_v11
-# Metric: Substring Exact Match (SQuAD-norm) + retrieval latency | Test: McNemar/Binomial
+# Metrik: Substring Exact Match (SQuAD-norm) + retrieval latency | Test: McNemar/Binomial
 # ============================================================
 
 import os
@@ -52,9 +52,9 @@ except ImportError:
 app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
-# ─── 1. HARDWARE MEASUREMENT (TIMED RETRIEVE - MS ONLY) ─────────────────────────
+# ─── 1. DONANIM ÖLÇÜMÜ (TIMED RETRIEVE - SADECE MS) ─────────────────────────
 def timed_retrieve(fn, *args, warmup=2, runs=10, **kw):
-    """Wrapper to measure retrieval steps in milliseconds with absolute precision."""
+    """Retrieval adımlarını ms cinsinden mutlak doğrulukla ölçen wrapper."""
     for _ in range(warmup):
         fn(*args, **kw)
     if CUDA_AVAILABLE:
@@ -70,9 +70,9 @@ def timed_retrieve(fn, *args, warmup=2, runs=10, **kw):
     dt_ms = (time.perf_counter() - t0) / runs * 1000.0
     return out, dt_ms
 
-# ─── 2. STRICT EXACT MATCH AT SQUAD STANDARDS ────────────────────────────
+# ─── 2. SQUAD STANDARTLARINDA STRICT EXACT MATCH ────────────────────────────
 def normalize_answer(s):
-    """SQuAD-style normalization: remove articles, remove punctuation, lowercase."""
+    """SQuAD tarzı normalizasyon: makale (article) sil, noktalama sil, küçük harf."""
     def remove_articles(text):
         return re.sub(r'\b(a|an|the)\b', ' ', text)
     def white_space_fix(text):
@@ -84,9 +84,9 @@ def normalize_answer(s):
 
 def compute_exact_match(predicted_answer, ground_truth):
     """
-    PRIMARY METRIC — strict (single-direction) substring EM.
-    Basis of the paper's 'deterministic, no partial credit' claim; SHOULD NOT BE CHANGED.
-    Does the ground truth appear as a contiguous sub-string (word-boundary) in the output?
+    BİRİNCİL METRİK — katı (strict) tek-yön substring EM.
+    Makalenin 'deterministic, no partial credit' iddiasının dayanağı; DEĞİŞTİRİLMEMELİ.
+    ground_truth, çıktının içinde bitişik bir alt-dize (word-boundary) olarak geçiyor mu?
     """
     if not predicted_answer or not ground_truth:
         return 0
@@ -98,10 +98,10 @@ def compute_exact_match(predicted_answer, ground_truth):
 
 def compute_em_flex(predicted_answer, ground_truth):
     """
-    SECONDARY — Bi-directional substring. Still DETERMINISTIC and THRESHOLD-LESS (no partial credit).
-    Is the shorter string a contiguous substring of the longer one? Checks both directions.
-    Recovers cases like 'The actor is John Travolta' ↔ 'John Travolta'.
-    (Note: 'John Travolta' → 'John Joseph Travolta' will NOT be recovered — words are not contiguous.)
+    İKİNCİL — çift yönlü substring. Hâlâ DETERMİNİSTİK ve EŞİKSİZ (kısmi kredi yok).
+    Kısa olan dize, uzun olanın bitişik alt-dizesi mi? Her iki yöne de bakar.
+    'The actor is John Travolta' ↔ 'John Travolta' gibi vakaları kurtarır.
+    (Not: 'John Travolta' → 'John Joseph Travolta'yı KURTARMAZ — arada kelime var, bitişik değil.)
     """
     if not predicted_answer or not ground_truth:
         return 0
@@ -116,11 +116,11 @@ def compute_em_flex(predicted_answer, ground_truth):
 
 def compute_f1(predicted_answer, ground_truth):
     """
-    DIAGNOSTIC — SQuAD token-F1. Gives PARTIAL CREDIT (0.0–1.0 float).
-    Prevents inflation in long/loose outputs by looking at precision and recall:
-    'John Travolta' vs 'John Joseph Travolta' → 0.80 (captured),
-    '11 February 1929' vs long incorrect text → 0.00 (rejected).
-    NOT the primary decision metric; an extra signal to see what EM missed.
+    TEŞHİS — SQuAD token-F1. KISMİ KREDİ verir (0.0–1.0 float).
+    Precision ve recall'a birlikte baktığı için uzun/gevşek çıktılarda şişmez:
+    'John Travolta' vs 'John Joseph Travolta' → 0.80 (yakalar),
+    '11 February 1929' vs uzun yanlış metin → 0.00 (reddeder).
+    Birincil karar metriği DEĞİL; sadece EM'in kaçırdığını görmek için ek sinyal.
     """
     if not predicted_answer or not ground_truth:
         return 0.0
@@ -142,8 +142,8 @@ def compute_f1(predicted_answer, ground_truth):
     recall = num_same / len(truth_tokens)
     return round(2 * precision * recall / (precision + recall), 4)
 
-# ─── 3. MODELS (BGE-M3 & CROSS-ENCODER) ────────────────────────────────────
-print("[v11] Loading models...")
+# ─── 3. MODELLER (BGE-M3 & CROSS-ENCODER) ────────────────────────────────────
+print("[v11] Modeller yükleniyor...")
 def _pick_device(prefer_cuda=True):
     return "cuda" if (prefer_cuda and CUDA_AVAILABLE) else "cpu"
 
@@ -158,8 +158,8 @@ except Exception:
     cross_encoder = None
     RERANK_AVAILABLE = False
 
-# Powerful/updated reranker (BGE-reranker-v2-m3) — second baseline.
-# Same CrossEncoder API; activation is sigmoid (scores 0-1).
+# Güçlü/güncel reranker (BGE-reranker-v2-m3) — ikinci baseline.
+# Aynı CrossEncoder API'si; aktivasyon sigmoid (skorlar 0-1).
 try:
     from sentence_transformers import CrossEncoder as _CE2
     cross_encoder_bge = _CE2("BAAI/bge-reranker-v2-m3", device=_dev, max_length=512)
@@ -167,9 +167,9 @@ try:
 except Exception as _e:
     cross_encoder_bge = None
     RERANK_BGE_AVAILABLE = False
-    logging.warning("BGE-reranker could not be loaded: %s", _e)
+    logging.warning("BGE-reranker yüklenemedi: %s", _e)
 
-# ─── HISTORY CONFIGURATION ──────────────────────────────────────────────────
+# ─── HISTORY YAPILANDIRMASI ──────────────────────────────────────────────────
 HISTORY_JSON_PATH = "history_v11.json"
 HISTORY_CSV_PATH = "history_v11.csv"
 TR_TZ = timezone(timedelta(hours=3))
@@ -216,7 +216,7 @@ def append_history(csv_row_dict: dict, json_record_snake: dict = None):
             with open(HISTORY_JSON_PATH, "w", encoding="utf-8") as f:
                 json.dump(history_data, f, ensure_ascii=False, indent=2)
         except Exception as e:
-            logging.error("JSON could not be written: %s", e)
+            logging.error("JSON yazılamadı: %s", e)
 
     file_exists = os.path.isfile(HISTORY_CSV_PATH)
     row = [csv_row_dict.get(c, "") for c in CSV_HEADER]
@@ -227,28 +227,28 @@ def append_history(csv_row_dict: dict, json_record_snake: dict = None):
                 writer.writerow(CSV_HEADER)
             writer.writerow(row)
     except Exception as e:
-        logging.error("CSV could not be written: %s", e)
+        logging.error("CSV yazılamadı: %s", e)
 
-# ─── 4. VECTORIZED SEARCH (RETRIEVAL) FUNCTIONS ───────────────────
+# ─── 4. VEKTÖRİZE EDİLMİŞ ARAMA (RETRIEVAL) FONKSİYONLARI ───────────────────
 def sklearn_cosine_wrapper(v1, mat):
     return sklearn_cosine_sim(v1.reshape(1, -1), mat)[0]
 
 def svsf_search_step(query_vec, all_embs, nodes, bm25_norm_scores, alpha_val, beta_val, num_agents, relevance_threshold, use_hetero_scout, manifold_threshold=0.80, neg_gamma=None):
-    """Fully vectorized, O(N) pure numpy loop."""
+    """Tamamen vektörize edilmiş, O(N) çalışan saf numpy döngüsü."""
     num_nodes = len(nodes)
     active_mask = np.ones(num_nodes, dtype=bool)
     global_pheromone = np.zeros_like(query_vec)
-    # NEGATIVE PHEROMONE (repellent): Active when neg_gamma>0. Accumulates the center
-    # of near-duplicate noise nodes filtered out by manifold; subsequent agents are
-    # REPELLED from this region (subtracted from score). gamma=0 → fully disabled (legacy behavior).
-    # If parameter is not provided, reads from env (backward compatibility).
+    # NEGATİF FEROMON (repellent): neg_gamma>0 iken aktif. Manifold ile elenen
+    # near-duplicate gürültü düğümlerinin merkezini biriktirir; sonraki ajanlar bu
+    # bölgeden İTİLİR (skordan çıkarılır). gamma=0 → tamamen kapalı (mevcut davranış).
+    # Parametre verilmezse env'den okur (geriye uyumluluk).
     if neg_gamma is None:
         neg_gamma = float(os.environ.get("SVSF_NEG_GAMMA", "0.0"))
     neg_pheromone = np.zeros_like(query_vec)
     svsf_nodes = []
     svsf_log = []
     
-    # Query embedding is static, calculate once
+    # Soru çekimi statiktir, 1 kez hesapla
     att_scores_dense = sklearn_cosine_wrapper(query_vec, all_embs)
 
     for agent_idx in range(num_agents):
@@ -258,48 +258,48 @@ def svsf_search_step(query_vec, all_embs, nodes, bm25_norm_scores, alpha_val, be
         # Attraction
         att = bm25_norm_scores if is_lexical_scout else att_scores_dense
         
-        # Repulsion (Pheromone) — positive trace (attraction)
+        # Repulsion (Pheromone) — pozitif iz (çekim)
         if np.all(global_pheromone == 0):
             rep = np.zeros(num_nodes)
         else:
             rep = sklearn_cosine_wrapper(global_pheromone, all_embs)
 
-        # Negative pheromone (repulsion): PENALIZE proximity to filtered noise regions
+        # Negatif feromon (itme): elenen gürültü bölgesine yakınlığı CEZALANDIR
         if neg_gamma > 0.0 and not np.all(neg_pheromone == 0):
             neg = sklearn_cosine_wrapper(neg_pheromone, all_embs)
         else:
             neg = np.zeros(num_nodes)
 
-        # Dual-Attractor + negative trace
+        # Dual-Attractor + negatif iz
         scores = (alpha_val * att) + (beta_val * rep) - (neg_gamma * neg)
         
-        # Mask those used or triggered by manifold constraints to -999
+        # Maskelenmiş olanları (kullanılmış veya manifold uyarısı yemiş) -999 yap
         masked_scores = np.where(active_mask, scores, -999.0)
         best_idx = int(np.argmax(masked_scores))
         best_score = masked_scores[best_idx]
 
         if best_score < relevance_threshold:
-            svsf_log.append(f"Agent {agent_idx+1}: Below threshold (Score: {best_score:.4f}).")
+            svsf_log.append(f"Agent {agent_idx+1}: Threshold altında (Skor: {best_score:.4f}).")
             break
             
         best_node = nodes[best_idx]
         svsf_nodes.append(best_node)
-        svsf_log.append(f"Agent {agent_idx+1}: Successful hop (Score: {best_score:.4f}).")
+        svsf_log.append(f"Agent {agent_idx+1}: Başarılı sıçrama (Skor: {best_score:.4f}).")
         
-        # Manifold Blurring Constraint: mask similar items above threshold.
-        # If manifold_threshold >= 1.0, mask is INEFFECTIVE (bridge-documents not filtered).
+        # Manifold Blurring Constraint: eşik üzeri benzerleri maskele.
+        # manifold_threshold >= 1.0 ise maske ETKİSİZ (köprü-belge elenmez).
         if manifold_threshold < 1.0:
             sim_to_best = sklearn_cosine_wrapper(best_node.text_embedding, all_embs)
             eliminated = active_mask & (sim_to_best >= manifold_threshold)
-            eliminated[best_idx] = False  # The chosen node itself is not negative
-            # Add center of eliminated near-duplicates to negative pheromone
+            eliminated[best_idx] = False  # seçilen düğümün kendisi negatif değil
+            # Elenen near-duplicate'lerin merkezini negatif feromona ekle
             if neg_gamma > 0.0 and np.any(eliminated):
                 neg_pheromone = neg_pheromone + 0.2 * all_embs[eliminated].mean(axis=0)
             active_mask = active_mask & (sim_to_best < manifold_threshold)
         else:
             active_mask[best_idx] = False
         
-        # Pheromone Update (positive trace)
+        # Pheromone Update (pozitif iz)
         global_pheromone = global_pheromone + 0.2 * ((query_vec + best_node.text_embedding) / 2.0)
         
     return svsf_nodes, svsf_log
@@ -320,7 +320,7 @@ def rerank_search_step(query_vec, query_text, all_embs, nodes, num_agents, cross
     return [top_nodes[i] for i in best_idx]
 
 def mmr_search_step(query_vec, all_embs, nodes, num_agents, lambda_param=0.5):
-    """Vectorized Maximum Marginal Relevance (MMR) search."""
+    """Vektörize edilmiş Maximum Marginal Relevance (MMR) araması."""
     if len(nodes) == 0:
         return []
     sims = sklearn_cosine_wrapper(query_vec, all_embs)
@@ -329,16 +329,16 @@ def mmr_search_step(query_vec, all_embs, nodes, num_agents, lambda_param=0.5):
         unselected_idx = [i for i in range(len(nodes)) if i not in selected_idx]
         if not unselected_idx:
             break
-        # Maximum similarity of unselected items to the selected ones
+        # Seçilmeyenlerin, seçilenlere olan maksimum benzerliği
         sim_to_selected = sklearn_cosine_sim(all_embs[unselected_idx], all_embs[selected_idx])
         max_sim_to_selected = np.max(sim_to_selected, axis=1)
-        # MMR: (lambda * query similarity) - ((1-lambda) * similarity between items)
+        # MMR: (lambda * sorgu benzerliği) - ((1-lambda) * kendi aralarındaki benzerlik)
         mmr_scores = (lambda_param * sims[unselected_idx]) - ((1 - lambda_param) * max_sim_to_selected)
         selected_idx.append(unselected_idx[int(np.argmax(mmr_scores))])
     return [nodes[i] for i in selected_idx]
 
 def multiquery_search_step(query_variants_embs, all_embs, nodes, num_agents):
-    """MultiQuery: search with vector average of query variations (retrieval-only)."""
+    """MultiQuery: sorgu varyasyonlarının vektör ortalaması ile arama (retrieval-only)."""
     if len(nodes) == 0 or len(query_variants_embs) == 0:
         return []
     combined_scores = np.zeros(len(nodes))
@@ -347,7 +347,7 @@ def multiquery_search_step(query_variants_embs, all_embs, nodes, num_agents):
     best_idx = np.argsort(combined_scores)[-num_agents:][::-1]
     return [nodes[i] for i in best_idx]
 
-# ─── BASIC NODE STRUCTURE AND CHUNKING ───────────────────────────────────────
+# ─── TEMEL DÜĞÜM YAPISI VE CHUNKING ───────────────────────────────────────
 class ChunkNode:
     def __init__(self, node_id, text):
         self.node_id = node_id
@@ -381,17 +381,17 @@ def chunk_recursive(text, chunk_size=500, overlap=0):
 
 def semantic_chunking(text, similarity_threshold=0.60, max_chunk_chars=1200):
     """
-    Chunking with semantic boundary detection. Splits sentences; starts new chunk
-    when cosine similarity between consecutive sentences falls BELOW threshold.
-    For Manifold Blurring thesis: boundaries are determined by semantic shift
-    rather than character count (zero-overlap, natural semantic boundary).
+    Anlamsal sınır tespitli chunking. Cümleleri böler; ardışık cümleler arası
+    embedding kosinüs benzerliği eşiğin ALTINA düştüğünde yeni chunk başlatır.
+    Manifold Blurring tezi için: sınırlar karakter sayısına göre değil,
+    anlamsal kopuşa göre belirlenir (zero-overlap, doğal semantik sınır).
     """
-    # Split into sentences (simple but language-agnostic)
+    # Cümlelere böl (basit ama dilden bağımsız)
     sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+|\n+', text) if s.strip()]
     if len(sentences) <= 1:
         return [text.strip()] if text.strip() else []
 
-    # Sentence embeddings (with passage prefix, consistent with ChunkNode)
+    # Cümle embeddingleri (passage prefix ile, ChunkNode ile tutarlı)
     embs = model.encode(["passage: " + s for s in sentences])
     embs = np.asarray(embs)
 
@@ -400,7 +400,7 @@ def semantic_chunking(text, similarity_threshold=0.60, max_chunk_chars=1200):
     cur_len = len(sentences[0])
     for i in range(1, len(sentences)):
         sim = float(sklearn_cosine_sim(embs[i-1].reshape(1, -1), embs[i].reshape(1, -1))[0][0])
-        # Semantic shift OR chunk too large → new chunk
+        # Anlamsal kopuş VEYA chunk fazla büyüdü → yeni chunk
         if sim < similarity_threshold or (cur_len + len(sentences[i]) > max_chunk_chars):
             chunks.append(" ".join(current).strip())
             current = [sentences[i]]
@@ -412,7 +412,7 @@ def semantic_chunking(text, similarity_threshold=0.60, max_chunk_chars=1200):
         chunks.append(" ".join(current).strip())
     return [c for c in chunks if c]
 
-# ─── LLM CALL ──────────────────────────────────────────────────────────
+# ─── LLM ÇAĞRISI ──────────────────────────────────────────────────────────
 def get_ollama_models():
     try:
         resp = requests.get("http://localhost:11434/api/tags", timeout=3)
@@ -424,7 +424,7 @@ def get_ollama_models():
 def query_llm(model_name, prompt):
     if not model_name: return ""
     try:
-        # CoT produces long output; num_predict must be sufficient otherwise <answer> is truncated.
+        # CoT uzun çıktı üretir; num_predict yeterli olmalı yoksa <answer> kesilir.
         temp = float(os.environ.get("SVSF_LLM_TEMPERATURE", "0.0"))
         num_predict = int(os.environ.get("SVSF_LLM_NUM_PREDICT", "512"))
         resp = requests.post(
@@ -440,7 +440,7 @@ def query_llm(model_name, prompt):
         return f"LLM Error: {e}"
 
 def make_prompt(nodes, query):
-    # Handle repeated context (same node shouldn't appear twice)
+    # Tekrarlanan bağlamları ele (aynı düğüm iki kez gelmesin)
     seen = set()
     unique_contexts = []
     for n in nodes:
@@ -450,10 +450,10 @@ def make_prompt(nodes, query):
             unique_contexts.append(f"- {txt}")
     context = "\n".join(unique_contexts)
 
-    # Non-CoT mode (ablation): When SVSF_NO_COT=1, generator does NO reasoning,
-    # gives direct short answer. This isolates raw retrieval quality by removing
-    # generator's noise-filtering/compensation effect. Applied EQUALLY to all systems
-    # (fair comparison maintained).
+    # CoT'suz mod (ablasyon): SVSF_NO_COT=1 iken generator muhakeme YAPMAZ,
+    # doğrudan kısa cevabı verir. Bu, generator'ın gürültü-filtreleme/telafi
+    # etkisini kaldırarak ham retrieval kalitesini izole eder. Tüm sistemlere
+    # EŞİT uygulanır (adil karşılaştırma korunur).
     no_cot = os.environ.get("SVSF_NO_COT", "0") == "1"
     if no_cot:
         return (
@@ -465,9 +465,9 @@ def make_prompt(nodes, query):
             "If the answer is not in the context, write <answer>NOT FOUND</answer>.\n"
         )
 
-    # CoT: reasoning first (<thinking>), then SHORT answer (<answer>).
-    # EM only scores <answer> content (parsed via extract_answer),
-    # so reasoning text doesn't pollute EM. Applied EQUALLY to all systems.
+    # CoT: önce muhakeme (<thinking>), sonra KISA cevap (<answer>).
+    # EM yalnızca <answer> içeriğini puanlar (extract_answer ile ayıklanır),
+    # böylece muhakeme metni EM'i kirletmez. Tüm sistemlere EŞİT uygulanır.
     return (
         "You are an expert analyst. You are given evidence (CONTEXT) gathered by "
         "autonomous agents from multiple documents; some of it may be noisy or irrelevant.\n\n"
@@ -484,15 +484,15 @@ def make_prompt(nodes, query):
 
 def extract_answer(raw):
     """
-    Extracts <answer>...</answer> content from LLM output (EM/F1/judge score this).
-    If no tag, safe fallback: last line (answer is usually at the end in CoT).
+    LLM çıktısından <answer>...</answer> içeriğini ayıklar (EM/F1/judge bunu puanlar).
+    Tag yoksa güvenli fallback: son satır (CoT'ta cevap genelde sondadır).
     """
     if not raw:
         return ""
     m = re.search(r'<answer>(.*?)</answer>', raw, re.IGNORECASE | re.DOTALL)
     if m:
         return m.group(1).strip()
-    # Fallback: remove <thinking> block, take last meaningful line of remaining
+    # Fallback: <thinking> bloğunu at, kalanın son anlamlı satırını al
     cleaned = re.sub(r'<thinking>.*?</thinking>', '', raw, flags=re.IGNORECASE | re.DOTALL).strip()
     if cleaned:
         lines = [l.strip() for l in cleaned.splitlines() if l.strip()]
@@ -502,43 +502,42 @@ def extract_answer(raw):
 
 def llm_judge(judge_model, question, predicted_answer, ground_truth):
     """
-    LLM-as-a-judge: evaluates if an answer is semantically correct regarding
-    the ground truth. Retrieval context is NOT PROVIDED — judge only evaluates
-    answer accuracy, not retrieval quality. Output is strictly parsed: 1 (correct) / 0 (wrong).
+    LLM-as-a-judge: bir cevabın ground-truth ile anlamsal olarak doğru olup olmadığını
+    yargılar. Retrieval bağlamı VERİLMEZ — judge sadece cevabın doğruluğunu değerlendirir,
+    retrieval kalitesini değil. Çıktı katı parse edilir: 1 (doğru) / 0 (yanlış).
 
-    To catch cases missed by EM/F1: can consider 'John Joseph Travolta' vs 
-    'John Travolta' correct, despite surface differences.
+    EM/F1'in kaçırdığı vakaları yakalamak için: 'John Joseph Travolta' vs 'John Travolta'
+    gibi anlamca eşdeğer ama yüzeyde farklı cevapları doğru sayabilir.
     """
     if not judge_model or not predicted_answer or not ground_truth:
-        return None  # judge failed/not applied → None (not 0; distinguishable)
+        return None  # judge çalışmadı/uygulanamadı → None (0 değil; ayırt edilebilsin)
     prompt = (
-        "You are an impartial evaluation expert. Judge whether the PREDICTED answer "
-        "to a question is semantically equivalent to the CORRECT answer.\n"
-        "Surface expression differences (full name, abbreviation, extra words) do not matter; "
-        "if the meaning is the same, it is correct. If the meaning differs or the prediction contains "
-        "wrong/missing information, it is incorrect.\n\n"
-        f"QUESTION: {question}\n"
-        f"CORRECT ANSWER: {ground_truth}\n"
-        f"PREDICTION: {predicted_answer}\n\n"
-        "Answer with only one word: CORRECT or INCORRECT."
+        "Sen tarafsız bir değerlendirme uzmanısın. Bir soruya verilen TAHMİN edilen cevabın, "
+        "DOĞRU cevapla anlamca eşdeğer olup olmadığını yargıla.\n"
+        "Yüzeysel ifade farkları (tam ad, kısaltma, fazladan kelime) önemli değildir; "
+        "ANLAM aynıysa doğrudur. Anlam farklıysa veya tahmin yanlış/eksik bilgi içeriyorsa yanlıştır.\n\n"
+        f"SORU: {question}\n"
+        f"DOĞRU CEVAP: {ground_truth}\n"
+        f"TAHMİN: {predicted_answer}\n\n"
+        "Sadece tek kelimeyle yanıtla: DOĞRU veya YANLIŞ."
     )
     raw = query_llm(judge_model, prompt)
     if not raw or raw.startswith("LLM Error"):
         return None
     norm = raw.strip().upper()
-    if norm.startswith("CORRECT") or norm.startswith("TRUE") or norm.startswith("YES"):
+    if norm.startswith("DOĞRU") or norm.startswith("DOGRU") or norm.startswith("CORRECT") or norm.startswith("TRUE") or norm.startswith("EVET"):
         return 1
-    if norm.startswith("INCORRECT") or norm.startswith("FALSE") or norm.startswith("NO") or norm.startswith("WRONG"):
+    if norm.startswith("YANLIŞ") or norm.startswith("YANLIS") or norm.startswith("INCORRECT") or norm.startswith("FALSE") or norm.startswith("HAYIR") or norm.startswith("WRONG"):
         return 0
-    if "CORRECT" in norm or "TRUE" in norm:
+    if "DOĞRU" in norm or "DOGRU" in norm or "CORRECT" in norm:
         return 1
     return 0
 
 
-# ─── SHARED CORPUS CACHE ──────────────────────────────
-# If SVSF_SHARED_CORPUS_PATH is set, ALL questions are searched in this single
-# large pool (real candidate-pool-bottleneck scenario). Pool is chunked &
-# embedded ONCE and cached; not recalculated for every query.
+# ─── PAYLAŞILAN HAVUZ (shared corpus) cache ──────────────────────────────
+# SVSF_SHARED_CORPUS_PATH set'liyse, TÜM sorular bu tek büyük havuzda aranır
+# (gerçek candidate-pool-bottleneck senaryosu). Havuz bir kez chunk'lanıp
+# embedding'lenir ve cache'lenir; her soruda yeniden hesaplanmaz.
 _SHARED_CACHE = {}  # key: (path, use_semantic, sem_thr, chunk_size, overlap) -> (nodes, all_embs)
 
 def _get_shared_pool(use_semantic, semantic_threshold, chunk_size, chunk_overlap):
@@ -556,12 +555,12 @@ def _get_shared_pool(use_semantic, semantic_threshold, chunk_size, chunk_overlap
         raw_texts = chunk_recursive(pool_text, chunk_size=chunk_size, overlap=chunk_overlap)
     nodes = [ChunkNode(f"P_{i}", txt) for i, txt in enumerate(raw_texts)]
     all_embs = np.vstack([n.text_embedding for n in nodes]) if nodes else None
-    logging.info("Shared pool loaded: %d chunks (%s)", len(nodes), path)
+    logging.info("Shared pool yüklendi: %d chunk (%s)", len(nodes), path)
     _SHARED_CACHE[key] = (nodes, all_embs)
     return _SHARED_CACHE[key]
 
 
-# ─── MAIN SIMULATION LOGIC ───────────────────────────────────────────────
+# ─── ANA SİMÜLASYON MANTIĞI ───────────────────────────────────────────────
 def perform_simulation_logic(
     corpus_text, query_text, suggested_answer, alpha_val, beta_val, num_agents,
     llm_model, chunk_size=500, chunk_overlap=0, relevance_threshold=0.2,
@@ -572,18 +571,18 @@ def perform_simulation_logic(
 ):
     corpus_text, query_text = (corpus_text or "").strip(), (query_text or "").strip()
     if not query_text:
-        return {"error": "Query cannot be empty."}
+        return {"error": "Sorgu boş olamaz."}
 
-    # Shared pool mode: all questions searched in a single large pool
+    # Paylaşılan havuz modu: tüm sorular tek büyük havuzda aranır
     shared = _get_shared_pool(use_semantic_chunking, semantic_threshold, chunk_size, chunk_overlap)
     if shared is not None:
         nodes, all_embs = shared
         chunking_method = ("Semantic" if use_semantic_chunking else "Recursive") + " [SHARED POOL]"
         if not nodes:
-            return {"error": "Could not generate chunks from shared pool."}
+            return {"error": "Paylaşılan havuzdan chunk üretilemedi."}
     else:
         if not corpus_text:
-            return {"error": "Corpus and query cannot be empty."}
+            return {"error": "Korpus ve sorgu boş olamaz."}
         if use_semantic_chunking:
             raw_texts = semantic_chunking(corpus_text, similarity_threshold=semantic_threshold)
             chunking_method = f"Semantic (thr={semantic_threshold})"
@@ -592,12 +591,12 @@ def perform_simulation_logic(
             chunking_method = f"Recursive ({chunk_size}/{chunk_overlap})"
         nodes = [ChunkNode(f"C_{i}", txt) for i, txt in enumerate(raw_texts)]
         if not nodes:
-            return {"error": "No chunks generated from text."}
+            return {"error": "Metinden hiç chunk üretilemedi."}
         all_embs = np.vstack([n.text_embedding for n in nodes])
 
     query_vec = model.encode("query: " + query_text)
 
-    # Is LLM usable? (MMR/MQ blocks must NOT come before this)
+    # LLM kullanılabilir mi? (MMR/MQ blokları bundan önce GELMEMELİ)
     can_llm = bool(llm_model and "(Ollama" not in llm_model)
 
     bm25_norm_scores = np.zeros(len(nodes))
@@ -629,7 +628,7 @@ def perform_simulation_logic(
     else:
         mmr_nodes, m_ms = [], 0.0
 
-    # --- CROSS-ENCODER (RERANKER, classic: MiniLM) ---
+    # --- CROSS-ENCODER (RERANKER, klasik: MiniLM) ---
     if enable_rerank and RERANK_AVAILABLE:
         rerank_nodes, r_ms = timed_retrieve(
             rerank_search_step, query_vec, query_text, all_embs, nodes, num_agents, cross_encoder
@@ -637,7 +636,7 @@ def perform_simulation_logic(
     else:
         rerank_nodes, r_ms = [], 0.0
 
-    # --- CROSS-ENCODER (RERANKER, powerful/updated: BGE-reranker-v2-m3) ---
+    # --- CROSS-ENCODER (RERANKER, güçlü/güncel: BGE-reranker-v2-m3) ---
     if enable_rerank and RERANK_BGE_AVAILABLE:
         rerank_bge_nodes, rb_ms = timed_retrieve(
             rerank_search_step, query_vec, query_text, all_embs, nodes, num_agents, cross_encoder_bge
@@ -646,8 +645,8 @@ def perform_simulation_logic(
         rerank_bge_nodes, rb_ms = [], 0.0
 
     # --- MULTI-QUERY ---
-    # To SEPARATE LLM query variation generation time (LLM latency) from retrieval
-    # (MIPS) time, we generate variations OUTSIDE timed_retrieve — fair measurement.
+    # LLM'in sorgu varyasyonu üretme süresini (LLM latency) arama (MIPS) süresinden
+    # AYIRMAK için varyasyonları timed_retrieve DIŞINDA üretiyoruz — adil ölçüm.
     if enable_multiquery and can_llm:
         variants_text = query_llm(
             llm_model,
@@ -659,18 +658,18 @@ def perform_simulation_logic(
     else:
         mq_nodes, mq_ms = [], 0.0
 
-    # --- LLM GENERATION & METRICS (strict EM + flex + F1 + optional judge) ---
-    effective_judge = judge_model if judge_model else llm_model  # use main model if judge empty
+    # --- LLM GENERATION & METRICS (strict EM + flex + F1 + opsiyonel judge) ---
+    effective_judge = judge_model if judge_model else llm_model  # judge modeli boşsa ana modeli kullan
     def evaluate(n_list):
         if not n_list or not can_llm:
             return "", 0, 0, 0.0, None
         raw = query_llm(llm_model, make_prompt(n_list, query_text))
-        ans = extract_answer(raw)  # <answer> content — metrics score this
-        em = compute_exact_match(ans, suggested_answer)       # primary
-        em_flex = compute_em_flex(ans, suggested_answer)      # bi-directional, deterministic
-        f1 = compute_f1(ans, suggested_answer)                # diagnostic, partial credit
+        ans = extract_answer(raw)  # <answer> içeriği — metrikler bunu puanlar
+        em = compute_exact_match(ans, suggested_answer)       # birincil
+        em_flex = compute_em_flex(ans, suggested_answer)      # çift-yön, deterministik
+        f1 = compute_f1(ans, suggested_answer)                # teşhis, kısmi kredi
         judge = llm_judge(effective_judge, query_text, ans, suggested_answer) if use_judge else None
-        # Write extracted answer to LLM column (keep raw if audit is needed)
+        # LLM sütununa ayıklanmış cevabı yaz (denetim için raw'ı da saklamak istersen ayrı alan)
         return ans, em, em_flex, f1, judge
 
     s_llm, s_em, s_emf, s_f1, s_jd = evaluate(svsf_nodes)
@@ -684,7 +683,7 @@ def perform_simulation_logic(
         d = {
             "chunks": [n.text for n in node_list], "llm": llm_txt,
             "exact_match": em, "em_flex": em_flex, "f1": f1, "judge": judge,
-            "sdi": em, "faithfulness": "", "relevance": "",  # UI backward compatibility
+            "sdi": em, "faithfulness": "", "relevance": "",  # UI geriye dönük uyumluluk
             "time_ms": ms
         }
         if extra:
@@ -706,7 +705,7 @@ def perform_simulation_logic(
     return payload
 
 def _jv(judge_val):
-    """Convert judge score to string for CSV: None → '' (not applied), 0/1 → '0'/'1'."""
+    """Judge skorunu CSV için stringe çevir: None → '' (uygulanmadı), 0/1 → '0'/'1'."""
     return "" if judge_val is None else str(int(judge_val))
 
 def _run_record_to_append(res, data):
@@ -761,7 +760,7 @@ def _run_record_to_append(res, data):
         "MultiQuery_LLM": mq.get("llm", "")
     }
 
-    # Interface (history) JSON record — honest field names (*_em, *_time_ms) + backward compatibility *_sdi
+    # Arayüz (history) JSON kaydı — dürüst alan adları (*_em, *_time_ms) + geriye dönük *_sdi
     snake = {
         "model": csv_row["Model"], "agents": csv_row["Agents"],
         "alpha": csv_row["Alpha"], "beta": csv_row["Beta"],
@@ -787,18 +786,18 @@ def _run_record_to_append(res, data):
         "svsf_time_ms": svsf.get("time_ms", 0), "vanilla_time_ms": van.get("time_ms", 0),
         "mmr_time_ms": mmr.get("time_ms", 0), "rerank_time_ms": rrk.get("time_ms", 0),
         "multiquery_time_ms": mq.get("time_ms", 0),
-        # Old UI compatibility
+        # Eski UI uyumluluğu
         "svsf_sdi": svsf.get("exact_match", 0), "vanilla_sdi": van.get("exact_match", 0),
         "rerank_sdi": rrk.get("exact_match", 0)
     }
     append_history(csv_row, snake)
 
-# ─── DATASET FETCHING AND AUTOMATION (WORKER) ─────────────────────────────────────
+# ─── DATASET ÇEKME VE OTOMASYON (WORKER) ─────────────────────────────────────
 def build_mixed_validation_set(n_sample: int = 5, sources=None) -> list:
     """
-    Samples from HotpotQA, 2Wiki, MuSiQue validation sets.
-    sources: list of sets to pull from, e.g., ["MuSiQue"] or
-             ["HotpotQA","2WikiMultihopQA","MuSiQue"] (None → all).
+    HotpotQA, 2Wiki, MuSiQue validation setlerinden örnek çeker.
+    sources: çekilecek setlerin listesi, örn. ["MuSiQue"] veya
+             ["HotpotQA","2WikiMultihopQA","MuSiQue"] (None → hepsi).
     """
     from datasets import load_dataset
     if sources is None:
@@ -807,14 +806,14 @@ def build_mixed_validation_set(n_sample: int = 5, sources=None) -> list:
     mixed = []
 
     def _try_load(repo_configs):
-        """repo_configs: [(repo_id, config_or_None, split), ...] — returns first successful."""
+        """repo_configs: [(repo_id, config_or_None, split), ...] — ilk başarılıyı döndürür."""
         for repo, cfg, split in repo_configs:
             try:
                 ds = load_dataset(repo, cfg, split=split) if cfg else load_dataset(repo, split=split)
-                logging.info("[dataset] Loaded: %s (cfg=%s, split=%s, n=%d)", repo, cfg, split, len(ds))
+                logging.info("[dataset] Yüklendi: %s (cfg=%s, split=%s, n=%d)", repo, cfg, split, len(ds))
                 return ds
             except Exception as e:
-                logging.warning("[dataset] '%s' (cfg=%s) failed: %s", repo, cfg, e)
+                logging.warning("[dataset] '%s' (cfg=%s) başarısız: %s", repo, cfg, e)
         return None
 
     def _sample_indices(ds, n):
@@ -840,12 +839,12 @@ def build_mixed_validation_set(n_sample: int = 5, sources=None) -> list:
                         mixed.append({"query": q, "corpus": "\n\n".join(parts), "suggested_answer": a, "source": "HotpotQA"})
                         added += 1
                 except Exception as e:
-                    logging.warning("[HotpotQA] item parse error: %s", e)
-        logging.info("[dataset] HotpotQA: %d samples added.", added)
+                    logging.warning("[HotpotQA] item parse hatası: %s", e)
+        logging.info("[dataset] HotpotQA: %d örnek eklendi.", added)
 
     # ── 2WikiMultihopQA ──
-    # NOTE: 'xanhho/2WikiMultihopQA' is script-based (.py) and does not load
-    # in new datasets versions. Repos not requiring scripts (parquet/json) tried first.
+    # NOT: 'xanhho/2WikiMultihopQA' script-tabanlı (.py) ve yeni datasets sürümünde
+    # yüklenmiyor. Script gerektirmeyen (parquet/json) repo'lar önce denenir.
     if "2WikiMultihopQA" in sources:
         ds = _try_load([
             ("scholarly-shadows-syndicate/2wikimultihopqa_with_q_gpt35", None, "train"),
@@ -863,11 +862,11 @@ def build_mixed_validation_set(n_sample: int = 5, sources=None) -> list:
                     ctx_parts = []
                     ctx = item.get("context", None)
                     if isinstance(ctx, str):
-                        # Plain text context (gpt35 variant)
+                        # Düz metin context (gpt35 varyantı)
                         if ctx.strip():
                             ctx_parts.append(ctx.strip())
                     elif isinstance(ctx, (list, tuple)):
-                        # HotpotQA-style: [[title, [sentences]], ...]
+                        # HotpotQA-stili: [[title, [sentences]], ...]
                         for c in ctx:
                             if isinstance(c, (list, tuple)) and len(c) >= 2:
                                 title, sents = c[0], c[1]
@@ -880,7 +879,7 @@ def build_mixed_validation_set(n_sample: int = 5, sources=None) -> list:
                         for t, s in zip(titles, sents):
                             s_txt = " ".join(s) if isinstance(s, (list, tuple)) else str(s)
                             ctx_parts.append(f"Title: {t}\n{s_txt}")
-                    # If context is missing, try 'paragraphs' / 'passages' fields
+                    # context yoksa 'paragraphs' / 'passages' alanlarını dene
                     if not ctx_parts:
                         for alt_key in ("paragraphs", "passages", "contexts"):
                             alt = item.get(alt_key)
@@ -896,9 +895,10 @@ def build_mixed_validation_set(n_sample: int = 5, sources=None) -> list:
                         mixed.append({"query": q, "corpus": "\n\n".join(ctx_parts), "suggested_answer": a, "source": "2WikiMultihopQA"})
                         added += 1
                 except Exception as e:
-                    logging.warning("[2Wiki] item parse error: %s", e)
-        logging.info("[dataset] 2Wiki: %d samples added.", added)
+                    logging.warning("[2Wiki] item parse hatası: %s", e)
+        logging.info("[dataset] 2Wiki: %d örnek eklendi.", added)
 
+    # ── MuSiQue ──
     # ── MuSiQue ──
     if "MuSiQue" in sources:
         ds = _try_load([
@@ -921,25 +921,25 @@ def build_mixed_validation_set(n_sample: int = 5, sources=None) -> list:
                         mixed.append({"query": q, "corpus": "\n\n".join(ctx_parts), "suggested_answer": a, "source": "MuSiQue"})
                         added += 1
                 except Exception as e:
-                    logging.warning("[MuSiQue] item parse error: %s", e)
-        logging.info("[dataset] MuSiQue: %d samples added.", added)
+                    logging.warning("[MuSiQue] item parse hatası: %s", e)
+        logging.info("[dataset] MuSiQue: %d örnek eklendi.", added)
 
-    logging.info("[dataset] TOTAL: %d samples ready.", len(mixed))
+    logging.info("[dataset] TOPLAM: %d örnek hazır.", len(mixed))
     random.shuffle(mixed)
     return mixed
 
 def _parse_multi(val, cast=float, default=None):
     """
-    Converts multi-value parameter input to list.
-    Accepted: "2,3,4" / "2 3 4" / [2,3,4] / 4 / 4.0
-    Returns default if invalid.
+    Çok-değerli parametre girişini listeye çevirir.
+    Kabul edilenler: "2,3,4" / "2 3 4" / [2,3,4] / 4 / 4.0
+    Geçersizse default döner.
     """
     if val is None:
         return list(default) if default else []
     if isinstance(val, (list, tuple)):
         items = val
     else:
-        # string or single number
+        # string veya tek sayı
         s = str(val).strip()
         items = re.split(r"[,\s]+", s) if s else []
     out = []
@@ -958,7 +958,7 @@ def _run_automation_worker(payload: dict):
 
         if bool(payload.get("use_mixed_validation")):
             n_sample = max(1, int(payload.get("mixed_sample_size", 5)))
-            srcs = payload.get("sources") or None  # None → all three
+            srcs = payload.get("sources") or None  # None → üçü de
             if isinstance(srcs, str):
                 srcs = [s.strip() for s in srcs.split(",") if s.strip()] or None
             test_set.extend(build_mixed_validation_set(n_sample=n_sample, sources=srcs))
@@ -966,12 +966,12 @@ def _run_automation_worker(payload: dict):
         if not test_set:
             with AUTOM_LOCK:
                 _automation_state["last_error"] = (
-                    "Test set empty. Check logs if datasets couldn't be loaded "
-                    "(HotpotQA/2Wiki/MuSiQue repo access) or upload your own CSV."
+                    "Test seti boş. Veri setleri yüklenemediyse logları kontrol edin "
+                    "(HotpotQA/2Wiki/MuSiQue repo erişimi) veya kendi CSV'nizi yükleyin."
                 )
             return
 
-        # Multi-value parameter grid (can come as "2,3,4" from UI)
+        # Multi-değer parametre ızgarası (UI'dan "2,3,4" gibi gelebilir)
         agents_list   = _parse_multi(payload.get("agents", 4), cast=int,   default=[4])
         alpha_list    = _parse_multi(payload.get("alpha", 1.0), cast=float, default=[1.0])
         beta_list     = _parse_multi(payload.get("beta", 1.0),  cast=float, default=[1.0])
@@ -979,7 +979,7 @@ def _run_automation_worker(payload: dict):
         overlap_list  = _parse_multi(payload.get("overlaps", [0, 50]), cast=int, default=[0, 50])
         chunk_list    = _parse_multi(payload.get("chunk_sizes", 500), cast=int, default=[500])
 
-        # Scout toggle: "true,false" → [True, False]; single value → single element list
+        # Scout aç/kapa: "true,false" → [True, False]; tek değer → tek elemanlı
         def _parse_bools(v, default):
             if v is None:
                 return default
@@ -1048,26 +1048,26 @@ def _run_automation_worker(payload: dict):
                         _automation_state["progress"] = run_idx
                         _automation_state["completed_runs"] = run_idx
 
-        # Generate report automatically upon test completion — ONLY with this run's data
+        # Test bitince otomatik rapor üret — SADECE bu koşunun verisiyle (karışma yok)
         try:
             _compute_reports(automation_id=payload.get("automation_id"))
         except Exception as e:
-            logging.warning("Automatic report generation failed: %s", e)
-        # Drive backup immediately after run (without waiting for 5min cycle)
+            logging.warning("Otomatik rapor üretilemedi: %s", e)
+        # Koşu biter bitmez Drive yedeği (5dk döngüsünü beklemeden)
         try:
             _drive_export_once()
         except Exception as e:
-            logging.warning("Drive export error at end of run: %s", e)
+            logging.warning("Koşu sonu Drive export hatası: %s", e)
 
     except Exception as e:
-        logging.exception("Automation worker error")
+        logging.exception("Otomasyon worker hatası")
         with AUTOM_LOCK:
             _automation_state["last_error"] = str(e)
     finally:
         with AUTOM_LOCK:
             _automation_state["running"] = False
 
-# ─── FLASK ROUTES AND INTERFACE (UI) ───────────────────────────────────────────
+# ─── FLASK ROTALARI VE ARAYÜZ (UI) ───────────────────────────────────────────
 @app.route("/")
 def index(): return render_template("index_v11.html")
 
@@ -1084,14 +1084,14 @@ def api_history_reset():
     try:
         for p in (HISTORY_JSON_PATH, HISTORY_CSV_PATH):
             if os.path.exists(p): os.remove(p)
-        return jsonify({"message": "History cleared."})
+        return jsonify({"message": "Geçmiş silindi."})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 @app.route("/history.csv")
 def history_csv_dl():
     if not os.path.exists(HISTORY_CSV_PATH):
-        return jsonify({"error": "CSV not found"}), 404
+        return jsonify({"error": "CSV yok"}), 404
     return send_file(HISTORY_CSV_PATH, as_attachment=True, download_name="history_v11.csv")
 
 @app.route("/api/models")
@@ -1127,14 +1127,14 @@ def api_simulate():
 def api_automation_start():
     global _automation_thread, _automation_state
     with AUTOM_LOCK:
-        if _automation_state["running"]: return jsonify({"error": "Already running"}), 400
+        if _automation_state["running"]: return jsonify({"error": "Zaten çalışıyor"}), 400
         payload = request.get_json(silent=True) or {}
-        if not payload.get("models"): return jsonify({"error": "Select at least 1 model."}), 400
+        if not payload.get("models"): return jsonify({"error": "En az 1 model seçin."}), 400
         _automation_state.update({"running": True, "progress": 0, "total": 0, "total_runs": 0, "completed_runs": 0, "last_error": None})
         payload["automation_id"] = f"auto_{int(time.time())}"
         _automation_thread = threading.Thread(target=_run_automation_worker, args=(payload,), daemon=True)
         _automation_thread.start()
-    return jsonify({"message": "Started", "state": {**_automation_state}})
+    return jsonify({"message": "Başladı", "state": {**_automation_state}})
 
 @app.route("/api/automation/status")
 def api_automation_status():
@@ -1144,7 +1144,7 @@ def api_automation_status():
 def api_download_dataset():
     n_sample = int(request.args.get("n", 50))
     mixed = build_mixed_validation_set(n_sample=n_sample)
-    if not mixed: return jsonify({"error": "Could not create dataset."}), 500
+    if not mixed: return jsonify({"error": "Veri seti oluşturulamadı."}), 500
 
     output = io.StringIO()
     writer = csv.DictWriter(output, fieldnames=["source", "query", "suggested_answer", "corpus"], extrasaction="ignore")
@@ -1156,9 +1156,9 @@ def api_download_dataset():
 
 def _compute_reports(automation_id=None):
     """
-    Produces McNemar test + EM/F1/Judge/latency plots and summary tables.
-    If automation_id is provided, ONLY rows from that run are used (runs don't mix).
-    All outputs are written to reports/<run_tag>/ folder with unique name.
+    McNemar testi + EM/F1/Judge/latency grafikleri ve özet tablolar üretir.
+    automation_id verilirse SADECE o koşunun satırları kullanılır (koşular karışmaz).
+    Tüm çıktılar benzersiz isimle reports/<run_tag>/ klasörüne yazılır.
     """
     from scipy.stats import chi2
     try:
@@ -1167,18 +1167,18 @@ def _compute_reports(automation_id=None):
         from scipy.stats import binom_test as binomtest
 
     if not os.path.exists(HISTORY_CSV_PATH):
-        return {"error": "CSV not found"}
+        return {"error": "CSV yok"}
 
     df = pd.read_csv(HISTORY_CSV_PATH)
 
-    # Isolate run (prevent mixing)
+    # Koşuyu izole et (karışmayı önle)
     if automation_id:
         df = df[df['AutomationId'].astype(str) == str(automation_id)].copy()
         if len(df) == 0:
-            return {"error": f"No rows for AutomationId '{automation_id}'"}
+            return {"error": f"AutomationId '{automation_id}' için satır yok"}
         run_tag = str(automation_id)
     else:
-        # Take last run if multiple exist (highest row count last AutomationId)
+        # Tek koşu varsa onu al, yoksa EN SON koşuyu (en çok satırlı son AutomationId)
         aids = df['AutomationId'].astype(str)
         if aids.nunique() > 1:
             last_aid = df.iloc[-1]['AutomationId']
@@ -1187,7 +1187,7 @@ def _compute_reports(automation_id=None):
         else:
             run_tag = str(aids.iloc[0]) if len(aids) else "all"
 
-    # Unique stamp: run_tag + time (even if same run is reported multiple times, it won't collide)
+    # Benzersiz damga: run_tag + zaman (aynı koşu birden çok kez raporlanırsa da çakışmasın)
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     safe_tag = re.sub(r'[^A-Za-z0-9_-]', '_', run_tag)
     out_dir = os.path.join("reports", f"{safe_tag}__{stamp}")
@@ -1195,7 +1195,7 @@ def _compute_reports(automation_id=None):
 
     df_zero = df[df['chunk_overlap'] == 0].copy()
     if len(df_zero) == 0:
-        df_zero = df.copy()  # use all if overlap=0 doesn't exist (e.g., semantic mode)
+        df_zero = df.copy()  # overlap=0 yoksa tümünü kullan (semantic modda hep 0 değilse)
 
     systems = ['SVSF', 'Vanilla', 'MMR', 'Rerank', 'MultiQuery']
     metric_cols = {
@@ -1209,7 +1209,7 @@ def _compute_reports(automation_id=None):
         vals = pd.to_numeric(df_zero[col], errors='coerce').dropna()
         return float(vals.mean()) if len(vals) else None
 
-    # ── Summary table (all systems × all metrics) ──
+    # ── Özet tablo (tüm sistemler × tüm metrikler) ──
     summary_rows = []
     for s in systems:
         row = {'System': s, 'n': int(len(df_zero))}
@@ -1218,7 +1218,7 @@ def _compute_reports(automation_id=None):
             if v is None:
                 row[mname] = None
             elif mname in ('EM', 'EM_flex', 'Judge'):
-                row[mname] = round(v * 100, 2)  # percentage
+                row[mname] = round(v * 100, 2)  # yüzde
             else:
                 row[mname] = round(v, 4)
         summary_rows.append(row)
@@ -1226,11 +1226,11 @@ def _compute_reports(automation_id=None):
     summary_csv = os.path.join(out_dir, f"summary_metrics__{safe_tag}.csv")
     summary_df.to_csv(summary_csv, index=False)
 
-    # Save raw rows of this run separately (for reproducibility)
+    # Bu koşunun ham satırlarını da ayrı kaydet (tekrar-üretilebilirlik)
     subset_csv = os.path.join(out_dir, f"run_rows__{safe_tag}.csv")
     df.to_csv(subset_csv, index=False)
 
-    # ── McNemar (SVSF vs Cross-Encoder), via EM ──
+    # ── McNemar (SVSF vs Cross-Encoder), EM üzerinden ──
     b, c = 0, 0
     if 'SVSF_EM' in df_zero.columns and 'Rerank_EM' in df_zero.columns:
         for s, r in zip(pd.to_numeric(df_zero['SVSF_EM'], errors='coerce').fillna(0).tolist(),
@@ -1238,7 +1238,7 @@ def _compute_reports(automation_id=None):
             if s == 0 and r == 1: b += 1
             elif s == 1 and r == 0: c += 1
     if b + c == 0:
-        p_value, stat_msg = 1.0, "Same results"
+        p_value, stat_msg = 1.0, "Aynı sonuçlar"
     elif (b + c) < 20:
         try:
             p_value = binomtest(min(b, c), b + c, 0.5).pvalue
@@ -1260,11 +1260,11 @@ def _compute_reports(automation_id=None):
     with open(os.path.join(out_dir, f"mcnemar__{safe_tag}.json"), "w") as f:
         json.dump(report_data, f, indent=2)
 
-    # ── Plots ──
+    # ── Grafikler ──
     plt.rcParams['font.family'] = 'serif'
     palette5 = ['#1f77b4', '#9ca3af', '#38bdf8', '#fb923c', '#c084fc']
 
-    # Plot 1: EM (with Judge side-by-side) for all systems
+    # Grafik 1: Tüm sistemler EM (+ Judge yan yana)
     plt.figure(figsize=(9, 5))
     em_vals = [col_mean(s, '_EM') or 0 for s in systems]
     em_vals = [v*100 for v in em_vals]
@@ -1276,7 +1276,7 @@ def _compute_reports(automation_id=None):
     plt.savefig(os.path.join(out_dir, f"fig_EM__{safe_tag}.png"), dpi=150, bbox_inches='tight')
     plt.close()
 
-    # Plot 2: EM vs Judge vs F1 (grouped) — comparison of metrics
+    # Grafik 2: EM vs Judge vs F1 (gruplu) — metriklerin kıyası
     plt.figure(figsize=(10, 5))
     import numpy as _np
     x = _np.arange(len(systems)); w = 0.25
@@ -1292,7 +1292,7 @@ def _compute_reports(automation_id=None):
     plt.savefig(os.path.join(out_dir, f"fig_metrics__{safe_tag}.png"), dpi=150, bbox_inches='tight')
     plt.close()
 
-    # Plot 3: Latency (all systems)
+    # Grafik 3: Latency (tüm sistemler)
     plt.figure(figsize=(9, 5))
     lat_vals = [col_mean(s, '_Time_ms') or 0 for s in systems]
     ax3 = sns.barplot(x=systems, y=lat_vals, hue=systems, legend=False, palette=palette5)
@@ -1308,68 +1308,68 @@ def _compute_reports(automation_id=None):
 
 @app.route("/api/generate_reports", methods=["GET"])
 def generate_academic_reports():
-    # Report a specific run with ?automation_id=...; if none, report last run
+    # ?automation_id=... ile belirli koşu raporlanabilir; verilmezse en son koşu
     aid = request.args.get("automation_id")
     rep = _compute_reports(automation_id=aid)
     if rep.get("error"):
         return jsonify(rep), 404
-    return jsonify({"message": f"Reports generated: {rep['out_dir']}", "mcnemar": rep})
+    return jsonify({"message": f"Raporlar üretildi: {rep['out_dir']}", "mcnemar": rep})
     
 def _drive_export_once():
-    """Copies history CSV/JSON and reports/ folder to Drive target."""
+    """history CSV/JSON ve reports/ klasörünü Drive hedefine kopyalar."""
     dest = os.environ.get("SVSF_DRIVE_EXPORT_PATH", "").strip()
     if not dest:
         return False
     try:
         os.makedirs(dest, exist_ok=True)
         import shutil
-        # history files
+        # history dosyaları
         for p in (HISTORY_CSV_PATH, HISTORY_JSON_PATH):
             if os.path.exists(p):
                 shutil.copy2(p, os.path.join(dest, os.path.basename(p)))
-        # reports folder (all unique run reports)
+        # reports klasörü (tüm benzersiz koşu raporları)
         if os.path.isdir("reports"):
             dst_reports = os.path.join(dest, "reports")
-            # dirs_exist_ok exists in Python 3.8+; available in Colab
+            # dirs_exist_ok Python 3.8+; Colab'da var
             shutil.copytree("reports", dst_reports, dirs_exist_ok=True)
         return True
     except Exception as e:
-        logging.warning("Drive export error: %s", e)
+        logging.warning("Drive export hatası: %s", e)
         return False
 
 def _drive_export_loop():
-    """Background periodic Drive backup. Works if SVSF_DRIVE_EXPORT_PATH is set."""
+    """Arka planda periyodik Drive yedeği. SVSF_DRIVE_EXPORT_PATH set ise çalışır."""
     if not os.environ.get("SVSF_DRIVE_EXPORT_PATH", "").strip():
-        logging.info("Drive export disabled (SVSF_DRIVE_EXPORT_PATH missing).")
+        logging.info("Drive export kapalı (SVSF_DRIVE_EXPORT_PATH yok).")
         return
     try:
         interval = int(os.environ.get("SVSF_DRIVE_EXPORT_INTERVAL_SEC", "300"))
     except ValueError:
         interval = 300
-    logging.info("Drive export enabled: every %ds → %s", interval, os.environ.get("SVSF_DRIVE_EXPORT_PATH"))
+    logging.info("Drive export açık: her %ds → %s", interval, os.environ.get("SVSF_DRIVE_EXPORT_PATH"))
     while True:
         time.sleep(interval)
         ok = _drive_export_once()
         if ok:
-            logging.info("Drive backup taken (%s).", datetime.now().strftime("%H:%M:%S"))
+            logging.info("Drive yedeği alındı (%s).", datetime.now().strftime("%H:%M:%S"))
 
 @app.route("/api/drive_export", methods=["POST"])
 def api_drive_export():
-    """Trigger manual instant Drive backup."""
+    """Manuel anlık Drive yedeği tetikle."""
     ok = _drive_export_once()
     if ok:
-        return jsonify({"message": "Drive backup taken.", "path": os.environ.get("SVSF_DRIVE_EXPORT_PATH")})
-    return jsonify({"error": "Drive export failed (is SVSF_DRIVE_EXPORT_PATH set?)"}), 400
+        return jsonify({"message": "Drive yedeği alındı.", "path": os.environ.get("SVSF_DRIVE_EXPORT_PATH")})
+    return jsonify({"error": "Drive export yapılamadı (SVSF_DRIVE_EXPORT_PATH set mi?)"}), 400
 
 if __name__ == "__main__":
     def _boot_flask():
         app.run(host="0.0.0.0", port=5010, debug=False, use_reloader=False)
 
     threading.Thread(target=_boot_flask, daemon=True).start()
-    # Periodic Drive backup (for Colab disconnections)
+    # Periyodik Drive yedeği (Colab kopmalarına karşı)
     threading.Thread(target=_drive_export_loop, daemon=True).start()
-    print("SVSF v11 started (port 5010). Drive export:",
-          "ENABLED → " + os.environ["SVSF_DRIVE_EXPORT_PATH"] if os.environ.get("SVSF_DRIVE_EXPORT_PATH") else "disabled")
+    print("SVSF v11 başlatıldı (port 5010). Drive export:",
+          "AÇIK → " + os.environ["SVSF_DRIVE_EXPORT_PATH"] if os.environ.get("SVSF_DRIVE_EXPORT_PATH") else "kapalı")
     try:
         while True: time.sleep(3600)
     except KeyboardInterrupt:
